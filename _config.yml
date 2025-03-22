@@ -1,8 +1,36 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: AWS Certified AI Practitioner
+email: vusirikalaharikiran@gmail.com
+description: Preparation for clearing AWS Certified AI Practitioner
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://harikiranvusirikala.github.io/aws-certified-ai-practitioner
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+logo: "assets/imges/icon.png"
+
+defaults:
+  - scope:
+      path: "docs" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      layout: "default"
+
+# Build settings
+aux_links: # remove if you don't want this link to appear on your pages
+  Repository: https://github.com/harikiranvusirikala/aws-certified-ai-practitioner
+aux_links_new_tab: true
+heading_anchors: true
+footer_content: 'Contact us over email at <a href="mailto:vusirikalaharikiran@gmail.com">vusirikalaharikiran@gmail.com</a>'
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+callouts:
+  warning:
+    title: Warning
+    color: red
+  alert:
+    color: yellow
+  note:
+    title: Note
+    color: purple
