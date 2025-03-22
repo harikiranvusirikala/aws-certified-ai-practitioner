@@ -75,7 +75,7 @@ Biases in AI systems
 
 **Core Dimensions of Responsible AI**
 
-![Responsible AI core dimensions.png]({{site.baseurl}}/assets/images/getting-started/Responsible%20AI%20core%20dimensions.png)
+![Responsible AI core dimensions.png]({{site.baseurl}}/assets/images/Responsible%20AI%20core%20dimensions.png)
 
 - Fairness  
  AI systems promote inclusion, prevent discrimination, uphold responsible values and legal norms, and build trust with society.  
