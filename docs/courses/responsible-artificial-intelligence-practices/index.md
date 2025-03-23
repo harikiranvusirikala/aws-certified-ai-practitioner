@@ -5,5 +5,3 @@ nav_order: 7
 ---
 
 # Course: Responsible Artificial Intelligence Practices (Domain 4)
-
----
