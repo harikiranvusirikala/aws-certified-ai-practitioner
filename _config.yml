@@ -18,7 +18,7 @@ defaults:
 # aux_links: # remove if you don't want this link to appear on your pages
 #   Repository: https://github.com/harikiranvusirikala/aws-certified-ai-practitioner
 # aux_links_new_tab: true
-heading_anchors: true
+# heading_anchors: true     # true is default
 footer_content: 'Contact over LinkedIn at <a href="https://linkedin.com/in/hari-kiran-vusirikala/">Hari Kiran Vusirikala</a>'
 
 # Back to top link
@@ -39,3 +39,6 @@ callouts:
 # Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
 ga_tracking: G-F3R5F3MBEK
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
+
+# For copy button on code
+enable_copy_code_button: true

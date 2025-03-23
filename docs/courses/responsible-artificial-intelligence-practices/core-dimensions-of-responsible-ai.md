@@ -1,7 +1,7 @@
 ---
-title: "Core Dimensions of Responsible AI"
-parent: "7. Responsible Artificial Intelligence Practices"
-grand_parent: "Courses"
+title: Core Dimensions of Responsible AI
+parent: 7. Responsible Artificial Intelligence Practices
+grand_parent: Courses
 nav_order: 3
 ---
 
