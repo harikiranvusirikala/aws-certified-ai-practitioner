@@ -1,7 +1,6 @@
 ---
-title: "Responsible AI Challenges in Traditional AI and Generative AI"
-parent: "7. Responsible Artificial Intelligence Practices"
-grand_parent: "Courses"
+title: Responsible AI Challenges in Traditional AI and Generative AI
+parent: 7. Responsible AI Practices
 nav_order: 2
 ---
 

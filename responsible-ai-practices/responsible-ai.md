@@ -1,7 +1,6 @@
 ---
-title: "Responsible AI"
-parent: "7. Responsible Artificial Intelligence Practices"
-grand_parent: "Courses"
+title: Responsible AI
+parent: 7. Responsible AI Practices
 nav_order: 1
 ---
 
@@ -10,7 +9,7 @@ nav_order: 1
 Responsible AI refers to "practices" and "principles" that ensure that AI systems are "transparent" and "trustworthy" while "mitigating potential risks and negative outcomes".  
 These responsible standards should be considered throughout the entire lifecycle of an AI application. This includes the initial design, development, deployment, monitoring, and evaluation phases.  
 
-![What-Is-Responsible-AI-horizontal-Small-Font.png]({{site.baseurl}}/assets/images/responsible-artificial-intelligence-practices/What-Is-Responsible-AI-horizontal-Small-Font.png)
+![What-Is-Responsible-AI-horizontal-Small-Font.png]({{site.baseurl}}/assets/images/responsible-ai-practices/What-Is-Responsible-AI-horizontal-Small-Font.png)
 
 <!--
 To operate AI responsibly, companies should proactively ensure the following about their system:  

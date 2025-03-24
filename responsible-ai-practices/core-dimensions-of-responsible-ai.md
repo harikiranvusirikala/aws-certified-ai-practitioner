@@ -1,20 +1,19 @@
 ---
 title: Core Dimensions of Responsible AI
-parent: 7. Responsible Artificial Intelligence Practices
-grand_parent: Courses
+parent: 7. Responsible AI Practices
 nav_order: 3
 ---
 
 # Core Dimensions of Responsible AI
 
-![Responsible AI core dimensions.png]({{site.baseurl}}/assets/images/responsible-artificial-intelligence-practices/Responsible%20AI%20core%20dimensions.png)
+![Responsible AI core dimensions.png]({{site.baseurl}}/assets/images/responsible-ai-practices/Responsible%20AI%20core%20dimensions.png)
 
 - **Fairness**  
     AI systems promote inclusion, prevent discrimination, uphold responsible values and legal norms, and build trust with society.  
     To create systems suitable and beneficial for all.  
 - **Explainability**  
     Clearly explain or provide justification for its internal mechanisms and decisions so that it is understandable to humans.  
-    Humans must understand how models are making decisions and address any issues of bias, trust, or fairness.
+    Humans must understand **how models are making decisions** and address any issues of bias, trust, or fairness.
 - **Privacy and security**  
     Data is protected from theft and exposure.  
     At a privacy level, individuals control when and if their data can be used.  
@@ -27,7 +26,7 @@ nav_order: 3
     resilient to changes in input parameters, data distributions, and external circumstances.  
     retain reliability, accuracy, and safety in uncertain environments.  
 - **Governance**  
-    Governance is a set of processes that are used to define, implement, and enforce responsible AI practices within an organization.  
+    Governance is a set of processes that are used to **define, implement, and enforce responsible AI practices** within an organization.  
     Governance addresses various responsible, legal, or societal problems that generative AI might invite.  
     For example, governance policies can help to protect the rights of individuals to intellectual property.  
 - **Safety**  
@@ -38,4 +37,15 @@ nav_order: 3
     helps mitigate risks, promote fairness and transparency, and ensure that AI systems benefit society as a whole. 
 
 ## Business benefits of responsible AI
-- 
+- **Increased trust and reputation**  
+    Customers are more likely to interact with AI applications, if they believe the system is fair and safe. This enhances their reputation and brand value.
+- **Regulatory compliance**  
+    As AI regulations emerge, companies with robust ethical AI frameworks are better positioned to comply with guidelines on data privacy, fairness, accountability, and transparency.
+- **Mitigating risks**  
+    Responsible AI practices help mitigate risks such as bias, privacy violations, security breaches, and unintended negative impacts on society. This reduces legal liabilities and financial costs.
+- **Competitive advantage**  
+    Companies that prioritize responsible AI can differentiate themselves from competitors and gain a competitive edge, especially as consumer awareness of AI ethics grows.
+- **Improved decision-making**  
+    AI systems built with fairness, accountability, and transparency in mind are more reliable and less likely to produce biased or flawed outputs, which leads to better data-driven decisions.
+- **Improved products and business**  
+    Responsible AI encourages a diverse and inclusive approach to AI development. Because it draws on varied perspectives and experiences, it can drive more creative and innovative solutions.
