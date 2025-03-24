@@ -1,6 +1,6 @@
 ---
 title: ML Fundamentals
-parent: 1. Fundamentals of Machine Learning and Artificial Intelligence
+parent: 1. Fundamentals of ML and AI
 nav_order: 1
 ---
 

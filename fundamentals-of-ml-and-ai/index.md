@@ -1,9 +1,9 @@
 ---
-title: 1. Fundamentals of Machine Learning and Artificial Intelligence
+title: 1. Fundamentals of ML and AI
 nav_order: 2
 ---
 
-# Course: Fundamentals of Machine Learning and Artificial Intelligence
+# Course: Fundamentals of ML and AI
 
 AI is a broad field that encompasses the development of intelligent systems capable of performing tasks that typically require human intelligence, such as perception, reasoning, learning, problem-solving, and decision-making. AI serves as an umbrella term for various techniques and approaches, including machine learning, deep learning, and generative AI, among others.
 
