@@ -5,7 +5,11 @@ theme: just-the-docs
 
 url: https://harikiranvusirikala.github.io/aws-certified-ai-practitioner
 
+# Set a path/url to a logo that will be displayed instead of the title
 logo: "assets/images/icon.png"
+
+# Set a path/url to a favicon that will be displayed by the browser
+favicon_ico: "/assets/images/favicon.png"
 
 defaults:
   - scope:
