@@ -1,5 +1,5 @@
 ---
-title: Core Dimensions of Responsible AI
+title: Amazon Services and Tools for Responsible AI
 parent: 7. Responsible AI Practices
 nav_order: 4
 ---
