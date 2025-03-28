@@ -36,3 +36,53 @@ Security and Privacy Considerations for AI Systems
     9. Overreliance: Over-dependence on a model's capabilities, leading to over-trust and failure to properly audit its outputs
     10. Model theft: Unauthorized access or copying of a model's parameters or architecture, allowing for its reuse or misuse
 
+5.1.a
+AWS Services and Features for Securing AI Systems
+  Reasons for securing an AI system
+    • AI models process sensitive data
+    • AI Systems can be vulnerable to adversarial attacks
+    • AI systems are increasingly integration into critical applications and decision-making processes
+  The AWS Shared Responsibility Model
+    The customer assumes responsibility and management of the guest operating system. This includes updates, security patches, and other associated application software, in addition to the configuration of the AWS provided security group firewall. 
+    A customer's responsibility will be determined by the AWS Cloud services that a customer selects. This determines the amount of configuration work the customer must perform as part of their security responsibilities.
+    Responsibility for "security IN the cloud".
+
+    AWS operates, manages, and controls the host operating system and virtualization layer down to the physical security of the facilities in which the service operates.
+    Responsibility for "security OF the cloud".
+    <SharedResponsibilityModel-Final.jpg>
+  AWS services for securing AI systems
+    Defense in depth security
+      (discussed previously)
+      Four foundational AWS security services recommended for any workload, any customer, and any industry.
+        • AWS Security Hub - incident response
+            provides customers with a single dashboard to view all security findings, and to create and run automated playbooks.
+        • AWS KMS - data protection
+            encrypts data and gives customers the choice and control of using AWS managed keys or customer-managed keys to protect their data.
+        • Amazon GuardDuty - threat detection
+            threat detection service that monitors for suspicious activity and unauthorized behavior to protect AWS accounts, workloads, and data.
+        • AWS Shield Advanced - network and application protection
+            helps protect workloads against Distributed Denial of Service (DDoS) events.
+            includes AWS WAF and AWS Firewall Manager.
+    AWS security services
+      • Identify sensitive data before training models - Amazon Macie
+          "Amazon Macie" uses ML to automate sensitive data discovery at scale.
+      • Manage identities and access to AWS services and resources - IAM
+          "IAM", also centrally manage fine-grained permissions, and analyze access to refine permissions across AWS.
+      • Limit access to your data, models, and outputs - AWS IAM Identity Center, IAM Access Analyzer, AWS Verified Access, Amazon Verified Permissions and Amazon SageMaker Role Manager
+          Apply a policy of least privilege to training data, models, and applications using "AWS IAM Identity Center" (formerly SSO) and "IAM Access Analyzer".
+          Explore further zero trust capabilities to add fine-grained access controls with AWS Verified Access and Amazon Verified Permissions. 
+          Use "AWS Verified Access" to further eliminate the costs, complexity and performance issues related to virtual private networks (VPNs). 
+          use "Amazon SageMaker Role Manager" to build and manage persona-based IAM roles for common ML needs.
+          Note:
+            "AWS Verified Access" focuses on secure remote access to corporate applications and resources without a VPN.
+            "Amazon Verified Permissions" is a fine-grained permissions management and authorization service for custom applications built by you. 
+      • Protect data from exfiltration (data theft) and manipulation
+          Network Firewall, Amazon VPC and it's policies, AWS PrivateLink
+      • Protect AI workloads with intelligent threat detection
+          Amazon GuardDuty, Amazon Inspector and Amazon Detective
+      • Automate incident response and compliance
+          AWS Security Hub, AWS Config, AWS Audit Manager and AWS Artifact
+      • Defend your generative AI web applications and data
+          AWS Shield Advanced, AWS Firewall Manager, and AWS WAF and it's AWS WAF Bot Control
+      (in detail in course)
+
