@@ -117,3 +117,70 @@ Understanding Data and Model Lineage
         • Support audit activities with detailed descriptions of model training and performance.
         • Communicate how a model is intended to support business goals.
 
+Best Practices for Secure Data Engineering
+Review of data usage in generative AI
+  • User data
+      specific inputs or requirements provided by the customers or end-users. This data is used to generate or personalize the output of the generative AI model.
+      For all application scopes(from Generative AI Security Scoping Matrix), the customer controls their data. 
+  • Fine-tuning data
+      This data is used to adapt or fine-tune the pre-trained a generative AI model to the specific needs or preferences of the customers or the application domain.
+      The fine-tuning data is typically a subset of the training data or additional data collected from the application domain.
+      The fine-tuning process adjusts the model's parameters and weights to better fit the fine-tuning data, allowing the model to generate more relevant and personalized outputs.
+      For application Scopes 1 and 2, the application provider controls the fine-tuning data.
+      For application Scope 4, the customer controls the fine-tuning data.
+  • Training data
+      comprehensive dataset used to train the initial pre-trained generative AI model.
+      typically a large and diverse collection of data, such as text, images, or audio, depending on the specific application.
+      used to build the fundamental knowledge and capabilities of the generative AI model.
+      For application Scopes 1, 2, 3, and 4, the application provider controls the training data.
+      For application Scope 5, the customer controls the training data.
+Data flows in a generative AI application
+  <DataFlowsGenAIapp-Final.png>
+Data engineering lifecycle
+  an iterative process where the data is collected, prepared, and analyzed. This data is then used to train, evaluate, and continuously improve the AI or generative AI models.
+  <DataEngineeringLifeCycle-Final.png>
+  • Data engineering automation and access control
+      Pipeline automation is an important part of modern data-centric architecture design.
+      You can use "AWS Glue workflows" to create a pipeline.
+  • Data collection
+      "Amazon Kinesis", "AWS Database Migration Service (DMS)" and AWS Glue
+  • Data preparation and cleaning
+      one of the most important, yet most time-consuming, stages of the data lifecycle.
+      large workload that has a variety of data, use "Amazon EMR" or AWS Glue
+  • Data quality checks
+      "AWS Glue DataBrew", and "AWS Glue Data Quality"
+  • Data visualization and analysis
+      "Amazon QuickSight" - Use to create graphs or charts. 
+      "Amazon Neptune" - Use for graph database operations and visualization.
+  • Infrastructure as code (IaC) deployment
+      "AWS CloudFormation"
+  • Monitoring and debugging
+      "Amazon CloudWatch"
+5.1.c
+Best Practices for Secure Data Engineering
+  • Assessing data quality
+    • Define clear data quality "metrics" and benchmarks such as Completeness, Accuracy, Timeliness and Consistency.
+    • Implement "data validation checks" and tests at various stages of the data pipeline.
+    • Perform regular data profiling and monitoring to identify data quality issues.
+    • Establish a "feedback loop" to address data quality problems and continuously improve.
+    • Maintain detailed "data lineage" and metadata to understand the origin and transformation of data.
+  • Implementing privacy-enhancing technologies
+    • Implement "data masking", data obfuscation, or differential privacy mechanisms to reduce the risk of data breaches.
+    • Use "encryption", tokenization, or secure multi-party computation to protect data during processing and storage.
+  • Data access control
+    • Establish a comprehensive "data governance framework" with clear policies and procedures for data access, usage, and sharing.
+    • Implement "role-based access" controls and fine-grained permissions to restrict access to sensitive data.
+    • Use "authentication and authorization" mechanisms, such as single sign-on, MFA, or IAM solutions.
+    • Monitor and "log all data access activities" to detect and investigate any unauthorized access or anomalies.
+    • Regularly review and update access rights based on the principle of least privilege.
+  • Data integrity
+    quality, accuracy, and reliability of the data used to train the AI models.
+    It ensures that the data used for model development, training, and deployment is complete, consistent, and free from errors or inconsistencies.
+    • Implement data validation and "integrity checks" at various stages of the data pipeline, such as schema validation, referential integrity checks, and business rule validations.
+    • Maintain a robust "data backup" and recovery strategy to ensure data can be restored in case of errors, system failures, or natural disasters.
+    • Employ "transaction management" and "atomicity principles" to ensure data consistency and reliability during data processing and transformation.
+    • Maintain detailed "data lineage" and audit trails to track the origin, transformations, and changes made to the data.
+    • Regularly monitor and test the data integrity controls to ensure their effectiveness and make necessary adjustments.
+  "AWS Privacy Reference Architecture"
+    offers a set of guidelines to assist in the design and implementation of privacy-supporting controls within AWS services.
+    helps make informed decisions regarding the people, processes, and technology that are necessary to ensure privacy in the AWS Cloud environment.
