@@ -86,3 +86,34 @@ AWS Services and Features for Securing AI Systems
           AWS Shield Advanced, AWS Firewall Manager, and AWS WAF and it's AWS WAF Bot Control
       (in detail in course)
 
+5.1.b
+Understanding Data and Model Lineage
+  Data and model lineage refer to the detailed record of the origin, transformation, and evolution of data and models used in AI and generative AI systems. This information is important for understanding the origin, reliability, and potential biases or limitations of the data and models used in these systems.
+  • Source citation
+      act of properly attributing and acknowledging the sources of the data used to train the model.
+      It is necessary to identify the sources from which the training data was collected, such as the following: 
+        • Datasets
+        • Databases
+        • Other sources
+      In addition, it is necessary to identify any relevant licenses, terms of use, or permissions associated with the data.
+      helps assess the "reliability" and "trustworthiness" of the output.
+  • Documenting data origins
+      providing detailed information about the provenance, or the place of origin of the data used to train the model.
+      This includes the following:
+        • Details about the data collection process
+        • The methods used to curate and clean the data
+        • Any preprocessing or transformations applied to the data
+      Documenting the data origins is important for understanding the "potential biases, limitations, or quality issues" that might be present in the training data. This can ultimately impact the "performance" and "reliability" of the generative AI model.
+  Tools and techniques
+   • Data lineage
+   • Cataloging
+   • Model cards
+   "Amazon SageMaker Model Cards"
+      document critical details about your ML models in a single place for streamlined governance and reporting.
+      Model cards can catalog details, such as the intended use and risk rating of a model, training details and metrics, evaluation results and observations.
+      It also catalogs additional call-outs such as considerations, recommendations, and custom information.
+      By creating model cards, you can do the following:
+        • Provide guidance on how a model should be used.
+        • Support audit activities with detailed descriptions of model training and performance.
+        • Communicate how a model is intended to support business goals.
+
