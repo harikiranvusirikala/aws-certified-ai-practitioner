@@ -1,0 +1,38 @@
+Security and Privacy Considerations for AI Systems
+  5.1.d
+  Security considerations
+    • Threat detection
+      • Identify and monitor for potential security threats, such as malicious actors attempting to exploit vulnerabilities in AI systems or using generative AI for malicious purposes. The following are some examples:
+        • Generating fake content
+        • Manipulating data
+        • Automating attacks
+      • You can assist threat detection by developing and deploying AI-powered threat detection systems. You can analyze network traffic, user behavior, and other data sources to detect and respond to potential threats.
+    • Vulnerability management
+      • Identify and address vulnerabilities in AI and generative AI systems, including software bugs, model weaknesses, and potential attack vectors (for example, malware, viruses, and email attachments).
+      • Regularly conduct security assessments, "penetration testing" (attempt to find and exploit vulnerabilities), and code reviews to uncover and address vulnerabilities.
+      • Implement robust "patch management" and update processes to ensure that AI systems are kept up to date and secure.
+    • Infrastructure protection
+      • Secure the underlying infrastructure that supports AI and generative AI systems, such as Cloud computing platforms, Edge devices and Data stores.
+      • Implement strong access controls, network segmentation, encryption, and other security measures to protect the infrastructure from unauthorized access and attacks.
+      • Ensure that the AI infrastructure is resilient and can withstand failures, attacks, or other disruptions.
+    • Prompt injection
+        adversaries attempt to manipulate the input prompts of generative AI models to generate malicious or undesirable content.
+      • Employ techniques, such as "prompt filtering", "sanitization", and validation, to ensure that the input prompts are safe and do not contain malicious content.
+      • Develop robust models and training procedures that are resistant to prompt injection attacks.
+    • Data encryption
+      • Implement strong encryption mechanisms to secure both "data at rest" and "data in transit".
+      • Ensure that the encryption keys are properly managed and protected from unauthorized access.
+
+  The Open Web Application Security Project (OWASP) Top 10 for LLMs
+    industry standard list of the top 10 vulnerabilities that can impact a generative AI LLM system
+    1. Prompt injection: Malicious user inputs that can manipulate the behavior of a language model
+    2. Insecure output handling: Failure to properly sanitize or validate model outputs, leading to security vulnerabilities
+    3. Training data poisoning: Introducing malicious data into a model's training set, causing it to learn harmful behaviors
+    4. Model denial of service: Techniques that exploit vulnerabilities in a model's architecture to disrupt its availability
+    5. Supply chain vulnerabilities: Weaknesses in the software, hardware, or services used to build or deploy a model
+    6. Sensitive information disclosure: Leakage of sensitive data through model outputs or other unintended channels
+    7. Insecure plugin design: Flaws in the design or implementation of optional model components that can be exploited
+    8. Excessive agency: Granting a model too much autonomy or capability, leading to unintended and potentially harmful actions
+    9. Overreliance: Over-dependence on a model's capabilities, leading to over-trust and failure to properly audit its outputs
+    10. Model theft: Unauthorized access or copying of a model's parameters or architecture, allowing for its reuse or misuse
+
