@@ -1,6 +1,7 @@
 ---
 title: Conclusion
-nav_order: 10
+parent: 7. Responsible AI Practices
+nav_order: 5
 ---
 
 # Conclusion
@@ -15,7 +16,4 @@ nav_order: 10
 {:toc}
 </details>
 
-
 {% include responsible-ai-practices/conclusion.md %}
-
-{% include security-compliance-and-governance-for-ai-solutions/conclusion.md %}
