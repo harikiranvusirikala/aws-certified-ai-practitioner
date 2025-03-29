@@ -11,30 +11,6 @@
 - Algorithmic Accountability Act
 
 ## AWS Services for Governance and Compliance
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-| Service | Usage |
-|:-------------|:------------------|
-| AWS Config | view of configuration |
-| Amazon Inspector | vulnerability management |
-| AWS Audit Manager | manage risk and compliance |
-| AWS Artifact | AWS security and compliance documents |
-| AWS CloudTrail | log of actions |
-| AWS Trusted Advisor | cost, performance, security, resillience, operational excellence, and service limits |
-
-| Service             | Usage |
-|:--------------------|:------------------|
-| AWS Config          | view of configuration |
-| Amazon Inspector    | vulnerability management |
-| AWS Audit Manager   | manage risk and compliance |
-| AWS Artifact        | AWS security and compliance documents |
-| AWS CloudTrail      | log of actions |
-| AWS Trusted Advisor | cost, performance, security, resillience, operational excellence, and service limits |
 
 | Service | Usage |
 |:--|:--|
@@ -80,6 +56,7 @@
 - Monitoring for compliance and responsible AI
 
 ## Generative AI Security Scoping Matrix
+
 | Scope | Info |
 |:--|:--|
 | Scope 1: Consumer app        | Using public generative AI services |

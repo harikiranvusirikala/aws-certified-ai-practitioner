@@ -7,6 +7,7 @@ OR
 "    "
 
 https://analytics.google.com/
+https://search.google.com/search-console
 
 ===
 # In-Page Navigation
