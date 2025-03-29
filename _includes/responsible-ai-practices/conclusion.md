@@ -22,28 +22,28 @@
 # Developing Responsible AI Systems
 ## Reviewing Amazon service tools for responsible AI
 - Foundation model evaluation
-	- **Model evaluation on Amazon Bedrock** - evaluate, compare, and select between FMs  
-	- **SageMaker Clarify** - evaluate FMs for metrics like accuracy, robustness, and toxicity  
+  - **Model evaluation on Amazon Bedrock** - evaluate, compare, and select between FMs  
+  - **SageMaker Clarify** - evaluate FMs for metrics like accuracy, robustness, and toxicity  
 - Safeguards for generative AI
-	- **Amazon Bedrock Guardrails** - implement safeguards  
+  - **Amazon Bedrock Guardrails** - implement safeguards  
 - Bias detection
-	- **Amazon SageMaker Clarify** - identify potential bias in ML models and dataset without extensive coding  
-	- **Amazon SageMaker Data Wrangler** - import, prepare, transform, balance data if imbalance  
+  - **Amazon SageMaker Clarify** - identify potential bias in ML models and dataset without extensive coding  
+  - **Amazon SageMaker Data Wrangler** - import, prepare, transform, balance data if imbalance  
 - Model prediction explanation
-	- **SageMaker Clarify** in integrated with **Amazon SageMaker Experiments**  
+  - **SageMaker Clarify** in integrated with **Amazon SageMaker Experiments**  
 - Monitoring and human reviews
-	- **Amazon SageMaker Model Monitor** - monitors models in production  
-	- **Amazon Augmented AI (Amazon A2I)** - workflow for human review on **ML predictions**
+  - **Amazon SageMaker Model Monitor** - monitors models in production  
+  - **Amazon Augmented AI (Amazon A2I)** - workflow for human review on **ML predictions**
 - Governance improvement
 **Amazon SageMaker Role Manager** - define minimum permissions  
-	- **Amazon SageMaker Model Cards** - model behavior in production, all in one place
-		- Catalog details include information such as the intended use and risk rating of a model, training details and metrics, evaluation results and observations, and additional callouts such as considerations, recommendations, and custom information. 
+  - **Amazon SageMaker Model Cards** - model behavior in production, all in one place
+    - Catalog details include information such as the intended use and risk rating of a model, training details and metrics, evaluation results and observations, and additional callouts such as considerations, recommendations, and custom information. 
 - Providing transparency
-	- **AWS AI Service Cards** - responsible AI documentation for AWS AI services
-	  - Basic concepts to help customers better understand the service or service features
-	  - Intended use cases and limitations
-	  - Responsible AI design considerations
-	  - Guidance on deployment and performance optimization
+  - **AWS AI Service Cards** - responsible AI documentation for AWS AI services
+    - Basic concepts to help customers better understand the service or service features
+    - Intended use cases and limitations
+    - Responsible AI design considerations
+    - Guidance on deployment and performance optimization
 
 ## Responsible Practices to Select a Model
 - use **Model evaluation on Amazon Bedrock** or **SageMaker Clarify** to evaluate models for accuracy, robustness, toxicity, or nuanced content that requires human judgement.
@@ -116,19 +116,19 @@
 
 ## Principles of Human-Centered Design for Explainable AI
 - Design for amplified decision-making.
-	- Clarity
-	- Simplicity
-	- Usability
-	- Reflexivity
-	- Accountability
+  - Clarity
+  - Simplicity
+  - Usability
+  - Reflexivity
+  - Accountability
 - Design for unbiased decision-making.
-	- Transparency
-	- Fairness
-	- Training
+  - Transparency
+  - Fairness
+  - Training
 - Design for human and AI learning.
-	- Cognitive apprenticeship
-	- Personalization
-	- User-centered design
+  - Cognitive apprenticeship
+  - Personalization
+  - User-centered design
 
 - Reinforcement learning from human feedback (RLHF)
-	- **Amazon SageMaker Ground Truth** - humans involved for making high value data sets, incorporating human feedback across the ML lifecycle
+  - **Amazon SageMaker Ground Truth** - humans involved for making high value data sets, incorporating human feedback across the ML lifecycle
