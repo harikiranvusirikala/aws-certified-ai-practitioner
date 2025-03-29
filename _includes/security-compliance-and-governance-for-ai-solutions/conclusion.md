@@ -1,4 +1,4 @@
-# Course: Security, Compliance, and Governance for AI Solutions (Domain 5)
+# Course 8: Security, Compliance, and Governance for AI Solutions (Domain 5)
 
 ## Compliance Standards
 - National Institute of Standards and Technology (NIST)

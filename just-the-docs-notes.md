@@ -82,4 +82,42 @@ grand_parent: "Getting Started"
 nav_order: 4
 ---
 
+{:style="counter-reset:none"}
+1.  Item three
+
+{:style="counter-reset:step-counter 41"}
+1.  Item 42
+
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
+
+===
+Term
+: Brief description of Term
+
+Longer Term
+: Longer description of Term,
+  possibly more than one line
+
+Term
+: First description of Term,
+  possibly more than one line
+
+: Second description of Term,
+  possibly more than one line
+
+Term1
+Term2
+: Single description of Term1 and Term2,
+  possibly more than one line
+===
+
 `Step 1`<br />[Create a namespace]({{site.baseurl}}/getting-started/whisper-ui/create-a-namespace)|`Step 2`<br />**Create a secret and a bucket**|`Step 3`<br />[Manage permissions]({{site.baseurl}}/getting-started/whisper-ui/manage-permissions)|`Step 4`<br />[Read secrets]({{site.baseurl}}/getting-started/whisper-ui/read-secrets)|`Step 5`<br />[Next Steps]({{site.baseurl}}/getting-started/whisper-ui/next-steps)|
