@@ -1,5 +1,3 @@
-# Course 7: Responsible AI Practices (Domain 4)
-
 - Bias-variance trade-off
 
 ## Challenges of Generative AI
@@ -44,7 +42,7 @@
 	  - Responsible AI design considerations
 	  - Guidance on deployment and performance optimization
 
-# Model Trade-Offs
+## Model Trade-Offs
 - Interpretability trade-offs
 - Safety and transparency trade-offs
 - Model controllability
@@ -55,7 +53,7 @@
 - A model that avoids causing harm in its interactions with the world is an example of **safety** in a model.
 - A model that you can influence the predictions and behavior by changing aspects of the training data is an example of **controllability** in a model.
 
-# Principles of Human-Centered Design for Explainable AI
+## Principles of Human-Centered Design for Explainable AI
 - Design for amplified decision-making.
 	- Clarity
 	- Simplicity

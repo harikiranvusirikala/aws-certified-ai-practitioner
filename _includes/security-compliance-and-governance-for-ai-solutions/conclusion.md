@@ -1,5 +1,3 @@
-# Course 8: Security, Compliance, and Governance for AI Solutions (Domain 5)
-
 ## Compliance Standards
 - National Institute of Standards and Technology (NIST)
 - European Union Agency for Cybersecurity (ENISA)
