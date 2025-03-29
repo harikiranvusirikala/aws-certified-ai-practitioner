@@ -1,4 +1,5 @@
 <br>
+
 - Bias-variance trade-off
 
 ## Challenges of Generative AI
@@ -18,6 +19,7 @@
 - Safety  
 - Controllability  
 
+# Developing Responsible AI Systems
 ## Reviewing Amazon service tools for responsible AI
 - Foundation model evaluation
 	- **Model evaluation on Amazon Bedrock** - evaluate, compare, and select between FMs  
@@ -42,6 +44,64 @@
 	  - Intended use cases and limitations
 	  - Responsible AI design considerations
 	  - Guidance on deployment and performance optimization
+
+## Responsible Practices to Select a Model
+- use **Model evaluation on Amazon Bedrock** or **SageMaker Clarify** to evaluate models for accuracy, robustness, toxicity, or nuanced content that requires human judgement.
+<br>
+
+- Define application use case narrowly
+- Choosing a model based on performance
+  - Level of customization – The ability to change a model’s output with new data ranging from prompt-based approaches to full model retraining
+  - Model size – The amount of information the model has learned as defined by parameter count
+  - Inference options – From self-managed deployment to API calls
+  - Licensing agreements – Some agreements can restrict or prohibit commercial use
+  - Context windows – The amount of information that can fit in a single prompt
+  - Latency – The amount of time it takes for a model to generate an output
+- Choosing a model based on sustainability concerns (socially, environmentally, and economically sustainable over the long term.)
+  - Responsible agency considerations for selecting a model
+    - Value alignment
+    - Responsible reasoning skills
+    - Appropriate level of autonomy
+    - Transparency and accountability
+  - Environmental considerations for selecting a model
+    - Energy consumption
+    - Resources utilization
+    - Environmental impact assessment
+  - Economic considerations for selecting a model (impact on jobs)
+
+## Responsible Preparation for Datasets
+- use **SageMaker Clarify** and **SageMaker Data Wrangler** to help balance your datasets.
+<br>
+
+- Balancing datasets
+  - Inclusive and diverse data collection
+  - Data curation
+    - Data preprocessing
+    - Data augmentation
+    - Regular auditing
+
+---
+
+# Transparent and Explainable Models
+## Transparent and explainable models have several advantages over black box models.
+- Increased trust
+- Easier to debug and optimize for improvements
+- Better understanding of the data and the model's decision-making process
+
+<!-- ## Solutions for transparent and explainable models
+- Explainability frameworks
+- Transparent documentation
+- Monitoring and auditing
+- Human oversight and involvement
+- Counterfactual explanations
+- User interface explanations -->
+
+## AWS tools for transparency
+- **AWS AI Service Cards** - Amazon provides transparent documentation on Amazon services that help you build your AI services.
+- **Amazon SageMaker Model Cards** - you can catalog and provide documentation on models that you create or develop yourself.
+## AWS tools for explainability
+- **SageMaker Clarify**
+- **SageMaker Autopilot** (how ML models make predictions)
 
 ## Model Trade-Offs
 - Interpretability trade-offs
