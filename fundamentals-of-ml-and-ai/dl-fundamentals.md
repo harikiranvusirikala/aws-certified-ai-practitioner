@@ -14,6 +14,9 @@ Nodes are organized into layers. The layers include an input layer, one or more 
 
 ![neural networks@4x.png]({{site.baseurl}}/assets/images/fundamentals-of-ml-and-ai/neural%20networks@4x.png)
 
+_Source: AWS Skill Builder_
+{: .text-center .fs-3 .grey-dk-000}
+
 When we show a neural network many examples, like data about customers who bought certain products or used certain services, it figures out how to identify patterns by adjusting the connections between its nodes. It's like the nodes are talking to each other and slowly figuring out the patterns that separate different types of customers.  
 
 Couple branches of AI where deep learning is used to enhance results:  

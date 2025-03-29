@@ -11,6 +11,9 @@ These responsible standards should be considered throughout the entire lifecycle
 
 ![What-Is-Responsible-AI-horizontal-Small-Font.png]({{site.baseurl}}/assets/images/responsible-ai-practices/What-Is-Responsible-AI-horizontal-Small-Font.png)
 
+_Source: AWS Skill Builder_
+{: .text-center .fs-3 .grey-dk-000}
+
 <!--
 To operate AI responsibly, companies should proactively ensure the following about their system:  
   - It is fully transparent and accountable, with monitoring and oversight mechanisms in place.

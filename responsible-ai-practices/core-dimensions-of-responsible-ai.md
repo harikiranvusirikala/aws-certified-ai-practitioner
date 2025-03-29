@@ -8,6 +8,9 @@ nav_order: 3
 
 ![Responsible AI core dimensions.png]({{site.baseurl}}/assets/images/responsible-ai-practices/Responsible%20AI%20core%20dimensions.png)
 
+_Source: AWS Skill Builder_
+{: .text-center .fs-3 .grey-dk-000}
+
 - **Fairness**  
     AI systems promote inclusion, prevent discrimination, uphold responsible values and legal norms, and build trust with society.  
     To create systems suitable and beneficial for all.  

@@ -13,6 +13,9 @@ Hiring a large team, spending on compute resources, and importantly, having the 
 
 ![FMDiagram2.png]({{site.baseurl}}/assets/images/fundamentals-of-ml-and-ai/FMDiagram2.png)
 
+_Source: AWS Skill Builder_
+{: .text-center .fs-3 .grey-dk-000}
+
 Generative AI is powered by models that are pretrained on internet-scale data, and these models are called "foundation models (FMs)"  
 
 With FMs, instead of gathering labeled data for each model and training multiple models as in traditional ML, you can adapt a single FM to perform multiple tasks.  
