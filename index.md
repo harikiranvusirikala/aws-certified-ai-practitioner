@@ -7,8 +7,8 @@ nav_order: 1
 Guide for clearing AWS Certified AI Practitioner (AIF-C01) exam
 
 - Doing Recap? Directly go the following summaries of each section.
-  - [Summary - Course 7: Responsible AI Practices (Domain 4)]({{site.baseurl}}/responsible-ai-practices/summary.md)
-  - [Summary - Course 8: Security, Compliance, and Governance for AI Solutions (Domain 5)]({{site.baseurl}}/security-compliance-and-governance-for-ai-solutions/summary.md)
+  - [Summary - Course 7: Responsible AI Practices (Domain 4)]({{site.baseurl}}/responsible-ai-practices/summary.html)
+  - [Summary - Course 8: Security, Compliance, and Governance for AI Solutions (Domain 5)]({{site.baseurl}}/security-compliance-and-governance-for-ai-solutions/summary.html)
 
 
 
