@@ -19,6 +19,8 @@ nav_order: 10
 
 {% include responsible-ai-practices/summary.md %}
 
+---
+
 # Course 8: Security, Compliance, and Governance for AI Solutions (Domain 5)
 
 {% include security-compliance-and-governance-for-ai-solutions/summary.md %}
