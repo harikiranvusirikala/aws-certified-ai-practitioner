@@ -107,10 +107,8 @@
 ## Model Trade-Offs
 - Interpretability trade-offs
 - Safety and transparency trade-offs
-- Model controllability
-
-<br>
-
+- Model controllability  
+ 
 - A model that provides transparency into a system so a human can explain the model’s output based on the weights and features is an example of **interpretability** in a model.
 - A model that uses model agnostic methods to explain the behavior of the model in human terms is an example of **explainability** in a model.
 - A model that avoids causing harm in its interactions with the world is an example of **safety** in a model.
