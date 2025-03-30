@@ -46,7 +46,7 @@
     - Guidance on deployment and performance optimization
 
 ## Responsible Practices to Select a Model
-- use **Model evaluation on Amazon Bedrock** or **SageMaker Clarify** to evaluate models for accuracy, robustness, toxicity, or nuanced content that requires human judgement.
+- use **Model evaluation on Amazon Bedrock** or **SageMaker Clarify** to evaluate models for accuracy, robustness, toxicity, or nuanced content that requires human judgement.  
  
 - Define application use case narrowly
 - Choosing a model based on performance
@@ -69,7 +69,7 @@
   - Economic considerations for selecting a model (impact on jobs)
 
 ## Responsible Preparation for Datasets
-- use **SageMaker Clarify** and **SageMaker Data Wrangler** to help balance your datasets.
+- use **SageMaker Clarify** and **SageMaker Data Wrangler** to help balance your datasets.  
  
 - Balancing datasets
   - Inclusive and diverse data collection
