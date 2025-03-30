@@ -7,7 +7,7 @@
 - Health Insurance Portability and Accountability Act (HIPAA)
 - General Data Protection Regulation (GDPR)
 - Payment Card Industry Data Security Standard (PCI DSS)
-- Algorithmic Accountability Act
+- Algorithmic Accountability Act - prevent bias, ensure transparency and explainbility
 
 ## AWS Services for Governance and Compliance
 
@@ -45,11 +45,11 @@
 
 ## Key aspects to consider when monitoring an AI system.
 - Performance metrics
-  - Model accuracy: The proportion of correct predictions made by the model
-  - Precision: The ratio of true positive predictions to the total number of **positive predictions made by the model**
-  - Recall: The ratio of true positive predictions to the total number of **actual positive instances in the data**
-  - F1-score: The harmonic mean of precision and recall, which provides a balanced measure of model performance
-  - Latency: The time taken by the model to make a prediction, which is an important measure of a model's practical performance
+  - **Model accuracy**: The proportion of correct predictions made by the model
+  - **Precision**: The ratio of true positive predictions to the total number of **positive predictions made by the model**
+  - **Recall**: The ratio of true positive predictions to the total number of **actual positive instances in the data**
+  - **F1-score**: The harmonic mean of precision and recall, which provides a **balanced measure** of model performance
+  - **Latency**: The time taken by the model to make a prediction, which is an important measure of a model's practical performance
 - Infrastructure monitoring
 - Monitoring for bias and fairness
 - Monitoring for compliance and responsible AI
@@ -75,7 +75,7 @@
 - Data encryption
 
 ## AWS Shared Responsibility Model
-- customer - security IN the cloud
+- Customer - security IN the cloud
 - AWS - security OF the cloud
 
 ## Foundational AWS security services recommended
@@ -116,7 +116,8 @@
 ## Tools and techniques
 - Data lineage
 - Cataloging
-- Model cards
+- Model cards  
+
 <br>
 
 - **Amazon SageMaker Model Cards**
@@ -129,15 +130,15 @@
   - Pipeline automation is an important part of modern data-centric architecture design.
   - You can use **AWS Glue workflows** to create a pipeline.
 - Data collection
-  - **Amazon Kinesis**, **AWS Database Migration Service (DMS)** and AWS Glue
+  - **Amazon Kinesis**, **AWS Database Migration Service (DMS)** and **AWS Glue**
 - Data preparation and cleaning
   - one of the most important, yet most time-consuming, stages of the data lifecycle.
-  - large workload that has a variety of data, use **Amazon EMR** or AWS Glue
+  - for large workload that has a variety of data, use **Amazon EMR** or **AWS Glue**
 - Data quality checks
   - **AWS Glue DataBrew**, and **AWS Glue Data Quality**
 - Data visualization and analysis
-  - **Amazon QuickSight** - Use to create graphs or charts. 
-  - **Amazon Neptune** - Use for graph database operations and visualization.
+  - **Amazon QuickSight** - to create graphs or charts. 
+  - **Amazon Neptune** - for graph database operations and visualization.
 - Infrastructure as code (IaC) deployment
   - **AWS CloudFormation**
 - Monitoring and debugging
@@ -148,6 +149,7 @@
 - Implementing privacy-enhancing technologies
 - Data access control
 - Data integrity  
+
 <br>
 
 - **AWS Privacy Reference Architecture** - guidelines to assist in deign and implementation of privacy-supporting controls
