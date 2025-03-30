@@ -35,7 +35,7 @@
   - **Amazon SageMaker Model Monitor** - monitors models in production  
   - **Amazon Augmented AI (Amazon A2I)** - workflow for human review on **ML predictions**
 - Governance improvement
-**Amazon SageMaker Role Manager** - define minimum permissions  
+  - **Amazon SageMaker Role Manager** - define minimum permissions  
   - **Amazon SageMaker Model Cards** - model behavior in production, all in one place
     - Catalog details include information such as the intended use and risk rating of a model, training details and metrics, evaluation results and observations, and additional callouts such as considerations, recommendations, and custom information. 
 - Providing transparency
@@ -71,6 +71,7 @@
 
 ## Responsible Preparation for Datasets
 - use **SageMaker Clarify** and **SageMaker Data Wrangler** to help balance your datasets.
+
 <br>
 
 - Balancing datasets
@@ -83,7 +84,7 @@
 ---
 
 # Transparent and Explainable Models
-## Transparent and explainable models have several advantages over black box models.
+## Advantages over black box models
 - Increased trust
 - Easier to debug and optimize for improvements
 - Better understanding of the data and the model's decision-making process
@@ -107,6 +108,7 @@
 - Interpretability trade-offs
 - Safety and transparency trade-offs
 - Model controllability
+
 <br>
 
 - A model that provides transparency into a system so a human can explain the model’s output based on the weights and features is an example of **interpretability** in a model.
