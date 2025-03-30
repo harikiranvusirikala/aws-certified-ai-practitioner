@@ -1,9 +1,9 @@
 ---
-title: Conclusion
+title: Summary
 nav_order: 10
 ---
 
-# Conclusion
+# Summary
 {: .no_toc }
 
 <details open markdown="block">
@@ -17,8 +17,8 @@ nav_order: 10
 
 # Course 7: Responsible AI Practices (Domain 4)
 
-{% include responsible-ai-practices/conclusion.md %}
+{% include responsible-ai-practices/summary.md %}
 
 # Course 8: Security, Compliance, and Governance for AI Solutions (Domain 5)
 
-{% include security-compliance-and-governance-for-ai-solutions/conclusion.md %}
+{% include security-compliance-and-governance-for-ai-solutions/summary.md %}

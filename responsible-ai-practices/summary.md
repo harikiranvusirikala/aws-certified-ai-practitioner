@@ -1,10 +1,10 @@
 ---
-title: Conclusion
+title: Summary
 parent: 7. Responsible AI Practices
 nav_order: 5
 ---
 
-# Conclusion
+# Summary
 {: .no_toc }
 
 <details open markdown="block">
@@ -16,4 +16,4 @@ nav_order: 5
 {:toc}
 </details>
 
-{% include responsible-ai-practices/conclusion.md %}
+{% include responsible-ai-practices/summary.md %}

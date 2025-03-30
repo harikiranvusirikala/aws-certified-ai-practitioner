@@ -1,10 +1,10 @@
 ---
-title: Conclusion
+title: Summary
 parent: 8. Security, Compliance, and Governance for AI Solutions
 nav_order: 7
 ---
 
-# Conclusion
+# Summary
 {: .no_toc }
 
 <details open markdown="block">
@@ -34,4 +34,4 @@ nav_order: 7
 7. Policies, procedures, and awareness
   - AWS IAM Access Analyzer
 
-{% include security-compliance-and-governance-for-ai-solutions/conclusion.md %}
+{% include security-compliance-and-governance-for-ai-solutions/summary.md %}
