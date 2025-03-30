@@ -64,6 +64,9 @@
 | Scope 4: Fine-tuned models  | Fine-tuning a model on your data |
 | Scope 5: Self-trained models | Training a model from scratch on your data |
 
+---
+
+# Securing AI Systems
 ## Security considerations
 - Threat detection
 - Vulnerability management
@@ -84,9 +87,6 @@
 | Amazon GuardDuty | threat detection |
 | AWS Shield Advanced | network and application protection |
 
----
-
-# Securing AI Systems
 ## AWS security services
 - Identify sensitive data before training models
   - Amazon Macie
