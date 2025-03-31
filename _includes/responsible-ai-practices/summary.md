@@ -42,7 +42,7 @@ Fainess measured by the bias and variance of outcomes across groups
   - **SageMaker Clarify** in integrated with **Amazon SageMaker Experiments**  
 - Monitoring and human reviews
   - **Amazon SageMaker Model Monitor** - monitors models in production  
-  - **Amazon Augmented AI (Amazon A2I)** - workflow for human review on **ML predictions**
+  - **Amazon Augmented AI (Amazon A2I)** - workflow for human review on **ML predictions**, low confidence/random predictions sent for human review
 - Governance improvement
   - **Amazon SageMaker Role Manager** - define minimum permissions  
   - **Amazon SageMaker Model Cards** - model behavior in production, all in one place
@@ -57,21 +57,21 @@ Fainess measured by the bias and variance of outcomes across groups
 Responsible datasets are the foundation of Responsible AI
 
 ## Characteristics of datasets
-- Inclusivity: Representing diverse populations, perspectives, and experiences in training data
-- Diversity: Incorporating a wide range of attributes, features, and variables to avoid bias
-- Balanced datasets: Ensuring equal representation of different groups and avoiding skewed distributions
-- Privacy protection: Safeguarding sensitive information and adhering to data protection regulations
-- Consent and transparency: Obtaining informed consent from data subjects and providing clear information about data usage
-- Regular audits: Conducting periodic reviews of datasets to identify and address potential issues or biases
+- **Inclusivity**: Representing diverse populations, perspectives, and experiences in training data
+- **Diversity**: Incorporating a wide range of attributes, features, and variables to avoid bias
+- **Balanced datasets**: Ensuring equal representation of different groups and avoiding skewed distributions
+- **Privacy protection**: Safeguarding sensitive information and adhering to data protection regulations
+- **Consent and transparency**: Obtaining informed consent from data subjects and providing clear information about data usage
+- **Regular audits**: Conducting periodic reviews of datasets to identify and address potential issues or biases
 
 ## Responsible Practices to Select a Model
 - use **Model evaluation on Amazon Bedrock** or **SageMaker Clarify** to evaluate models for accuracy, robustness, toxicity, or nuanced content that requires human judgement.  
  
-- Environmental considerations: Assessing the carbor footprint and energy consumption of Al models
-- Sustainability: Prioritizing models with minimal environmental impact and long-term viability
-- Transparency: Providing clear information about model capabilites, limitations, and potential risks
-- Accountability: Establishing clear lines of responsibility for Al model outcomes and decision making
-- Stakeholder engagement: Involving diverse perspectives in model selection and deployment processes  
+- **Environmental considerations**: Assessing the carbor footprint and energy consumption of Al models
+- **Sustainability**: Prioritizing models with minimal environmental impact and long-term viability
+- **Transparency**: Providing clear information about model capabilites, limitations, and potential risks
+- **Accountability**: Establishing clear lines of responsibility for Al model outcomes and decision making
+- **Stakeholder engagement**: Involving diverse perspectives in model selection and deployment processes  
  
 - Define application **use case narrowly**
 - Choosing a model based on **performance**
@@ -121,13 +121,29 @@ Responsible datasets are the foundation of Responsible AI
 
 ## AWS tools for transparency
 - **AWS AI Service Cards** - Amazon provides transparent documentation on Amazon services that help you build your AI services.
+  - Intended use cases and limitations
+  - Responsible AI design considerations
+  - Guidance on deployment and perforamnce optimization
 - **Amazon SageMaker Model Cards** - you can catalog and provide documentation on models that you create or develop yourself.
+  - Model details automatically populated.
+
 ## AWS tools for explainability
 - **SageMaker Clarify**
+  - Feature attributions - how much each feature contributed for the model predictions.
+  - Partial dependence plots - plot graph on models predications change for different values of feature
 - **SageMaker Autopilot** (how ML models make predictions)
 
 ## Model Trade-Offs
 - Interpretability trade-offs
+  - Interpretability
+    - More transparent
+    - Deep level understanding of internal mechanics
+    - Uses interpretable algorithms
+    - Performance and security tradeoffs
+  - Explainability
+    - Less transparent
+    - High-level understanding
+    - Model agnostic (black box) approach
 - Safety and transparency trade-offs
 - Model controllability  
  
@@ -150,7 +166,10 @@ Responsible datasets are the foundation of Responsible AI
 - Design for human and AI learning.
   - Cognitive apprenticeship
   - Personalization
-  - User-centered design
+  - User-centered design  
+ 
+- **Amazon Augmented AI (Amazon A2I)** - workflow for human review on **ML predictions**, low confidence/random predictions sent for human review
 
 - Reinforcement learning from human feedback (RLHF)
+  - incorporated human feedback in the rewards function
   - **Amazon SageMaker Ground Truth** - humans involved for making high value data sets, incorporating human feedback across the ML lifecycle
