@@ -1,5 +1,14 @@
 <br>
 
+Fainess measured by the bias and variance of outcomes across groups
+
+## Effects of bias and variance
+- Demographic disparities: Unequal outcomes or treatment of different groups because of biased models
+- Inaccuracy: Reduced model performance and reliability because of bias or variance issues
+- Overfitting: Models that are too complex and fail to generalize well to new data
+- Underfitting: Models that are too simple and fail to capture underlying patterns in the data
+- User trust: Eroding confidence in Al systems because of biased or inconsistent outputs  
+ 
 - Bias-variance trade-off
 
 ## Challenges of Generative AI
@@ -10,12 +19,12 @@
 - Disruption of the nature of work
 
 ## Core Dimensions of Responsible AI (features of responsible AI)
-- Fairness
-- Explainability
-- Privacy and security
-- Transparency  
-- Veracity and robustness  
-- Governance  
+- Fairness - How a system impacts different subpopulations of users (for example, by gender, ethnicity)
+- Explainability - Mechanisms to understand and evaluate the outputs of an Al system
+- Privacy and security - Data that is used in accordance with privacy considerations and protected from theft and exposure
+- Transparency - Information about an Al system so stakeholders can make informed choices about their use of the system
+- Veracity and robustness - Mechanisms to ensure that an Al system operates reliably
+- Governance - Processes to define, implement, and enforce responsible Al practices within an organization
 - Safety  
 - Controllability  
 
@@ -45,28 +54,44 @@
     - Responsible AI design considerations
     - Guidance on deployment and performance optimization
 
+Responsible datasets are the foundation of Responsible AI
+
+## Characteristics of datasets
+- Inclusivity: Representing diverse populations, perspectives, and experiences in training data
+- Diversity: Incorporating a wide range of attributes, features, and variables to avoid bias
+- Balanced datasets: Ensuring equal representation of different groups and avoiding skewed distributions
+- Privacy protection: Safeguarding sensitive information and adhering to data protection regulations
+- Consent and transparency: Obtaining informed consent from data subjects and providing clear information about data usage
+- Regular audits: Conducting periodic reviews of datasets to identify and address potential issues or biases
+
 ## Responsible Practices to Select a Model
 - use **Model evaluation on Amazon Bedrock** or **SageMaker Clarify** to evaluate models for accuracy, robustness, toxicity, or nuanced content that requires human judgement.  
  
-- Define application use case narrowly
-- Choosing a model based on performance
+- Environmental considerations: Assessing the carbor footprint and energy consumption of Al models
+- Sustainability: Prioritizing models with minimal environmental impact and long-term viability
+- Transparency: Providing clear information about model capabilites, limitations, and potential risks
+- Accountability: Establishing clear lines of responsibility for Al model outcomes and decision making
+- Stakeholder engagement: Involving diverse perspectives in model selection and deployment processes  
+ 
+- Define application **use case narrowly**
+- Choosing a model based on **performance**
   - Level of customization – The ability to change a model’s output with new data ranging from prompt-based approaches to full model retraining
   - Model size – The amount of information the model has learned as defined by parameter count
   - Inference options – From self-managed deployment to API calls
   - Licensing agreements – Some agreements can restrict or prohibit commercial use
   - Context windows – The amount of information that can fit in a single prompt
   - Latency – The amount of time it takes for a model to generate an output
-- Choosing a model based on sustainability concerns (socially, environmentally, and economically sustainable over the long term.)
+- Choosing a model based on **sustainability** concerns (socially, environmentally, and economically sustainable over the long term.)
   - Responsible agency considerations for selecting a model
     - Value alignment
     - Responsible reasoning skills
     - Appropriate level of autonomy
     - Transparency and accountability
-  - Environmental considerations for selecting a model
+  - **Environmental** considerations for selecting a model
     - Energy consumption
     - Resources utilization
     - Environmental impact assessment
-  - Economic considerations for selecting a model (impact on jobs)
+  - **Economic** considerations for selecting a model (impact on jobs)
 
 ## Responsible Preparation for Datasets
 - use **SageMaker Clarify** and **SageMaker Data Wrangler** to help balance your datasets.  
