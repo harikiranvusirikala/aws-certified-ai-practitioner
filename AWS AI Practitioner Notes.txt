@@ -1,3 +1,43 @@
+Learning Path in SkillBuilder:
+- [Standard Exam Prep Plan: AWS Certified AI Practitioner (AIF-C01)](https://explore.skillbuilder.aws/learn/learning-plans/2193/standard-exam-prep-plan-aws-certified-ai-practitioner-aif-c01)
+And
+Stephen Mareke course for hand-on understanding
+
+- https://explore.skillbuilder.aws/learn/courses/19554/exam-prep-standard-course-aws-certified-ai-practitioner-aif-c01/lessons
+- https://explore.skillbuilder.aws/learn/courses/19603/responsible-artificial-intelligence-practices/lessons/153624/responsible-artificial-intelligence-practices
+
+(see in detail Exam Guide page 4)
+• Domain 1: Fundamentals of AI and ML (20% of scored content)
+  1.1: Explain basic AI concepts and terminologies.
+  1.2: Identify practical use cases for AI.
+  1.3: Describe the ML development lifecycle.
+• Domain 2: Fundamentals of Generative AI (24% of scored content)
+  2.1: Explain the basic concepts of generative AI.
+  2.2: Understand the capabilities and limitations of generative AI for solving business problems.
+  2.3: Describe AWS infrastructure and technologies for building generative AI applications.
+• Domain 3: Applications of Foundation Models (28% of scored content)
+  3.1: Describe design considerations for applications that use foundation models.
+  3.2: Choose effective prompt engineering techniques.
+  3.3: Describe the training and fine-tuning process for foundation models.
+  3.4: Describe methods to evaluate foundation model performance.
+• Domain 4: Guidelines for Responsible AI (14% of scored content)
+  4.1: Explain the development of AI systems that are responsible.
+  4.2: Recognize the importance of transparent and explainable models.
+• Domain 5: Security, Compliance, and Governance for AI Solutions (14% of scored content)
+  5.1: Explain methods to secure AI systems.
+  5.2: Recognize governance and compliance regulations for AI systems.
+
+Schedule Exam - https://cp.certmetrics.com/amazon - personal skill builder - can test laptop before exam
+https://www.pearsonvue.com/us/en/test-takers/resources.html#what-to-expect
+https://youtu.be/OSWXzhavOwg - OnVUE Testing Guidelines
+
+Will Learn:
+• Understand AI, ML, and generative AI concepts, methods, and strategies in general and on AWS.
+• Understand the appropriate use of AI/ML and generative AI technologies to ask relevant questions within the candidate’s organization.
+• Determine the correct types of AI/ML technologies to apply to specific use cases.
+• Use AI, ML, and generative AI technologies responsibly.
+
+
 Course: introduction-to-generative-ai-art-of-the-possible
 =====
 Generative AI is a form of AI that can produce new content, including conversations, stories, images, videos, music, and code.
