@@ -1,3 +1,127 @@
+Course: essentials-of-prompt-engineering
+=====
+3.2.a
+Understanding Prompts:
+Using effective prompt strategies can offer you the following benefits:
+  • Enhance the model's capabilities and bolster its safety measures.
+  • Equip the model with domain-specific knowledge and external tools without modifying its parameters or undergoing fine-tuning.
+  • Interact with language models to fully comprehend their potential.
+  • Obtain higher-quality outputs by providing higher-quality inputs.
+
+Elements of a prompt:
+  • Instructions: This is a task for the large language model to do. It provides a task description or instruction for how the model should perform.
+  • Context: This is external information to guide the model.
+  • Input data: This is the input for which you want a response.
+  • Output indicator: This is the output type or format.
+  • Negative prompting:
+      Negative prompting is used to guide the model away from producing certain types of content or exhibiting specific behaviors.
+      For instance, in a text generation model, negative prompts could be used to prevent the model from producing hate speech, explicit content, or biased language. By specifying what the model should avoid, negative prompting helps steer the output towards more appropriate content.
+
+3.1.b
+Modifying Prompts:
+Inference parameters
+  When interacting with FMs, you can often configure inference parameters to limit or influence the model response. The parameters available to you will vary based on the model that you are using. Inference parameters fit into a range of categories, with the most common being "randomness" and "diversity" and "length".
+
+  1. Randomness and diversity
+  influence the variation in generated responses by limiting the outputs to more likely outcomes or by changing the shape of the probability distribution of outputs.
+    • Temperature:
+        controls the randomness or creativity of the model's output.
+        Temperature is set between 0 and 1.
+        A lower temperature makes it more focused and predictable.
+          Outputs are more conservative, repetitive, and focused on the most likely responses.
+        A higher temperature makes the output more diverse and unpredictable.
+          Outputs are more diverse, creative, and unpredictable, but might be less coherent or relevant.
+    • Top P (or nucleus):
+        Top p is a setting that controls the diversity of the text by limiting the number of words that the model can choose from based on their "probabilities".
+        Top p is also set on a scale from 0 to 1.
+        Low top p (for example, 0.250)
+          model will only consider words that make up the top 25 percent of the total probability distribution. This can help the output be more focused and coherent, because the model is limited to choosing from the most probable words given the context.
+        High top p (for example, 0.990)
+          model will consider a broad range of possible words for the next word in the sequence, because it will include words that make up the top 99 percent of the total probability distribution. This can lead to more diverse and creative output, because the model has a wider pool of words to choose from.
+    • Top K:
+        Top k limits the number of words to the top k most "probable words", regardless of their "percent probabilities".
+        Google statement - "Probable" describes something that is likely to happen or be true, while "probability" is the mathematical concept of the likelihood of an event occurring, often expressed as a number between 0 and 1.
+        Low top k (for example, 10)
+          model will only consider the 10 most probable words for the next word in the sequence. This can help the output be more focused and coherent, because the model is limited to choosing from the most probable words given the context.
+        High top k (for example, 500)
+          model will consider the 500 most probable words for the next word in the sequence, regardless of their individual probabilities. This can lead to more diverse and creative output, because the model has a larger pool of potential words to choose from.
+  2. Length
+    settings that control the maximum length of the generated output and specify the stop sequences that signal the end of the generation process.
+    • Maximum length:
+        setting determines the maximum number of tokens that the model can generate during the inference process.
+    • Stop sequences:
+        Stop sequences are special tokens or sequences of tokens that signal the model to stop generating further output. When the model encounters a stop sequence during the inference process, it will terminate the generation regardless of the maximum length setting. Stop sequences are particularly useful in tasks where the desired output length is variable or difficult to predict in advance. For example, in conversational artificial intelligence (AI) systems, the stop sequence could be an end-of-conversation token or a specific phrase that indicates the end of the response.
+
+        Stop sequences can be predefined or dynamically generated based on the input or the generated output itself. In some cases, multiple stop sequences can be specified, allowing the model to stop generation upon encountering any of the defined sequences.
+
+3.2.c
+Best practices for prompting
+  • Be clear and concise.
+    Prompts should be straightforward and avoid ambiguity.
+  • Include context if needed.
+  • Use directives for the appropriate response type.
+    If you want a particular output form, such as a summary, question, or poem, specify the response type directly.
+    You can also limit responses by length, format, included information, excluded information, and more.
+  • Consider the output in the prompt.
+    Mention the requested output at the end of the prompt to keep the model focused on appropriate content.
+  • Start prompts with an interrogation.
+    Phrase your input as a question, beginning with words, such as who, what, where, when, why, and how.
+  • Provide an example response.
+    Use the expected output format as an example response in the prompt. Surround it in brackets to make it clear that it is an example.
+  • Break up complex tasks.
+    • Divide the task into several subtasks. If you cannot get reliable results, try splitting the task into multiple prompts.
+    • Ask the model if it understood your instruction. Provide clarification based on the model's response.
+    • If you don’t know how to break the task into subtasks, ask the model to think step by step.
+  • Experiment and be creative.
+  • Use prompt templates.
+    "Prompt templates" are predefined structures or formats that can be used to provide consistent inputs to FMs. They help ensure that the prompts are phrased in a way that is easily understood by the model and can lead to more reliable and higher-quality outputs. Prompt templates often include instructions, context, examples, and placeholders for information relevant to the task at hand.
+    Prompt templates provide a structure that ensures the model generates content while adhering to specific guidelines and constraints, giving the user more control over the output.
+
+3.2.b
+Prompt Engineering Techniques
+• Zero shot - No examples of similar examples/shots of similar tasks; output based on it's knowledge
+    Eg: Translate "hello" to French
+    To optimize zero-shot prompting, consider the following tips:
+      • The larger and more capable the FM, the higher the likelihood of obtaining effective results from zero-shot prompts.
+      • Instruction tuning, a process of fine-tuning models to better align with human preferences, can enhance zero-shot learning capabilities. One approach to scale instruction tuning is through "reinforcement learning from human feedback (RLHF)", where the model is iteratively trained based on human evaluations of its outputs.
+• Few-shot prompting - giving sample inputs and their corresponding desired outputs
+    Although few-shot prompting provides a model with multiple examples, you can also use single-shot or one-shot prompting by providing just one example.
+    When employing a few-shot prompting technique, consider the following tips:
+      • Make sure to select examples that are representative of the task that you want the model to perform and cover a diverse range of inputs and outputs. Additionally, aim to use clear and concise examples that accurately demonstrate the desired behavior.
+      • Experiment with the number of examples. The optimal number of examples to include in a few-shot prompt can vary depending on the task, the model, and the complexity of the examples themselves. Generally, providing more examples can help the model better understand the task. But too many examples might introduce noise or confusion.
+• One shot - One example
+    Eg: English: Cat, French: Chat; English: Dog, French?
+• Two shot - Two examples
+    Eg: A dog is a mammal, A cat is a mammal. What is Lion?
+• Chain-of-thought (CoT) prompting
+    divides intricate reasoning tasks into smaller, intermediary steps.
+    This approach can be employed using either zero-shot or few-shot prompting techniques.
+    CoT prompts are tailored to specific problem types.
+    use the phrase "Think step by step."
+    use when the task requires multiple steps or a series of logical reasoning.
+    Chain-of-thought prompting can be combined with the few-shot prompting technique to break down tasks into a step-by-step process. Including examples of solved word problems can help the model to generate more informed outputs.
+• Self-consistency
+• Tree of thoughts (ToT)
+• Retrieval Augmented Generation (RAG)
+• Automatic Reasoning and Tool-use (ART)
+• ReAct prompting
+
+3.2.d
+Prompt Misuses and Risks:
+"Poisoning" (add malicioius data to training data)
+  Poisoning refers to the intentional introduction of malicious or biased data into the training dataset of a model. This can lead to the model producing biased, offensive, or harmful outputs, either intentionally or unintentionally.
+"Hijacking" and "prompt injection" (sending prompts to manipulate model behaviour)
+  Hijacking and prompt injection refer to the technique of influencing the outputs of generative models by embedding specific instructions within the prompts themselves.
+"Exposure" (model exposing sensitive information used in training)
+  Exposure refers to the risk of exposing sensitive or confidential information to a generative model during training or inference. An FM can then inadvertently reveal this sensitive data from their training corpus, leading to potential data leaks or privacy violations.
+"Prompt leaking" (leaking own System prompts)
+  Prompt leaking refers to the unintentional disclosure or leakage of the prompts or inputs (regardless of whether these are protected data or not) used within a model. Prompt leaking does not necessarily expose protected data. But it can expose other data used by the model, which can reveal information of how the model works and this can be used against it.
+"Jailbreaking"
+  Jailbreaking refers to the practice of modifying or circumventing the constraints and safety measures implemented in a generative model or AI assistant to gain unauthorized access or functionality.
+  Jailbreaking attempts involve crafting carefully constructed prompts or input sequences that aim to bypass or exploit vulnerabilities in the AI system's filtering mechanisms or constraints. The goal is to "break out" of the intended model limitations.
+=====
+
+
 Course: optimizing-foundation-models (Explained the whole flow using Business Use Case)
 =====
 large language model (LLM) are FMs that have the ability to understand and process natural language.
