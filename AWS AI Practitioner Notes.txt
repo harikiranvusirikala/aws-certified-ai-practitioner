@@ -1,3 +1,274 @@
+Course: developing-machine-learning-solutions
+=====
+* When doing recap see Conclusion section in course first.
+
+https://aws.amazon.com/sagemaker-ai/getting-started/
+
+Will learn about the machine learning lifecycle, and how to use AWS services at every stage. Additionally, you will discover the diverse sources for machine learning models and learn techniques to evaluate their performance. You will also understand the importance of machine learning operations (MLOps) in streamlining the development and deployment of your machine learning projects.
+
+Machine Learning Development Lifecycle:
+  Business goal identification
+  ML problem framing
+  Data processing (
+    data collection and integration - raw data in central place,
+    data preprocessing and data visualization - raw data into an understandable format, and 
+    feature engineering - creating, transforming, extracting, and selecting variables from data)
+  Model development (training, tuning, and evaluation)
+    do additional feature engineering and tune the model's hyperparameters before retraining
+  Model retraining
+    might also involve adjusting the training hyperparameters
+  Model deployment (inference and prediction)
+  Model monitoring
+    ensures the model is maintaining a desired level of performance through early detection and mitigation
+  Iterations
+    Add new data and retrain
+    helps ensure that the model remains accurate and relevant over time.
+
+Developing ML Solutions with Amazon SageMaker:
+Amazon SageMaker is a fully managed ML service.
+
+• Collect and prepare data.
+• Build and train machine learning models.
+• Deploy the models and monitor the performance of their predictions.
+
+Collecting, analyzing, and preparing your data
+  "Amazon SageMaker Data Wrangler" - import, prepare, "transform", featurize, and analyze data by using a web interface
+    low-code no-code (LCNC) tool
+    For more advanced users and data preparation at scale, can use built-in integration of Amazon EMR and AWS Glue interactive sessions
+    using the "SageMaker Processing API", customers can run scripts and notebooks to process, transform, and analyze datasets
+    can also use various ML frameworks such as scikit-learn, MXNet, or PyTorch while benefiting from fully managed machine learning environments.
+Managing Features
+  "Amazon SageMaker Feature Store" - helps create, share, and manage features for ML development
+Model training and evaluation
+  SageMaker provides a training job feature to train and deploy models using built-in algorithms or custom algorithms.
+  SageMaker launches the ML compute instances and uses the training code and the training dataset to train the model. It saves the resulting model artifacts in an Amazon S3 bucket that can be used later for inference.
+  "Amazon SageMaker Canvas" - use machine learning to generate predictions without needing to write any code. For customers aiming at a LCNC option.
+  "Amazon SageMaker JumpStart" - provides pretrained, open source models that customers can use for a wide range of problem types.
+Model evaluation
+  "Amazon SageMaker Experiments"
+    experiment with multiple combinations of data, algorithms, and parameters, all while observing the impact of incremental changes on model accuracy.
+  "Amazon SageMaker Automatic Model Tuning"
+    Hyperparameter tuning(way to find the best version of your models) by running many jobs with different hyperparameters in combination and measuring each of them by a metric that you choose.
+Deployment
+  With SageMaker, customers can deploy their ML models to make predictions, also known as "inference". SageMaker provides a broad selection of ML infrastructure and model deployment options to help meet all your ML inference needs.
+Monitoring
+  "Amazon SageMaker Model Monitor" - used to observe quality of SageMaker ML models in production.
+    They can set up continuous monitoring or on-schedule monitoring.
+    Helps maintain model quality by detecting violations of user-defined thresholds for data quality, model quality, bias drift, and feature attribution drift.
+
+"Amazon SageMaker Studio" - a web-based UI that provides access to all SageMaker environments and resources
+
+
+Sources of ML Models:
+Model implementations
+SageMaker supports
+  pre-trained models, 
+  built-in algorithms, and 
+  custom Docker images. 
+
+The following are ways to use SageMaker to build your ML model:
+  • Pre-trained models require the least effort and are models ready to deploy or to fine-tune and deploy using "SageMaker JumpStart".
+  • Built-in models available in SageMaker require more effort and scale if the dataset is large and significant resources are needed to train and deploy the model.
+  • If there is no built-in solution that works, try to develop one that uses pre-made images for machine learning and deep learning frameworks for supported frameworks such as scikit-learn, TensorFlow, PyTorch, MXNet, or Chainer.
+  • You can build your own custom Docker image that is configured to install the necessary packages or software. 
+
+SageMaker built-in algorithms
+  Supervised Learning
+    Classification, Regression - Linear learner, Factorization machines, XGBoost, K-Nearest Neighbors(KNN)
+  Unsupervised learning
+    Clustering - K-means, Latent Dirichlet Allocation (LDA)
+    Topic modeling - Latent Dirichlet Allocation (LDA)
+    Embeddings - Object2Vec
+    Anomaly detection - Random cut forest, IP insights
+    Dimensionality reduction - Principal Component Analysis
+  Image processing
+    Images/Videos
+      Image classification, Object detection - MXNet TensorFlow(ResNet, ImageNet, ...)
+      Semantic segmentation - Fully Convolutional Network(FCN), Pyramid Scene Parsing(PSP), DeepLab V3 with ResNet
+    Time series - DeepAR
+  Text analysis
+    Text
+      Text classification, Word2Vec - BlazingText
+      Machine translation - Sequence to sequence
+      Topic modeling - Latent Dirichlet Allocation (LDA), Neural topic Modelling (NTM)
+    Speech - Sequence to sequence
+
+SageMaker Jumpstart
+  You can deploy, fine-tune, and evaluate pre-trained models from the most popular model hubs.
+  SageMaker JumpStart provides pretrained open source models from leading providers for a range of problem types to help you get started with machine learning. You can incrementally train and tune these models before deployment. SageMaker JumpStart also provides solution templates that set up infrastructure for common use cases and runnable example notebooks for machine learning with SageMaker.
+
+Summary of Machine learning models
+SageMaker supports pre-trained models, built-in algorithms, and custom Docker images. It provides several built-in general-purpose algorithms that can be used for the following:
+  • Supervised learning with either classification or regression problems
+  • Unsupervised learning for tasks such as clustering, dimension reduction, pattern recognition, and anomaly detection
+  • Image processing for image classification, object detection, and computer vision as well as time series
+  • The analysis of textual documents used in natural language processing, document classification or summarization, topic modeling or classification, and language transcription or translation
+
+Machine Learning Models Performance Evaluation:
+Model evaluation datasets
+  Training set - 70% - used to train
+  Validation set - 10% - improve the model before in production
+  Testing set - 10% - evaluate the predictive quality
+Model fit
+  Overfitting - perform well on training data, not perform well on evaluation data
+  Underfitting - performs poorly on training data
+  Balanced - not overfit or underfit to training data
+Bias and variance
+  Consider the center of the bullseye in this situation is the label or target.
+  Think about bias as the gap between your predicted value and the actual value, whereas variance describes how dispersed your predicted values are.
+  In ML, the ideal algorithm has low bias and can accurately model the true relationship. The ideal algorithm also has low variability, by producing consistent predictions across different datasets.
+
+  Overfitting - High variance
+  Underfitting - High bias
+  Balanced - Low bias, Low variance
+
+Classification problem metrics
+  Classification example - compare actual value vs prediction value of cat or not cat.
+
+  • Accuracy using Confusion matrix
+    True Positive(TP) - actual positive, prediction positive - good
+    False Positive(FP) - actual negative, prediction positive
+    False Negative(FN) - actual postive, prediction negative
+    True Negative(TN) - actual negative, prediction negative - good
+  Calculation for a model's accuracy = (TP + TN) / (TP + TN + FP + FN)
+  This metric is less effective when there are a lot of true negative cases in your dataset.
+
+  • Precision - removes the negative predictions from the picture.
+  Calculation for precision = TP / (TP + FP)
+  When the cost of false positives are high in your particular business situation, precision can be a good metric.
+  Think about a classification model that identifies emails as spam or not. In this case, you do not want your model labeling a legitimate email as spam and preventing your users from seeing that email.
+  FP - No, but Yes said count
+
+  • Recall(or Sensitivity) - how good the algorithm is at detecting, for example, cats.
+  Calculation for recall = TP / (TP + FN)
+  Think about a model that needs to predict whether a patient has a terminal illness or not. In this case, using precision as your evaluation metric does not account for the false negatives in your model. It is extremely important and vital to the success of the model that it not give false negative results.
+  FN - Yes, but No said count
+
+  • Area under the curve-receiver operator curve (AUC-ROC)
+  ROC is a probability curve, and AUC represents the degree or measure of separability.
+  AUC-ROC uses sensitivity (true positive rate) and specificity (false positive rate)
+  In general, AUC-ROC can show what the curve for true positive compared to false positive looks like at various thresholds. That means that when you calculate the AUC-ROC curve, you plot multiple confusion matrices at different thresholds and compare them to one another to find out the threshold you need for your business use case.
+
+Regression problem metrics
+  • Mean squared error
+  you take the difference between the prediction and actual value, square that difference, and then sum up all the squared differences for all the observations.
+  The smaller the MSE, the better the model's predictive accuracy.
+
+  • R squared - commonly used metric with linear regression problems
+  R squared explains the fraction of variance accounted for by the model. It’s like a percentage, reporting a number from 0 to 1. When R squared is close to 1, it usually indicates that a lot of the variance in the data can be explained by the model itself.
+
+  MSE focuses on the average squared error of the model's predictions to provide a measure of model performance.
+  R squared provides a measure of the model's goodness of fit to the data.
+
+Business metrics
+KPIs are established in the business goal identification phase. They can include goals such as increasing sales, cutting costs, or decreasing customer churn.
+
+Evaluate whether the performance metrics accurately reflect the business’ tolerance for the error. For instance, false positives might lead to excessive maintenance costs in predictive maintenance use cases. Another example is deciding if acquiring a new customer is more expensive than retaining one. A business should focus on numerical metrics, such as precision and recall, to help differentiate the business requirements and be closer aligned to business value. 
+
+Consider developing custom metrics that tune the model directly for the business objectives. One way is to develop a cost function to evaluate the economic impact of the model. For the cost function, you can specify the cost, or value, of correct predictions and the cost of errors.
+
+By using A/B testing or the canary deployments technique, developers can experiment with two or more variants of a model and help achieve the business goals.
+
+Model Deployment:
+Model deployment is the integration of the model and its resources into a production environment so that it can be used to create predictions.
+
+  • Self-hosted API approach - deploy and host your ML models on your own infrastructure, either on premises or in the cloud
+  • Managed API services are cloud-based services that provide a fully managed environment for deploying and hosting your ML models as APIs. SageMaker is an example. These services abstract away the underlying infrastructure management so you can focus on building and deploying your models.
+
+  Advantages of self-hosted APIs include greater control over the infrastructure, potential cost savings (depending on usage), and the ability to customize the deployment environment. However, this approach requires more operational overhead and responsibility for managing and maintaining the infrastructure.
+
+Sagemaker provides the following:
+  • Deployment with one click or a single API call
+  • Automatic scaling
+  • Model hosting services
+  • HTTPS endpoints that can host multiple models
+
+Sagemaker deployment options:
+  • Real-time
+    Real-time inference is ideal for inference workloads where you have real-time, interactive, and low latency requirements.
+  • Batch transform
+    Use batch transform when you need to get inferences from large datasets and don't need a persistent endpoint. You can also use it when you need to preprocess datasets to remove noise or bias that interferes with training or inference from your dataset.
+  • Asynchronous
+    SageMaker asynchronous inference is a capability in SageMaker that queues incoming requests and processes them asynchronously. This option is ideal for requests with large payload sizes (up to 1GB), long processing times (up to one hour), and near real-time latency requirements.
+  • Serverless
+    On-demand serverless inference is ideal for workloads that have idle periods between traffic spurts and can tolerate cold starts. It is a purpose-built inference option that you can use to deploy and scale ML models without configuring or managing any of the underlying infrastructure.
+
+Fundamental Concepts of MLOps:
+MLOps combines people, technology, and processes to deliver collaborative ML solutions.
+MLOps goes from model development to model monitoring.
+MLOps refers to the practice of operationalizing and streamlining the end-to-end machine learning lifecycle from model development and deployment to monitoring and maintenance.
+
+MLOps accounts for the unique aspects of AI/ML projects in project management, CI/CD, and quality assurance.
+
+Goals of MLOps
+A goal of MLOps is to get ML workloads into production and keep them operating.
+The aim is to use MLOps to do the following:
+  • Increase the pace of the model development lifecycle through automation.
+  • Improve quality metrics through testing and monitoring.
+  • Promote a culture of collaboration between data scientists, data engineers, software engineers, and IT operations.
+  • Provide transparency, explainability, audibility, and security of the models by using model governance.
+
+Benefits of MLOps
+  Productivity
+    By providing self-service environments with access to curated datasets, data engineers and data scientists can move faster and waste less time with missing or invalid data.
+  Reliability
+    By incorporating CI/CD practices, developers can deploy quickly with increased quality and consistency.
+  Repeatability
+    By automating all the steps in the machine learning development lifecycle, you can ensure a repeatable process, including how the model is trained, evaluated, versioned, and deployed.
+  Auditability
+    By versioning all inputs and outputs, from data science experiments to source data to trained models, you can demonstrate exactly how the model was built and where it was deployed.
+  Data and Model quality
+    With MLOps, you can enforce policies that guard against model bias and track changes to data statistical properties and model quality over time.
+
+Key principles of MLOps
+Version control
+  For reproducibility, machine learning workflows must track changes to assets like data, code, and models. It can be rolled back to previous versions when needed.
+  Overall, version control and code review provide reproducible, trustworthy machine learning.
+Automation
+  For repeatability, consistency, and scalability, you can automate the various stages in the machine learning pipeline. This includes the data ingestion, pre-processing, model training, and validation and deployment stages. 
+
+  Automated testing helps you discover problems early for fast error fixes and learnings.
+CI/CD
+  Through automation, you can continuously test and deploy assets in the following ways:
+  • Continuous integration extends the validation and testing of code to data and models in the pipeline.
+  • Continuous delivery automatically deploys the newly trained model or model prediction service.
+  • Continuous training automatically retrains ML models for redeployment.
+  • Continuous monitoring uses data monitoring and model monitoring of metrics related to business.
+Model governance
+  Good governance of machine learning systems requires close collaboration between data scientists, engineers, and business stakeholders. Clear documentation, effective communication channels, and feedback mechanisms help align everyone and improve models over time. It is also crucial to protect sensitive data, secure access, and meet compliance rules. A structured process for reviewing, validating, and approving models before deployment checks for fairness, bias, and ethics. Governance manages all aspects of systems for efficiency.
+
+ML lifecycle and MLOps
+Managing code, data, and models throughout the ML lifecycle requires the following touchpoints:
+• Processing code in data preparation
+• Training data and training code in model building
+• Candidate models, test, and validation data in model evaluation
+• Metadata during model selection
+• Deployment-ready models and inference code during deployment
+• Production code, models, and data for monitoring
+
+Implementing MLOps
+A productionized ML lifecycle typically contains separate training and deployment pipelines.
+• Model build
+    The model building pipeline creates new models upon inititation, for example when new data become available.
+• Model evaluation
+    When the model building pipeline completes, you can implement quality control measures at the model registration step. The quality control step can be either manual (human in the loop) or automated. If a model meets baseline performance metrics, it can be registered with a model registry.
+• Model approval
+    You can use the registry to approve or reject model versions. The model approval action can act as an initiation to start the deployment pipeline.
+• Model deployment
+    The deployment pipeline is most similar to traditional CI/CD systems. This pipeline includes steps such as the following: 
+    • Source
+    • Build 
+    • Deployment to staging environment 
+    • Testing
+    • Promotion to production environment
+• Model monitoring
+    As soon as the model is in production, you should get feedback from the live system. For ML solutions, monitor the hosting infrastructure, data quality, and model performance.
+
+AWS services for MLOps
+<AWS_MLOPS_Services2_NOPROCESS_.png>
+=====
+
+
 Course: developing-generative-ai-solutions
 =====
 Capabilities:
