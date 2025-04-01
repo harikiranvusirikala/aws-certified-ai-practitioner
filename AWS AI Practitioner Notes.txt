@@ -1,3 +1,233 @@
+Course: developing-generative-ai-solutions
+=====
+Capabilities:
+• Adaptability
+• Responsiveness
+• Simplicity
+• Creativity and exploration
+• Data efficiency
+• Personalization
+• Scalability
+
+Challenges:
+• Regulatory violations
+• Social risks
+• Data security and privacy concerns
+• Toxicity
+• Hallucinations
+• Interpretability
+• Nondeterminism
+
+Generative AI application lifecycle:
+• Defining a business use case
+  In the first stage, requirements for incorporating generative AI capabilities into an application are identified. This might involve analyzing the application's functionalities, user needs, and business goals to determine where generative AI can add value.
+• Selecting a foundation model (FM)
+  Based on the identified requirements, an appropriate generative AI model is either selected from existing pre-trained models or developed from scratch. This decision depends on factors such as the availability of suitable pre-trained models, the complexity of the use case, and the availability of domain-specific data for training.
+• Improving the performance of an FM
+  The selected or developed generative AI model is integrated into the application's codebase or infrastructure. This might involve adapting the model's input and output formats, fine-tuning the model with application-specific data, and implementing any necessary customizations or optimizations.
+• Evaluating the performance of an FM
+  Thorough testing and evaluation of the integrated generative AI capabilities are conducted to ensure that they meet the specified requirements and perform as expected. This might involve testing with various inputs, edge cases, and real-world scenarios, as well as evaluating the quality, coherence, and relevance of the generated content.
+• Deployment and its impact on business objectives
+  After successful testing, the application with integrated generative AI capabilities is deployed to the production environment. Monitoring mechanisms are established to track the performance, usage, and potential issues or biases associated with the generative AI model's outputs.
+
+Defining a Use Case:
+  Parts of a use case:
+    • Use case name
+    • Brief description
+    • Actors
+    • Preconditions
+    • Basic flow (main success scenario)
+    • Alternative flows (extensions)
+    • Postconditions
+    • Business rules
+    • Nonfunctional requirements
+    • Assumptions
+    • Notes or additional information
+
+  Key metrics:
+    • Cost savings
+    • Time savings
+    • Quality improvement
+    • Customer satisfaction
+    • Productivity gains
+
+  Approaches:
+    • Process automation
+    • Automated decision-making
+    • Personalization and customization
+    • Creative content generation
+    • Exploratory analysis and innovation
+
+Selecting an FM:
+One key consideration is whether to use pre-trained models or develop a model from scratch.
+
+3.1.a
+Pre-trained model selection criteria
+Pre-trained models offer a valuable head start by encapsulating knowledge distilled from vast amounts of data. These models can be fine-tuned on task-specific data, potentially leading to faster convergence and better generalization. However, pre-trained models might carry undesirable biases or fail to fully capture the nuances of the target domain.
+
+Selection criteria for choosing a pre-trained model depend on the requirements of the business use case. Some are:
+• Cost
+• Modality
+• Latency
+• Multi-lingual support
+• Model size
+• Model complexity
+• Customization
+• Input/output length
+• Responsibility considerations
+• Deployment and integration
+
+Choosing a pre-trained model based on selection criteria
+Some of pre-trained models available on Amazon Bedrock:
+  AI21 labs - Jurassic-2 Models
+  Amazon - Amazon Titan
+  Anthropic - Claude
+  Cohere - Command
+  Meta - Llama
+  Mistral AI - Mistral Large
+  Stability AI - Stable Diffusion
+
+  <Explained details in course>
+
+Regularly reviewing and updating the selection criteria as new models and techniques emerge is recommended, because the generative AI landscape is rapidly evolving.
+
+Improving the Performance of an FM
+Prompt engineering
+  Prompt engineering is the fastest way to harness the power of large language models (LLMs). By interacting with an LLM through prompts (a series of questions, statements, or instructions), you can adjust LLM output behavior based on the specific context of the output that you want to achieve.
+
+  Some key aspects of prompt engineering:
+    • Design: Crafting clear, unambiguous, and context-rich prompts that effectively communicate the desired task or output to the model
+    • Augmentation: Incorporating additional information or constraints into the prompts, such as examples, demonstrations, or task-specific instructions, to guide the model's generation process
+    • Tuning: Iteratively refining and adjusting the prompts based on the model's outputs and performance, often through human evaluation or automated metrics
+    • Ensembling: Combining multiple prompts or generation strategies to improve the overall quality and robustness of the outputs
+    • Mining: Exploring and identifying effective prompts through techniques like prompt searching, prompt generation, or prompt retrieval from large prompt libraries
+
+Prompt techniques
+  • Zero-shot prompting
+  • Few-shot prompting
+  • Chain-of-thought (CoT) prompting
+  • Self-consistency
+  • Tree of thoughts (ToT)
+  • Retrieval Augmented Generation (RAG)
+  • Automatic Reasoning and Tool-use (ART)
+  • ReAct prompting
+
+  Zero shot - No examples; output based on it's knowledge
+    Eg: Translate "hello" to French
+  One shot - One example
+    Eg: English: Cat, French: Chat; English: Dog, French?
+  Two shot - Two examples
+    Eg: A dog is a mammal, A cat is a mammal. What is Lion?
+  Chain of Thought - Complex -> Simple
+
+3.1.c
+Retrieval Augmented Generation (RAG)
+RAG is a natural language processing (NLP) technique that combines the capabilities of retrieval systems and generative language models to produce high-quality and informative text outputs.
+
+The RAG prompt techniques approach uses:
+  The "retrieval system" provides access to a vast amount of factual knowledge and information.
+  And the "generative language model" can synthesize and present this information in a natural and coherent manner, tailored to the specific input or context.
+
+some RAG business applications
+• Building intelligent question-answering systems 
+• Expanding and enriching existing knowledge bases 
+• Generating high-quality content
+
+some examples of Amazon Bedrock knowledge bases that could be applicable to Retrieval Augmented Generation (RAG) business use cases:
+• Customer service chatbot
+• Legal research and analysis
+• Healthcare question-answering
+
+Fine-tuning
+  Fine-tuning refers to the process of taking a pre-trained language model and further training it on a specific task or domain-specific dataset.
+  Although FMs are pre-trained through self-supervised learning and have inherent capability of understanding information, fine-tuning the FM base model can improve performance.
+
+  Two ways to fine-tune a model:
+    1. Instruction fine-tuning uses examples of how the model should respond to a specific instruction. Prompt tuning is a type of instruction fine-tuning.
+    2. Reinforcement learning from human feedback (RLHF) provides human feedback data, resulting in a model that is better aligned with human preferences.
+
+  Let's consider a use case for fine-tuning. If you are working on a task that requires industry knowledge, you can take a pre-trained model and fine-tune the model with industry data.
+
+  The pre-trained model's architecture is often modified by adding additional layers or components specific to the target task.
+
+  The pre-trained model, with the added task-specific layers, is then fine-tuned on the task-specific dataset. During fine-tuning, the model's parameters are updated to better capture the patterns and nuances present in the task-specific data.
+
+  This approach is particularly useful when the target task has a limited amount of training data.
+
+Creating a foundation model from scratch:
+This approach is typically undertaken when there are no suitable pre-trained models available for the specific task or domain, or when the requirements for accuracy, performance, or customization are exceptionally high.
+
+defining the model architecture, which involves selecting the appropriate neural network architecture, layers, and hyperparameters based on the problem at hand
+Next, a large and diverse dataset must be curated, cleaned, and preprocessed to serve as the training data for the model.
+model is initialized with random weights and trained using various optimization algorithms in an iterative process.
+Creating a model from scratch allows for complete customization and tailoring to the specific problem. But it comes at a significant "cost in terms of computational resources, time, and expertise required".
+
+3.1.e
+
+3.1.f
+Automated multi-step tasks with agents:
+Agents are software components or entities designed to perform specific actions or tasks autonomously or semi-autonomously, based on predefined rules or algorithms.
+
+By using agents for multi-step tasks, organizations can achieve higher levels of automation, consistency, and efficiency in their cloud operations, while also improving visibility, control, and auditability of the processes involved.
+
+some examples of tasks that agents can accomplish:
+• Task coordination
+• Reporting and logging
+• Scalability and concurrency
+• Integration and communication
+
+
+Evaluating an FM:
+3.4.a (1)
+Types of evaluation methods
+Human evaluation
+  Human evaluators can provide qualitative feedback on factors like coherence, relevance, factuality, and overall quality of the model's outputs. Although human evaluation is often considered the gold standard, it can be time consuming and expensive, especially for large-scale evaluations.
+Benchmark datasets
+  Benchmark datasets are curated collections of data designed specifically for evaluating the performance of language models or other AI systems. These datasets often consist of carefully selected examples or tasks that cover a wide range of topics, complexities, and linguistic phenomena.
+
+  Some popular benchmark datasets for natural language processing tasks:
+    • The General Language Understanding Evaluation (GLUE) benchmark is a collection of datasets for evaluating language understanding tasks like text classification, question answering, and natural language inference.
+    • SuperGLUE is an extension of GLUE with more challenging tasks and a focus on compositional language understanding.
+    • Stanford Question Answering Dataset (SQuAD) is a dataset for evaluating question-answering capabilities.
+    • Workshop on Machine Translation (WMT) is a series of datasets and tasks for evaluating machine translation systems.
+
+    • "HumanEval" is a well-known benchmark specifically designed to assess the accuracy of "code generation" models.
+Automated metrics
+  can provide a quick and scalable way to evaluate foundation model performance.
+
+  These metrics typically measure specific aspects of the model's outputs, such as the following:
+    • Perplexity (a measure of how well the model predicts the next token)
+    • BLEU score (for evaluating machine translation)
+    • F1 score (for evaluating classification or entity recognition tasks)
+
+  Automated metrics can be useful for rapid iterations and fine-tuning during model development, but they often fail to capture the nuances and complexities of human language and might not align perfectly with human judgments.
+
+3.4.b (1)
+Relevant metrics
+  Metrics like ROUGE, BLEU, and BERTScore provide an initial assessment of the foundation model's capabilities.
+  • ROUGE
+    Recall-Oriented Understudy for Gisting Evaluation (ROUGE) is a set of metrics used for evaluating automatic summarization and machine translation systems. It measures the "quality of a generated summary" or translation by comparing it to one or more reference summaries or translations.
+  • BLEU
+    Bilingual Evaluation Understudy (BLEU) is a metric used to evaluate the "quality of machine-generated text", particularly in the context of machine translation. It measures the "similarity" between a generated text and one or more reference translations, considering both precision and brevity.
+  • BERTScore
+    BERTScore is a metric that evaluates the "semantic similarity" between a generated text and one or more reference texts. It uses pre-trained Bidirectional Encoder Representations from Transformers (BERT) models to compute contextualized embeddings for the input texts, and then calculates the cosine similarity between them.
+
+
+Deploying the Application:
+The deployment phase of the generative AI lifecycle ensures that the trained model is successfully integrated into the target environment for practical use.
+During this phase, careful consideration is given to factors such as system architecture, scalability, security, and user experience to ensure a seamless and efficient deployment.
+
+Key considerations
+  • Cost: Pay for the resources that you use with no minimum fees.
+  • Regions: Model deployment is limited to certain AWS Regions.
+  • Quotas: Ensure that you have the adequate service resources for your AWS account.
+  • Security:
+    • If your model is deployed in AWS infrastructure, the security responsibility is shared between the company and AWS.
+    • If accessing a model outside of AWS, security considerations must be evaluated for data leaving the AWS account.
+=====
+
+
+
 Course: essentials-of-prompt-engineering
 =====
 3.2.a
