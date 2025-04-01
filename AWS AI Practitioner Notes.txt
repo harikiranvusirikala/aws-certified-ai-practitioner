@@ -1,3 +1,32 @@
+Course: introduction-to-generative-ai-art-of-the-possible
+=====
+Generative AI is a form of AI that can produce new content, including conversations, stories, images, videos, music, and code.
+ML is training a computer to recognize patterns in historical data to make predictions on new data.
+
+AI > ML > DL > Generative AI (here > is super set of right)
+Generative AI is powered by large language models that are pretrained on internet-scale data, and these models are called foundation models (FMs).
+Generative AI is a subset of deep learning because it can adapt models built using deep learning, but without retraining or fine tuning. 
+
+Eg: Amazon Q Developer is a generative AI tool that increases developer productivity by generating code.
+
+Generative AI services on AWS:
+• Foundation Model as a Service: Amazon Bedrock
+• Build your own models: 	       Amazon SageMaker, Amazon SageMaker JumpStart(choose one of the language models available and retrain it with your own data.)
+• Compute: 			                 AWS Trainium, AWS Inferentia
+
+Risks:
+Regulatory requirements
+Social risks
+Privacy concerns
+
+Benefits:
+Personalize customer interactions.
+Generate novel content.
+Efficiently adapt pre-built models to business use cases.
+Achieve productivity gains through automation.
+=====
+
+
 Course: fundamentals-of-machine-learning-and-artificial-intelligence
 =====
 What is Artificial Intelligence (AI)? – https://aws.amazon.com/what-is/artificial-intelligence/
