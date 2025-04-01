@@ -1,3 +1,296 @@
+Course: fundamentals-of-machine-learning-and-artificial-intelligence
+=====
+What is Artificial Intelligence (AI)? – https://aws.amazon.com/what-is/artificial-intelligence/
+What is Machine Learning? – https://aws.amazon.com/what-is/machine-learning/
+What is Deep Learning? – https://aws.amazon.com/what-is/deep-learning/
+What is Generative AI? – https://aws.amazon.com/what-is/generative-ai/
+
+Generation of following types with Generative AI:
+Text
+Image
+Audio
+Coding
+
+Issues like:
+bias
+privacy
+responsible use
+
+AI is a broad field that encompasses the development of intelligent systems capable of performing tasks that typically require human intelligence, such as perception, reasoning, learning, problem-solving, and decision-making. AI serves as an umbrella term for various techniques and approaches, including machine learning, deep learning, and generative AI, among others.
+
+ML is a type of AI for understanding and building methods that make it possible for machines to learn. These methods use data to improve computer performance on a set of tasks.
+
+Deep learning uses the concept of neurons and synapses similar to how our brain is wired. An example of a deep learning application is Amazon Rekognition, which can analyze millions of images and streaming and stored videos within seconds.
+
+Generative AI is a subset of deep learning because it can adapt models built using deep learning, but without retraining or fine tuning.
+Generative AI systems are capable of generating new data based on the patterns and structures learned from training data.
+
+ML Fundamentals:
+===
+Building a machine learning model involves:
+• data collection and preparation, 
+• selecting an appropriate algorithm, 
+• training the model on the prepared data, and 
+• evaluating its performance through testing and iteration.
+
+Training data:
+Bad data is often called garbage in, garbage out, and therefore an ML model is only as good as the data used to train it.
+
+• Labeled data - each input instance has a label that represent output for classification
+• Unlabled data
+
+• Structured data    - data with particular format, mostly like form of tables or databases with rows and columns
+    Tabular data	   - data stored in spreadsheets, databases, or CSV files
+    Time-series data - data consists of sequences of values measured at successive points in time, such as stock prices, sensor readings, or weather data.
+• Unstructured data  - data that lacks a predefined structure or format, such as text, images, audio, and video
+    Text data        - documents, articles, social media posts, and other textual data.
+    Image data       - digital images, photographs, and video frames.
+
+Machine learning process:
+  • In supervised learning, the algorithms are trained on labeled data. The goal is to learn a mapping function that can predict the output for new, unseen input data.
+  • Unsupervised learning refers to algorithms that learn from unlabeled data. The goal is to discover inherent patterns, structures, or relationships within the input data.
+  • In reinforcement learning, the machine is given only a performance score as guidance and semi-supervised learning, where only a portion of training data is labeled. Feedback is provided in the form of rewards or penalties for its actions, and the machine learns from this feedback to improve its decision-making over time.
+
+Inferencing: (process of using the information that a model has learned to make predictions or decisions)
+  Syncronous inferencing
+    Client-req -> AI -> immediate response
+  Asyncronous inferencing - longer processing time
+    Client-req -> AI(ack) -> later
+  • Batch inferencing     - analyzes large amount of data all at once, where the speed of the decision-making process is not as crucial as the accuracy of the results.
+    Eg: data analysis
+  • Real-time inferencing - process the incoming data and make a decision almost instantaneously, without taking the time to analyze a large dataset
+    Eg: chatbots or self-driving cars
+
+
+DL Fundamentals:
+===
+involves the use of Artificial Neural Networks(ANN), which are computational models that are designed to mimic the way the human brain processes information.
+
+Neural networks - core of Deep learning. Like neurons connected in brain, "nodes" are connected here.
+  Nodes are organized into layers. The layers include an input layer, one or more hidden layers, and an output layer.
+
+When we show a neural network many examples, like data about customers who bought certain products or used certain services, it figures out how to identify patterns by adjusting the connections between its nodes. It's like the nodes are talking to each other and slowly figuring out the patterns that separate different types of customers.
+
+Couple branches of AI where deep learning is used to enhance results:
+  • Computer vision: makes it possible for computers to interpret and understand digital images and videos.
+    Deep learning has revolutionized computer vision by providing powerful techniques for tasks such as image classification, object detection, and image segmentation.
+  • Natural language processing (NLP): interaction between computers and human languages
+    Deep learning has made significant strides in NLP, making possible tasks such as text classification, sentiment analysis, machine translation, and language generation.
+
+
+Generative AI Fundamentals:
+===
+emergence of generative AI - due to huge investments in resources
+  Hiring a large team, spending on compute resources, and importantly, having the willingness to invest and develop big ideas, are all contributors to the rise of generative AI.
+
+Foundation Models: Generative AI is powered by models that are pretrained on internet-scale data, and these models are called "foundation models (FMs)"
+
+With FMs, instead of gathering labeled data for each model and training multiple models as in traditional ML, you can adapt a single FM to perform multiple tasks.
+These tasks include text generation, text summarization, information extraction, image generation, chatbot interactions, and question answering.
+FMs can also serve as the starting point for developing more specialized models.
+
+Foundation Model lifecycle:
+Data selection:
+  Unlabeled data can be used at scale for pre-training, easy to collect than labeled data.
+  FMs require training on massive datasets from diverse sources.
+Pre-training:
+  Although traditional ML models rely on supervised, unsupervised, or reinforcement learning patterns, FMs are typically pre-trained through self-supervised learning.
+  With self-supervised learning, labeled examples are not required. Self-supervised learning makes use of the structure within the data to autogenerate labels.
+
+  During the initial pre-training stage, the FM's algorithm can learn the meaning, context, and relationship of the words in the datasets. Like drink means bevarage(noun) or swalloing liquid(verb).
+
+  After the initial pre-training, the model can be further pre-trained on additional data. This is known as "continuous pre-training".
+Optimization:
+  optimized through techniques like prompt engineering, retrieval-augmented generation (RAG), and fine-tuning on task-specific data.
+Evaluation:
+  FM's performance can be measured using appropriate metrics and benchmarks.
+  Evaluation of model performance and its ability to meet business needs is important.
+Deployment:
+  deployed in the target production environment.
+  Deployment can involve integrating the model into applications, APIs, or other software systems.
+Feedback and continuous improvement:
+  performance is continuously monitored, and feedback is collected from users, domain experts, or other stakeholders.
+  The feedback loop permits continuous enhancement of the foundation model through fine-tuning, continuous pre-training, or re-training, as needed.
+
+
+Amazon Bedrock provides access to a choice of high-performing FMs from leading AI companies like AI21 Labs, Anthropic, Cohere, Meta, Mistral AI, Stability AI, and Amazon.
+
+With these FMs as a foundation, you can further optimize their outputs with prompt engineering, fine-tuning, or RAG.
+
+FMs that are essential to understanding generative AI's capabilities:
+==
+Large language models (LLM):
+  has variety of architecture, most common one is transformer architecture.
+  Transformer-based LLMs are powerful models that can understand and generate human-like text.
+  They are trained on vast amounts of text data from the internet, books, and other sources, and learn patterns and relationships between words and phrases.
+
+  Tokens are the basic units of text that the model processes.
+  Tokens can be words, phrases, or individual characters like a period.
+  Tokens also provide standardization of input data, which makes it easier for the model to process.
+
+  Embeddings are numerical representations of tokens, where each token is assigned a vector (a list of numbers) that captures its meaning and relationships with other tokens. These vectors are learned during the training process and allow the model to understand the context and nuances of language.
+  For example, the embedding vector for the token "cat" might be close to the vectors for "feline" and "kitten" in the embedding space, indicating that they are semantically related. 
+
+  LLMs use these tokens, embeddings, and vectors to understand and generate text. The models can capture complex relationships in language, so they can generate coherent and contextually appropriate text, answer questions, summarize information, and even engage in creative writing.
+
+Diffusion models:
+  starts with pure noise or random data
+  models gradually add more and more meaningful information to this noise until they end up with a clear and coherent output, like an image or a piece of text
+  
+  Forward diffusion: system gradually introduces a small amount of noise to an input image until only the noise is left over.
+  Reverse diffusion: noisy image is gradually introduced to denoising until a new image is generated.
+
+  well-kown for text-to-image models
+
+Multimodal models:
+  Instead of just relying on a single type of input or output, like text or images, multimodal models can process and generate multiple modes of data simultaneously.
+  For example, a multimodal model could take in an image and some text as input, and then generate a new image and a caption describing it as output.
+
+  These kinds of models learn how different modalities like images and text are connected and can influence each other.
+  Multimodal models can be used for automating video captioning, creating graphics from text instructions, answering questions more intelligently by combining text and visual info, and even translating content while keeping relevant visuals.
+==
+
+Some generative models:
+Generative adversarial networks (GANs):
+  involves two neural networks competing against each other in a zero-sum game framework. The two networks are generator and discriminator.
+
+  • Generator: This network generates new synthetic data (for example, images, text, or audio) by taking random noise as input and transforming it into data that resembles the training data distribution.
+  • Discriminator: This network takes real data from the training set and synthetic data generated by the generator as input. Its goal is to distinguish between the real and generated data.
+
+  During training, the generator tries to generate data that can fool the discriminator into thinking it's real, while the discriminator tries to correctly classify the real and generated data. This adversarial process continues until the generator produces data that is indistinguishable from the real data.
+Variational autoencoders (VAEs):
+  combines ideas from autoencoders (a type of neural network) and variational inference (a technique from Bayesian statistics).
+
+  • Encoder: This neural network takes the input data (for example, an image) and maps it to a lower-dimensional latent space, which captures the essential features of the data.
+  • Decoder: This neural network takes the latent representation from the encoder and generates a reconstruction of the original input data.
+
+  The key aspect of VAEs is that the latent space is encouraged to follow a specific probability distribution (usually a Gaussian distribution), which allows for generating new data by sampling from this latent space and passing the samples through the decoder.
+
+
+Optimizing model outputs:
+Prompt engineering:
+  fastest and lowest cost option
+  Prompts act as instructions for foundation models. Prompt engineering focuses on developing, designing, and optimizing prompts to enhance the output of FMs for your needs. It gives you a way to guide the model's behavior to the outcomes that you want to achieve.
+
+  • Instructions: This is a task for the FM to do. It provides a task description or instruction for how the model should perform.
+  • Context: This is external information to guide the model.
+  • Input data: This is the input for which you want a response.
+  • Output indicator: This is the output type or format.
+
+  Zero shot - No examples; output based on it's knowledge
+    Eg: Translate "hello" to French
+  One shot - One example
+    Eg: English: Cat, French: Chat; English: Dog, French?
+  Two shot - Two examples
+    Eg: A dog is a mammal, A cat is a mammal. What is Lion?
+  Chain of Thought - Complex -> Simple
+
+  Cyber-attacks in prompt engineering
+  1. Prompt Injection
+    Manipulate - LLM[behavior]
+    Prompts -> manipulate LLM
+  2. Prompt Leaking
+    LLM(own system prompts)
+  3. Prompt Poisioning
+    Malicious data -> training data -> manipulated output
+
+
+Fine-tuning:
+  Fine-tuning is a supervised learning process that involves taking a pre-trained model and adding specific, smaller datasets. Adding these narrower datasets modifies the weights of the data to better align with the task.
+
+  • Instruction fine-tuning: uses examples of how the model should respond to a specific instruction. Prompt tuning is a type of instruction fine-tuning.
+  • Reinforcement learning from human feedback (RLHF): provides human feedback data, resulting in a model that is better aligned with human preferences.
+
+  Consider this use case for fine-tuning. If you are working on a task that requires industry knowledge, you can take a pre-trained model and fine-tune the model with industry data.
+  If the task involves medical research, for example, the pre-trained model can be fine-tuned with articles from medical journals to achieve more contextualized results.
+
+Retrieval-augmented generation (RAG):
+  supplies domain-relevant data as context to produce responses based on that data.
+  This technique is similar to fine-tuning. However, rather than having to fine-tune an FM with a small set of labeled examples, RAG retrieves a small set of relevant documents and uses that to provide context to answer the user prompt.
+  RAG will not change the weights of the foundation model, whereas fine-tuning will change model weights.
+
+
+<updated till here in my site>
+
+AWS offering ML Frameworks, AI/ML Services and Generative AI:
+===
+ML Frameworks:
+  Amazon Sagemaker - build, train, and deploy ML models for any use case with fully managed infrastructure, tools, and workflows
+    provides a complete machine learning lifecycle, including data preparation, model building, training, tuning, and deployment.
+AI/ML Services:
+  Text and documents:
+    Amazon Comprehend - uses ML & Natural Language Processing to uncover insights & relationships of unstructured data, detecting offensive words in text.
+      insights and "patterns from textual data", such as sentiment analysis, language detection, key phrase extraction, and more. One of its important features includes "Toxic Content Detection", which can be used to moderate content and detect offensive language.
+    Amazon Translate - Neural machine translation using deep learning to translate
+    Amazon Textract - extract printed text, handwriting, layout elements, and data from any document
+  Chatbots:
+    Amazon Lex - design, build, test, and deploy conversational interfaces into any application using voice and text
+      deep learning functionalities of automatic speech recognition (ASR) for converting speech to text, and natural language understanding (NLU) to recognize the intent of the text.
+      the same deep learning technologies that power Amazon Alexa are now available to any developer. You can efficiently build sophisticated, natural-language conversational bots and voice-enabled interactive voice response (IVR) systems.
+  Speech:
+    Amazon Polly - Text to speech, natural-sounding human voices in dozens of languages.
+    Amazon Transcribe - automatic speech recognition (ASR) service for automatically converting speech to text
+  Vision:
+    Amazon Rekognition - image recognition and video analysis with machine learning.
+      can identify objects, people, text, scenes, and activities in images and videos, and even detect inappropriate content.
+      facial analysis and facial search capabilities
+      detect, analyze, and compare faces for a wide variety of user verification, people counting, and public safety use cases.
+  Search:
+    Amazon Kendra - use ML. Intelligent search across organizational data and other webs, etc
+  Recommendations:
+    Amazon Personalize
+      provide an activity stream from your application (page views, signups, purchases, and so forth)
+      provide an inventory of the items that you want to recommend, such as articles, products, videos, or music
+      choose to provide additional demographic information from your users, such as age or geographic location
+      Amazon Personalize processes and examines the data, identifies what is meaningful, selects the right algorithms, and trains and optimizes a personalization model that is customized for your data.
+  Misc:
+    AWS DeepRacer - to get started with reinforcement learning (RL)
+      RL superpower is that it learns very complex behaviors without requiring any labeled training data, and it can make short-term decisions while optimizing for a longer-term goal.
+Generative AI:
+  Amazon Sagemaker JumpStart - choose one of the language models available and retrain it with your own data
+    for accelerating model development and deployment
+    supports one-click deployment and fine-tuning of more than 150 popular open-source models(most common use cases) such as natural language processing, object detection, and image classification models.
+  Amazon Bedrock - Foundation Model as a Service
+    offers a choice of high-performing FMs from leading AI companies like AI21 Labs, Anthropic, Cohere, Meta, Mistral AI, Stability AI, and AWS, through a single API
+  Amazon Q
+    help you get fast, relevant answers to pressing questions, solve problems, generate content, and take actions using the data and expertise found in your company's information repositories, code, and enterprise systems
+    When you chat with Amazon Q, it provides immediate, relevant information and advice to help streamline tasks, speed decision-making, and help spark creativity and innovation.
+  Amazon Q Developer - improve developer productivity
+    provides ML–powered code recommendations to accelerate development of C#, Java, JavaScript, Python, and TypeScript applications.
+    integrates with multiple integrated development environments (IDEs) and helps developers write code faster by generating entire functions and logical blocks of code—often consisting of more than 10–15 lines of code.
+
+Advantages and benefits of AWS AI solutions:
+Accelerated development and deployment
+  Amazon Q Developer can generate code in real time
+  SageMaker handles tasks such as data preprocessing, model training, and deployment.
+  Amazon Bedrock provides access to pre-trained models and APIs
+Scalability and cost optimization
+  pay-as-you-go pricing models
+  scale seamlessly across regions and handle large datasets or high-volume traffic.
+Flexibility and access to models
+  AWS continuously updates and expands its AI services, providing access to the latest advancements in machine learning models, techniques, and algorithms.
+  Amazon Bedrock offers a choice of high-performing FMs from leading AI companies like AI21 Labs, Anthropic, Cohere, Meta, Mistral AI, Stability AI, and AWS, through a single API.
+Integration with AWS tools and services
+  Amazon Comprehend and Amazon Rekognition offer ready-to-use AI capabilities that can be readily incorporated into applications.
+  AWS AI services seamlessly integrate with other AWS services, so developers can build end-to-end solutions that use multiple cloud services.
+  AWS ecosystem provides a wide range of tools, SDKs, and APIs, so developers can incorporate AI capabilities into their existing applications or build entirely new AI-driven applications.
+
+Cost considerations:
+  Responsiveness and availability
+    higher levels of responsiveness and availability often come at an increased cost
+  Redundancy and Regional coverage
+    comes with an additional cost, because resources have to be provisioned and data replicated across multiple locations.
+  Performance
+    Higher-performance options, such as GPU instances, generally come at a higher cost
+  Token-based pricing
+    Many AWS generative AI services, such as Amazon Q Developer and Amazon Bedrock, use a token-based pricing model. This means that you pay for the number of tokens (a unit of text or code) generated or processed by the service. The more tokens you generate or process, the higher the cost.
+  Provisioned throughput
+    Some AWS generative AI services, like Amazon Polly and Amazon Transcribe, let you provision a specific amount of throughput (for example, audio or text processing capacity) in advance. Higher provisioned throughput levels typically come at a higher cost
+  Custom models
+    AWS provides pre-trained models for various generative AI tasks, but you can also bring your own custom models or fine-tune existing models with additional costs
+=====
+
+
 Course: exploring-artificial-intelligence-use-cases-and-applications
 =====
 AI, ML, and generative AI real-world use cases, capabilities and limitations, model selection techniques, and key business metrics.
