@@ -1,3 +1,172 @@
+Course: exploring-artificial-intelligence-use-cases-and-applications
+=====
+AI, ML, and generative AI real-world use cases, capabilities and limitations, model selection techniques, and key business metrics.
+
+AI transformed the industries by boosting employee productivity, fostering creativity, improving business operations, and enhancing customer experiences.
+
+Text summarization, code generation, image, video, and text generation, music creation, content localization, chatbots, virtual assistance, anomaly detection, maintenance assistance, and contact center analytics are ways AI transforms how businesses operate and make decisions.
+
+Examples of Real-World Use Cases:
+<in detail in course>
+Media and entertainment
+  Content generation
+  Virtual reality
+  New generation
+Retail
+  Product review summaries
+  Pricing optimization
+  Virtual try-ons
+  Store layout optimization
+Healthcare
+  AWS HealthScribe
+  Personalize medicine
+  Improve medical imaging
+Life sciences
+  Drug discovery
+  Protein folding prediction
+  Synthetic biology
+Financial services
+  Fraud detection mechanisms
+  Portfolio management
+  Debt collection
+Manufacturing
+  Predictive maintenance
+  Process optimization
+  Product design
+  Material science
+
+
+Examples of AI Applications:
+Computer vision
+  allows computers to interpret and understand digital images and videos.
+Natural language processing
+  interaction between computers and human languages
+  perform tasks such as text classification, sentiment analysis, machine translation, and language generation.
+Intelligent document processing (IDP)
+  extracts and classifies information from unstructured data, generates summaries, and provides actionable insights.
+Fraud detection
+  process of identifying and preventing fraudulent activities or unauthorized behavior with a system, process, or transaction.
+
+
+ML is a subset of AI that focuses on developing algorithms and statistical models so that computer systems can learn from data and make predictions or decisions without being explicitly programmed.
+
+When AI and ML are appropriate solutions
+  Coding the rules is challenging
+  Scale of the project is challenging
+
+ML Techniques and Use Cases:
+  Supervised - takes labeled data
+    Classification - assign labels or categories to new, unseen data instances based on a trained model
+      Fraud detection
+      Image classification
+      Customer retention
+      Diagnostics
+    Regression     - predicting continuous or numerical values
+      Advertising popularity prediction
+      Weather forecasting
+      Market forecasting
+      Estimating life expectancy
+      Population growth prediction
+  Unsupervised - takes unlabeled data
+    Clustering              - groups data into different clusters based on similar features or distances between the data point to better understand the attributes of a specific cluster.
+      Customer segmentation
+      Targeted marketing
+      Recommended systems
+    Dimensionally Reduction - reduce the number of features or dimensions in a dataset while preserving the most important information or patterns.
+      Big data visualization
+      Meaningful compression
+      Structure discovery
+      Feature elicitation
+  Reinforcement - continuously improves its model by mining feedback from previous iterations
+      AWS DeepRacer simulator
+
+
+Generative AI is a subset of deep learning. It can adapt models that are built using deep learning without needing to retrain or fine-tune them
+
+Capabilities of Generative AI:
+  Adaptability
+    adapt to various tasks and domains by learning from data and generating content tailored to specific contexts or requirements
+  Responsiveness
+    can generate content in real-time, which results in rapid response times and dynamic interactions
+    useful for chatbots, virtual assistants, and other interactive applications that require immediate responses.
+  Simplicity
+    can simplify complex tasks by automating content creation processes
+    Eg: can generate human-like text, which reduces the time and effort required for content generation.
+  Creativity and exploration
+    can generate novel ideas, designs, or solutions by combining and recombining elements in unique ways.
+  Data efficiency
+    can learn from relatively small amounts of data and generate new samples consistent with the training data
+  Personalization
+    can create personalized content tailored to individual preferences or characteristics, which enhances user experiences and engagement.
+  Scalability
+    can generate large amounts of content quickly. This makes the models suitable for tasks that require producing content at scale.
+
+Challenges of Generative AI:
+  Regulatory violations
+    when trained with sensitive data might generate output that violates regulations, such as exposing PII
+  Social risks
+    possibility of unwanted content that might reflect negatively on your organization
+  Data security and privacy concerns
+    The information shared with your model can include personal information and can potentially violate privacy laws.
+  Toxicity
+    can generate content that is inflammatory, offensive, or inappropriate.
+  Hallucinations
+    model generates inaccurate responses that are not consistent with the training data, called hallucinations
+  Interpretability
+    Users might misinterpret the model’s output, which could lead to incorrect conclusions or decisions.
+  Nondeterminism
+    model might generate different outputs for the same input, which can cause problems in applications where reliability is key.
+
+<Each challenge's solution in course>
+
+Factors to Consider When Selecting a Generative AI Model:
+  Models are optimized for different tasks, so choosing the right one is crucial for achieving the desired results.
+
+  Model types
+    AI21 labs - Jurassic-2 Models
+    Amazon - Amazon Titan
+    Anthropic - Claude
+    Stability AI - Stable Diffusion
+    Cohere - Command
+    Meta - Llama
+  Performance requirements
+    requirements include accuracy, reliability of the output, and others.
+    Assess the overall performance of the model to evaluate its suitability for a particular task.
+    You should also test the model against different datasets to ensure reliability.
+    Finally, monitor its performance over time to ensure it remains consistent. 
+  Capabilities
+    Generative AI can perform different tasks with varying degrees of output quality and levels of control or customization.
+  Constraints
+    Computational resources (for example, available GPU power, CPU power, or memory)
+    Data availability (for example, size and quality of training data)
+    Deployment requirement (for example, on premises or cloud)
+
+    Some models might have higher resource demands or require specific hardware configurations, which could impact their use case.
+  Compliance
+    Generative AI models can pose moral concerns, including biases, privacy issues, and potential misuse. When evaluating a particular model, consider its compliance and moral implications, particularly in sensitive domains like healthcare, finance, and legal applications. One should consider factors such as fairness, transparency or traceability, accountability, hallucination, and toxicity. Additionally, the model should adhere to relevant regulation guidelines.
+  Cost
+    Larger models are usually more precise, but they are expensive and offer few deployment options. Conversely, smaller models are cheaper and faster, and they offer more deployment alternatives.
+    By using generative AI for content creation, you can reduce labor costs and increase efficiency, especially for repetitive tasks that require significant human effort.
+    Remember to evaluate all expenses related to deployment, maintenance, hardware, software, and other associated costs.
+
+Business Metrics for Generative AI
+  By quantifying the performance, effectiveness, and return on investment (ROI) of AI applications through relevant business metrics, organizations can gain valuable insights into the value delivered. They can also identify areas of improvement and make informed decisions to optimize resource allocation and strategy.
+
+  User satisfaction
+    gathers user feedback to assess their satisfaction with the AI-generated content or recommendations.
+  Average revenue per user (ARPU)
+    calculates the average revenue generated per user or customer attributed to the generative AI application.
+  Cross-domain performance
+    measures the generative AI model's ability to perform effectively across different domains or industries.
+  Conversion rate
+    monitors the conversion rate to generate content or recommend desired outcomes, such as purchases, sign-ups, or engagement metrics.
+  Efficiency
+    metric evaluates the generative AI model's efficiency in resource utilization, computation time, and scalability.
+  Customer lifetime value(CLV)
+    measures the total revenue a company can expect to generate from a single customer throughout their entire relationship with the business
+=====
+
+
 Course: developing-machine-learning-solutions
 =====
 * When doing recap see Conclusion section in course first.
