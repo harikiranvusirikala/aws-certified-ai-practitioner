@@ -1,3 +1,149 @@
+Course: optimizing-foundation-models (Explained the whole flow using Business Use Case)
+=====
+large language model (LLM) are FMs that have the ability to understand and process natural language.
+
+Retrieval-Augmented Generation (RAG) approach that allows FMs to query knowledge bases to provide accurate and up-to-date answers to customer prompts.
+From dataset to vector embeddings
+Vector embeddings
+  Words that relate to each other will have closer embeddings.
+Storing vectors
+  The core function of vector databases is to compactly store billions of high-dimensional vectors representing words and entities.
+  Vector databases provide ultra-fast similarity searches across these billions of vectors in real time. 
+
+  The most common algorithms used to perform the similarity search are "k-nearest neighbors (k-NN)" or "cosine similarity".
+
+  Amazon Web Services (AWS) offers the following viable vector database options:
+  • Amazon OpenSearch Service (provisioned)
+  • Amazon OpenSearch Serverless
+  • pgvector extension in Amazon Relational Database Service (Amazon RDS) for PostgreSQL
+  • pgvector extension in Amazon Aurora PostgreSQL-Compatible Edition
+  • Amazon Kendra
+
+Agents
+  Key functions of agents
+    • Intermediary operations
+        Agents can act as intermediaries, facilitating communication between the generative AI model and various backend systems.
+    • Actions launch
+    • Feedback integration
+
+  Eg:
+    Agent 1 to modify customer plan features
+    Agent 2 uses conversations to improve or update the enterprise data
+    Agent 3 understands when the conversation ends and sends a customer satisfication survey
+
+3.4.a (2)
+Evaluate results
+  Human evaluation
+    assessing "qualitative aspects" of the model, such as the following:
+      User experience
+      Contextual approriateness
+      Creativity and flexibility
+  Benchmark datasets
+    provide a "quantitative way" to evaluate generative AI models, such as:
+      Accuracy
+      Speed and efficiency
+      Scalability
+    useful for initial testing phases
+    essential for comparing performance across different models or different iterations of the same model.
+
+    LLM as a judge approach:
+    The judge model(compares answer in dataset with model generated answer) calculates a grading score to assess the performance of the model. This score should take in to account metrics such as accuracy (correctness of the response), relevance (suitability of the response to the question), and comprehensiveness (depth and breadth of the response).
+
+  Human evaluation involves "subjective" assessment by humans, while benchmark datasets provide "objective, quantitative" measures of performance.
+
+AnyCompany use Generative AI, and will monitor the following metrics:
+  Conversion rate: Increase in successful purchases for each site visit
+  Average order value: Increase in the dollar amount spent for each transaction
+  Customer retention rate: Increase in the percentage of returning customers
+
+Fine-Tuning
+  • Increase specificity: Adapt the model’s responses or predictions to the nuances of a specific domain or task that were not adequately covered in the initial training.
+  • Improve accuracy: Enhance the model's performance on specialized tasks by training on domain-specific data, thereby reducing errors that occur due to the generic nature of foundational training.
+  • Reduce biases: Address and mitigate any biases inherent in the initial training data, making the model more fair and appropriate for different applications.
+  • Boost efficiency: Streamline the model’s operations within specific contexts, potentially reducing computational requirements and speeding up response times.
+
+3.3.b
+The different fine-tuning approaches
+  • Instruction tuning
+    This approach involves retraining the model on a new dataset that consists of prompts followed by the desired outputs.
+    This is structured in a way that the model learns to follow specific instructions better. This method is particularly useful for improving the model's ability to understand and execute user commands accurately, making it highly effective for interactive applications like "virtual assistants" and "chatbots". 
+  • Reinforcement learning from human feedback (RLHF)
+    This approach is a fine-tuning technique where the model is initially trained using supervised learning to predict human-like responses. Then, it is further refined through a reinforcement learning process, where a reward model built from human feedback guides the model toward generating more preferable outputs.
+    This method is effective in aligning the model’s outputs with human values and preferences, thereby increasing its practical utility in sensitive applications.
+    RLHF refers to the improvement of the model by learning from feedback, such as ratings, preferences, demonstrations, helpfulness, or toxicity, provided by humans. RLHF is used during the pretraining phase of the model but can also be used to fine-tune the model.
+  • Adapting models for specific domains
+    This approach involves fine-tuning the model on a corpus of text or data that is specific to a particular industry or sector.
+    An example of this would be legal documents for a legal AI or medical records for a healthcare AI. This specificity enables the model to perform with a higher degree of relevance and accuracy in domain-specific tasks, providing more useful and context-aware responses.
+  • Transfer learning
+    This approach is a method where a model developed for one task is reused as the starting point for a model on a second task.
+    For foundational models, this often means taking a model that has been trained on a vast, general dataset, then fine-tuning it on a smaller, specific dataset. This method is highly efficient in using learned features and knowledge from the general training phase and applying them to a narrower scope with less additional training required.
+  • Continuous pretraining
+    This approach involves extending the training phase of a pre-trained model by continuously feeding it new and emerging data.
+    This approach is used to keep the model updated with the latest information, vocabulary, trends, or research findings, ensuring its outputs remain relevant and accurate over time.
+
+3.3.c
+Preparing the data for the fine-tuning step
+The goals during the initial training phase are as follows:
+  • Extensive coverage: Ensuring the dataset covers a broad spectrum of knowledge to give the model a robust foundational understanding
+  • Diversity: Including varied types of data from numerous sources to equip the model with the ability to handle a wide array of tasks
+  • Generalization: Focusing on building a model that can generalize across different tasks and domains without specific tailoring
+
+  The data needs thorough cleaning and possibly anonymization to ensure privacy and compliance with regulations.
+
+The data preparation for fine-tuning is distinct from initial training due to the following reasons:
+  • Specificity: The dataset for fine-tuning is much more focused, containing examples that are directly relevant to the specific tasks or problems the model needs to solve.
+  • High relevance: Data must be highly relevant to the desired outputs. Examples include legal documents for a legal AI or customer service interactions for a customer support AI.
+  • Quality over quantity: Although the initial training requires massive amounts of data, fine-tuning can often achieve significant improvements with much smaller, but well-curated datasets.
+
+Key steps in fine-tuning data preparation:
+  • Data curation
+    Although it is a continuation, this involves a more rigorous selection process to ensure every piece of data is highly relevant. This step also ensures the data contributes to the model's learning in the specific context.
+  • Labeling
+    In fine-tuning, the accuracy and relevance of labels are paramount. They guide the model's adjustments to specialize in the target domain.
+  • Governance and compliance
+    Considering fine-tuning often uses more specialized data, ensuring data governance and compliance with industry-specific regulations is critical.
+  • Representativeness and bias checking
+    It is essential to ensure that the fine-tuning dataset does not introduce or perpetuate biases that could skew the model's performance in undesirable ways.
+  • Feedback integration
+    For methods like RLHF, incorporating user or expert feedback directly into the training process is crucial. This is more nuanced and interactive than the initial training phase.
+In the fine-tuning process, labeling the data with accurate and relevant labels is crucial for guiding the model's adjustments to specialize in the target domain.
+
+3.4.b (2)
+Model evaluation
+  • Recall-Oriented Understudy for Gisting Evaluation (ROUGE)
+    ROUGE is a set of metrics used to evaluate automatic summarization of texts, in addition to machine translation quality in NLP. The main idea behind ROUGE is to count the number of overlapping units. This includes words, N-grams, or sentence fragments between the computer-generated output and a set of reference (human-created) texts.
+
+    The following are two ways to use the ROUGE metric:
+
+    • ROUGE-N: This metric measures the overlap of n-grams between the generated text and the reference text. For example, ROUGE-1 refers to the overlap of unigrams, ROUGE-2 refers to bigrams, and so on. This metric primarily assesses the fluency of the text and the extent to which it includes key ideas from the reference.
+    • ROUGE-L: This metric uses the longest common subsequence between the generated text and the reference texts. It is particularly good at evaluating the coherence and order of the narrative in the outputs.
+    ROUGE is widely used because it is not complex. It is interpretable, and correlates reasonably well with human judgment, especially when evaluating the recall aspect of summaries. The evaluations assess how much of the important information in the source texts is captured by the generated summaries.
+  • Bilingual Evaluation Understudy (BLEU)
+    BLEU is a metric used to evaluate the quality of text that has been machine-translated from one natural language to another. Quality is calculated by comparing the machine-generated text to one or more high-quality human translations. BLEU measures the precision of N-grams in the machine-generated text that appears in the reference texts and applies a penalty for overly short translations (brevity penalty).
+
+    Unlike ROUGE, which focuses on "recall", BLEU is fundamentally a "precision" metric. It checks how many words or phrases in the machine translation appear in the reference translations. BLEU evaluates the quality at the level of the sentence, typically using a combination of unigrams, bigrams, trigrams, and quadrigrams. A brevity penalty discourages overly concise translations that might influence the precision score.
+
+    BLEU is popular in the field of machine translation for its ease of use and effectiveness at a broad scale. However, it has limitations in assessing the fluency and grammaticality of the output.
+  • BERTScore
+    BERTScore uses the pretrained contextual embeddings from models like BERT to evaluate the quality of text-generation tasks. BERTScore computes the cosine similarity between the contextual embeddings of words in the candidate and the reference texts. This is unlike traditional metrics that rely on exact matches of N-grams or words.
+
+    Because BERTScore evaluates the "semantic similarity" rather than relying on exact lexical matches, it is capable of capturing meaning in a more nuanced manner. BERTScore is less prone to some of the pitfalls of BLEU and ROUGE. An example of this is their sensitivity to minor paraphrasing or synonym usage that does not affect the overall meaning conveyed by the text.
+
+    BERTScore is increasingly used alongside traditional metrics like BLEU and ROUGE for a more "comprehensive assessment" of language generation models. This is especially true in cases where capturing the deeper semantic meaning of the text is important.
+
+
+AnyCompany use Generative AI, and will monitor the following metrics:
+  Conversion rate: Increase in successful purchases for each site visit
+    metric ROUGE used here
+  Average order value: Increase in the dollar amount spent for each transaction
+    metric BLEU used here
+  Customer retention rate: Increase in the percentage of returning customers
+    metric BERTScore used here
+
+ROUGE and BLEU evalutes the dynamic product descriptions generated
+BERTScore evaluates the personalized product displayed
+=====
+
 
 Course: Responsible Artificial Intelligence Practices (Domain 4)
 =====
