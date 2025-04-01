@@ -16,8 +16,8 @@ Building a machine learning model involves:
 Bad data is often called garbage in, garbage out, and therefore an ML model is only as good as the data used to train it.
 
 - **Labeled data** - each input instance has a label that represent output for classification  
-- **Unlabled data**
-<br>  
+- **Unlabled data**  
+ 
 
 - **Structured data**    - data with particular format, mostly like form of tables or databases with rows and columns  
   - **Tabular data**    - data stored in spreadsheets, databases, or CSV files  

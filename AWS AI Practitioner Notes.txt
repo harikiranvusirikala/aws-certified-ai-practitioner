@@ -1,3 +1,384 @@
+
+Course: Responsible Artificial Intelligence Practices (Domain 4)
+=====
+Responsible AI refers to "practices" and "principles" that ensure that AI systems are "transparent" and "trustworthy" while "mitigating potential risks and negative outcomes".  
+These responsible standards should be considered throughout the entire lifecycle of an AI application. This includes the initial design, development, deployment, monitoring, and evaluation phases.  
+
+To operate AI responsibly, companies should proactively ensure the following about their system:  
+  - It is fully transparent and accountable, with monitoring and oversight mechanisms in place.
+  - It is managed by a leadership team accountable for responsible AI strategies.
+  - It is developed by teams with expertise in responsible AI principles and practices.
+  - It is built following responsible AI guidelines.
+
+Responsible AI is not exclusive to any one form of AI. It should be considered when you are building "traditional" or "generative" AI systems.
+
+Traditional AI  
+  Traditional machine learning models perform tasks based on the data you provide. They can make predictions such as ranking, sentiment analysis, image classification, and more.
+  However, each model can perform only one task. And to successfully do it, the model needs to be carefully trained on the data. As they train, they analyze the data and look for patterns. Then these models make a prediction based on these patterns. 
+
+  Some examples of traditional AI include recommendation engines, gaming, and voice assistance. 
+Generative AI
+  Generative artificial intelligence (generative AI) runs on "foundation models (FMs)". These models are pre-trained on massive amounts of general domain data that is beyond your own data.
+  They can perform multiple tasks. Based on user input, usually in the form of text called a prompt, the model actually generates content. This content comes from learning patterns and relationships that empower the model to predict the desired outcome. 
+
+  Some examples of generative AI include chatbots, code generation, and text and image generation.
+
+Generative AI offers business value
+  • Creativity: Create new content and ideas, including conversations, stories, images, videos, and music.
+  • Productivity: Radically improve productivity across all lines of business, use cases, and industries.
+  • Connectivity: Connect and engage with customers and across organizations in new ways.
+
+
+Responsible AI Challenges in Traditional AI and Generative AI
+Biases in AI systems
+• Accuracy of models
+    models can make predictions or generate content based only on the data they are trained on. If they are not trained properly, you will get inaccurate results.
+    Therefore, it is important to address bias and variance in your model.
+    Bias
+      Bias in a model means that the model is missing important features of the datasets. This means that the data is too basic. Bias is measured by the difference between the "expected predictions" of the model and the "true values we are trying to predict".
+      If the difference is narrow, then the model has low bias. If the difference is wide, then the model has a high bias.
+      When a model has a high bias, it is "underfitted". Underfitted means that the model is not capturing enough difference in the features of the data, and therefore, the model performs poorly on the training data.
+    Variance
+      Variance refers to the "model's sensitivity to fluctuations or noise in the training data". The problem is that the model might consider noise in the data to be important in the output. When variance is high, the model becomes so familiar with the training data that it can make predictions with high accuracy. This is because it is capturing all the features of the data.
+      However, when you introduce new data to the model, the model's accuracy drops. This is because the new data can have different features that the model is not trained on. This introduces the problem of "overfitting". Overfitting is when model performs well on the training data but does not perform well on the evaluation data. This is because the model is memorizing the data it has seen and is unable to generalize to unseen examples.
+• Bias-variance trade-off
+    Bias-variance tradeoff is when you optimize your model with the right balance between bias and variance. This means that you need to optimize your model so that it is not underfitted or overfitted. The goal is to achieve a trained model with the lowest bias and lowest variance tradeoff for a given data set.
+    Can be overcome by:
+      • Cross validation
+      • Increase data
+      • Regularization
+      • Simpler models
+      • Dimension reduction (Principal component analysis)
+      • Stop training early
+      <in detail in course>
+
+Challenges of generative AI
+Toxicity (generate inappropriate content)
+  Toxicity is the possibility of generating content (whether it be text, images, or other modalities) that is offensive, disturbing, or otherwise inappropriate.
+Hallucinations (inaccurate responses)
+  Hallucinations are assertions or claims that sound plausible but are verifiably incorrect.
+  Example: "Tell me about some papers by" a particular author. The model is not actually searching for legitimate citations but generating ones from the distribution of words associated with that author.
+Intellectual property
+  tendency to occasionally produce text or code passages that were verbatim of parts of their "training data", resulting in privacy and other concerns
+Plagiarism and cheating
+  Being used to write college essays(where content is being graded or evaluated), writing samples for job applications, and other forms of cheating or illicit copying.
+Disruption of the nature of work
+  concern that some professions might be replaced or seriously disrupted by the technology.
+
+Core Dimensions of Responsible AI
+<Responsible AI core dimensions.png>
+Fairness
+    AI systems promote inclusion, prevent discrimination, uphold responsible values and legal norms, and build trust with society.
+    to create systems suitable and beneficial for all.
+Explainability
+    clearly explain or provide justification for its internal mechanisms and decisions so that it is understandable to humans.
+    Humans must understand how models are making decisions and address any issues of bias, trust, or fairness.
+Privacy and security
+    data that is protected from theft and exposure.
+    at a privacy level, individuals control when and if their data can be used.
+    At the security level, it verifies that no unauthorized systems or unauthorized users will have access to the individual’s data.
+Transparency  
+    Transparency communicates information about an AI system so stakeholders can make informed choices about their use of the system. Some of this information includes development processes, system capabilities, and limitations.  
+    It provides individuals, organizations, and stakeholders access to assess the fairness, robustness, and explainability of AI systems. They can identify and mitigate potential biases, reinforce responsible standards, and foster trust in the technology.  
+Veracity and robustness  
+    AI system operates reliably, even with unexpected situations, uncertainty, and errors.  
+    resilient to changes in input parameters, data distributions, and external circumstances.  
+    retain reliability, accuracy, and safety in uncertain environments.  
+Governance  
+    Governance is a set of processes that are used to "define, implement, and enforce responsible AI practices" within an organization.  
+    Governance addresses various responsible, legal, or societal problems that generative AI might invite.  
+    For example, governance policies can help to protect the rights of individuals to intellectual property.  
+Safety  
+    development of algorithms, models, and systems in such a way that they are responsible, safe, and beneficial for individuals and society as a whole.  
+    designed and tested to avoid causing unintended harm to humans or the environment. Things like bias, misuse, and uncontrolled impacts need to be proactively considered.  
+Controllability  
+    ability to monitor and guide an AI system's behavior to align with human values and intent. It involves developing architectures that are controllable, so that any unintended issues can be managed and addressed.  
+    helps mitigate risks, promote fairness and transparency, and ensure that AI systems benefit society as a whole. 
+
+Business benefits of responsible AI
+Increased trust and reputation  
+    Customers are more likely to interact with AI applications, if they believe the system is fair and safe. This enhances their reputation and brand value.
+Regulatory compliance  
+    As AI regulations emerge, companies with robust ethical AI frameworks are better positioned to comply with guidelines on data privacy, fairness, accountability, and transparency.
+Mitigating risks  
+    Responsible AI practices help mitigate risks such as bias, privacy violations, security breaches, and unintended negative impacts on society. This reduces legal liabilities and financial costs.
+Competitive advantage  
+    Companies that prioritize responsible AI can differentiate themselves from competitors and gain a competitive edge, especially as consumer awareness of AI ethics grows.
+Improved decision-making  
+    AI systems built with fairness, accountability, and transparency in mind are more reliable and less likely to produce biased or flawed outputs, which leads to better data-driven decisions.
+Improved products and business  
+    Responsible AI encourages a diverse and inclusive approach to AI development. Because it draws on varied perspectives and experiences, it can drive more creative and innovative solutions.
+
+
+Amazon Services and Tools for Responsible AI
+• Amazon SageMaker is a fully managed ML service.
+• Amazon Bedrock is a fully managed service that makes available high-performing FMs from leading AI startups and Amazon for our use through a unified API.
+  Amazon Bedrock also offers a broad set of capabilities to build generative AI applications with security, privacy, and responsible AI. 
+  With the serverless experience of Amazon Bedrock, you can privately customize FMs with your own data and securely integrate and deploy them into your applications by using AWS tools without having to manage any infrastructure.
+
+Reviewing Amazon service tools for responsible AI
+• Foundation model evaluation
+    "Model evaluation on Amazon Bedrock" - can evaluate, compare, and select the best foundation model for your use case in just a few clicks.
+    Amazon Bedrock offers a choice of automatic evaluation and human evaluation.
+        • Automatic evaluation offers predefined metrics such as accuracy, robustness, and toxicity. 
+        • Human evaluation offers subjective or custom metrics such as friendliness, style, and alignment to brand voice. For human evaluation, you can use your in-house employees or an AWS-managed team as reviewers.
+    "SageMaker Clarify" - can automatically evaluate FMs for metrics such as accuracy, robustness, and toxicity to support your responsible AI initiative.
+• Safeguards for generative AI
+    "Amazon Bedrock Guardrails" - implement safeguards
+        Guardrails helps control the interaction between users and FMs by filtering undesirable and harmful content, redacting personally identifiable information (PII), and enhancing content safety and privacy in generative AI applications.
+        Additionally, you can continuously monitor and analyze user inputs and FM responses that can violate customer-defined policies in the guardrails.
+            • Consistent level of AI safety
+            • Block undesirable topics
+            • Filter harmful content
+            • Redact PII to protect user privacy
+• Bias detection
+    "Amazon SageMaker Clarify" - helps identify potential bias in machine learning models and datasets without the need for extensive coding.
+    "Amazon SageMaker Data Wrangler" - to "balance your data" in cases of any imbalances.
+        Offers three balancing operators: random undersampling, random oversampling, and Synthetic Minority Oversampling Technique (SMOTE) to rebalance data in your unbalanced datasets.
+• Model prediction explanation
+    "SageMaker Clarify" is integrated with "Amazon SageMaker Experiments" to provide scores detailing which features contributed the most to your model prediction on a particular input for tabular, natural language processing (NLP), and computer vision models.
+        For tabular datasets, SageMaker Clarify can also output an aggregated feature importance chart that provides insights into the overall prediction process of the model.
+        These details can help determine if a particular model input has more influence than expected on overall model behavior.
+• Monitoring and human reviews
+    "Amazon SageMaker Model Monitor" - monitors the quality of SageMaker machine learning models in production.
+        You can set up continuous monitoring with a real-time endpoint (or a batch transform job that runs regularly), or on-schedule monitoring for asynchronous batch transform jobs.
+        You can set alerts that notify you when there are deviations in the model quality.
+    "Amazon Augmented AI (Amazon A2I)" - helps build the workflows required for human review of "ML predictions".
+        Brings human review to all developers and removes the undifferentiated heavy lifting associated with building human review systems or managing large numbers of human reviewers.
+        low confidence/random predictions sent for human review.
+        Human reviewers can review data extracted from "Amazon Textract forms", moderate "images in Amazon Rekognition", or review data using a "custom workflow".
+• Governance improvement
+    "Amazon SageMaker Role Manager" - administrators can define minimum permissions in minutes. 
+    "Amazon SageMaker Model Cards" - to capture, retrieve, and share essential model information, such as intended uses, risk ratings, and training details, from conception to deployment. 
+    "Amazon SageMaker Model Dashboard" - to keep your team informed on model behavior in production, all in one place.
+• Providing transparency
+    "AWS AI Service Cards" - help you better understand AWS AI services.
+        Form of responsible AI documentation that provides a single place to find information on the intended use cases and limitations, responsible AI design choices, and deployment and performance optimization best practices for AWS AI services.
+        They are part of a comprehensive development process to build AWS services in a responsible way that addresses the core dimensions of responsible AI.
+        Each AI Service Card contains four sections that cover the following:
+            • Basic concepts to help customers better understand the service or service features
+            • Intended use cases and limitations
+            • Responsible AI design considerations
+            • Guidance on deployment and performance optimization
+
+4.1.c
+Responsible Considerations to Select a Model
+  use "Model evaluation on Amazon Bedrock" or "SageMaker Clarify" to evaluate models for accuracy, robustness, toxicity, or nuanced content that requires human judgement.
+
+  Define application use case narrowly
+    Example: Defining application use case narrowly for traditional AI
+      Face recognition is not a use case; it is a technology. The way your model applies that technology is a use case.
+      For example, a gallery retrieval application might be used to help find missing persons.
+      Other face recognition applications are Celebrity recognition and Virtual proctoring.
+    Example: Defining application use case narrowly for generative AI
+      In an AI application to catalog a product, you would want a broad demographic target audience so that it is available for all of your customers. 
+      In an AI application to persuade to buy, you would want a narrow target audience to capture a specific group of people. For example, you might want to target an audience that lives on the coast to buy accessories for docking boats.
+  Choosing a model based on performance
+    • Level of customization – The ability to change a model’s output with new data ranging from prompt-based approaches to full model retraining
+    • Model size – The amount of information the model has learned as defined by parameter count
+    • Inference options – From self-managed deployment to API calls
+    • Licensing agreements – Some agreements can restrict or prohibit commercial use
+    • Context windows – The amount of information that can fit in a single prompt
+    • Latency – The amount of time it takes for a model to generate an output
+
+    Performance is a function of the model and a test dataset, not just the model. So, when you are assessing a model, you need to determine how well a model performs on a particular dataset.
+    This means that you need to consider two development trajectories: the development trajectory of the model and the development trajectory of the datasets.
+  Choosing a model based on sustainability concerns
+    Sustainability here is - ability of AI systems to be developed and deployed in a way that is socially, environmentally, and economically sustainable over the long term.
+
+    Responsible agency considerations for selecting a model
+      AI system's capacity to make good judgments and act in a socially responsible manner.
+      The following are key aspects of moral agency for AI:
+      • Value alignment
+          Value alignment is being able to understand, evaluate, and make decisions based on moral principles rather than pure utility maximization. This requires value alignment between the AI system's goals and values and the responsible human values. 
+      • Responsible reasoning skills
+          Responsible reasoning skills is being able to logically think through moral dilemmas and weigh various responsible considerations when making decisions. The AI needs logic and reasoning capabilities to apply responsible principles to novel situations. 
+          The AI system should have the capacity to engage in responsible reasoning and understand moral concepts, principles, and frameworks. It should be able to apply them in context to specific situations.
+      • Appropriate level of autonomy
+          The AI system should have the appropriate level of autonomy, with clear boundaries and mechanisms for human oversight and intervention, particularly in high-stakes or sensitive domains.
+      • Transparency and accountability
+          The AI system should be transparent about its decision-making process. It should allow external oversight and accountability to ensure its actions are responsibly justified.
+    Environmental considerations for selecting a model
+      Key environmental challenges and solutions:
+      • Energy consumption
+      • Resources utilization
+      • Environmental impact assessment
+      (in detail in course)
+    Economic considerations for selecting a model
+      potential benefits and costs of AI technologies and the impact on jobs and the economy.
+
+Responsible Preparation for Datasets
+  use "SageMaker Clarify" and "SageMaker Data Wrangler" to help balance your datasets.
+
+  Balancing datasets
+    Inclusive and diverse data collection
+      Data collection should accurately reflect the diverse perspectives and experiences required for the use case of the AI system. This includes a diverse range of sources, viewpoints, and demographics.
+      Collection of data for people, scientific research, geography, weather, products, and other topics should be collected with a focus on the diverse range for each topic.
+    Data curation
+      • Data preprocessing
+          Preprocess the data to ensure it is accurate, complete, and unbiased. Techniques such as data cleaning, normalization, and feature selection can help to eliminate biases in the dataset.
+      • Data augmentation
+          Use data augmentation techniques to generate new instances of underrepresented groups. This can help to balance the dataset and prevent biases towards more represented groups.
+      • Regular auditing
+          Regularly audit the dataset to ensure it remains balanced and fair. Check for biases and take corrective actions if necessary.
+
+  Balance your data for the intended use case
+
+4.2.a
+Transparent and Explainable Models
+  To promote trust and accountability in an AI system, there should be transparency and explainability in the model.
+  
+  Transparency helps to understand HOW a model makes decisions.
+  This helps to provide accountability and builds trust in the AI system. Transparency also makes auditing a system easier.
+
+  Explainability helps to understand WHY the model made the decision that it made. It gives insight into the limitations of a model.
+  This helps developers with debugging and troubleshooting the model. It also allows users to make informed decisions on how to use the model. 
+
+  black box models - Models that lack transparency and explainability
+  These models use complex algorithms and numerous layers of neural networks to make predictions, but they do not provide insight into their internal workings.
+
+  Transparent and explainable models have several advantages over black box models.
+    • Increased trust
+      particularly important in high-stakes applications, such as healthcare, financial services, and transportation, where it is crucial to understand the reasoning behind the models' decisions. 
+    • Easier to debug and optimize for improvements
+      As internal working is transparent
+    • Better understanding of the data and the model's decision-making process
+      particularly important in applications where explainability is a key consideration, such as in healthcare, where patients need to understand why a particular treatment was recommended.
+
+  Solutions for transparent and explainable models
+    • Explainability frameworks
+        There are several explainability frameworks available, such as SHapley Value Added (SHAP), Layout-Independent Matrix Factorization (LIME), and Counterfactual Explanations, that can help summarize and interpret the decisions made by AI systems. These frameworks can provide insights into the factors that influenced a particular decision and help assess the fairness and consistency of the AI system.
+    • Transparent documentation
+        Maintain clear and comprehensive documentation of the AI system's architecture, data sources, training processes, and underlying assumptions, which can be made available to relevant stakeholders and auditors.
+        This can include user guides, technical documentation, and visualizations that help users understand the underlying algorithms and their inputs and outputs.
+    • Monitoring and auditing
+        AI systems should be monitored and audited to ensure that they are functioning as intended and not exhibiting bias or discriminatory behavior. This can include regular testing and oversight by humans and automated tools to identify unusual patterns or decisions.
+    • Human oversight and involvement
+        Incorporate human oversight and involvement in critical decision-making processes where humans can review and validate the AI system's outputs and decisions, especially in high-stakes situations.
+    • Counterfactual explanations
+        Provide counterfactual explanations that show how the output would change if certain input features were different to help users understand the model's behavior and reasoning.
+    • User interface explanations
+        Design user interfaces that provide clear and understandable explanations of the AI system's outputs, rationale, and limitations to end-users, so they can make informed decisions.
+
+  Risks of transparent and explainable models
+    • Increasing the complexity of the development and maintenance of the model can increase the costs.
+    • Creating vulnerabilities of the model, data, and algorithms can be exploited by bad actors.
+    • Presenting unrealistic expectations that the model is perfectly transparent and explainable. In some situations, this may not be achievable or even intended.
+    • Providing too much information that can create privacy and security concerns. It could also lead to compromising the competitive edge of the model.
+
+  4.2.b
+  AWS tools for transparent and explainability
+  AWS tools for transparency
+    • "AWS AI Service Cards" - Amazon provides transparent documentation on Amazon services that help you build your AI services.
+      AI Service Cards are a resource to increase transparency and help customers better understand AWS AI services, including how to use them in a responsible way. AI service cards are a form of responsible AI documentation that provides customers with a single place to find information on the intended use cases and limitations, responsible AI design choices, and the deployment and operation best practices for our AI services.
+    • "Amazon SageMaker Model Cards" - you can catalog and provide documentation on models that you create or develop yourself.
+      Use SageMaker Model Cards to document critical details about your ML models in a single place for streamlined governance and reporting.
+      Catalog details include information such as the intended use and risk rating of a model, training details and metrics, evaluation results and observations, and additional callouts such as considerations, recommendations, and custom information. 
+  AWS tools for explainability
+    • "SageMaker Clarify"
+      SageMaker Clarify is integrated with "SageMaker Experiments" to provide scores detailing "which features contributed the most to your model prediction" on a particular input for tabular, NLP, and computer vision models. For tabular datasets, SageMaker Clarify can also output an aggregated feature importance chart which provides insights into the overall prediction process of the model. These details can help determine if a particular model input has more influence than expected on overall model behavior.
+    • "SageMaker Autopilot" (how ML models make predictions)
+      Amazon SageMaker Autopilot uses tools provided by "SageMaker Clarify" to help provide insights into "how ML models make predictions". These tools can help ML engineers, product managers, and other internal stakeholders "understand model characteristics". To trust and interpret decisions made on model predictions, both consumers and regulators rely on transparency in machine learning.
+
+4.2.c
+Model Trade-Offs
+  Interpretability trade-offs
+    Interpretability - feature of model transparency. degree to which a human can understand the cause of a decision.
+      access into a system so that a human can interpret the model’s output based on the weights and features.
+    Explainability - how to take an ML model and explain the behavior in human terms.
+      With complex models (for example, black boxes), you cannot fully understand how and why the inner mechanics impact the prediction.
+      However, through model agnostic methods (for example, partial dependence plots, SHAP dependence plots, or surrogate models) you can discover meaning between input data attributions and model outputs. With that understanding, you can explain the nature and behavior of the AI/ML model.
+      <Interpretability%20diagram.jpg>
+
+    If a business wants "high model transparency" and wants to "understand exactly why and how" the model is generating predictions, then they need a model that offers interpretability. However, "high interpretability typically comes at the cost of performance".
+    (as seen in the diagram)
+    If a company wants to achieve "high performance but still wants to have a general understanding" of the model behavior, model "explainability" starts to play a larger role.
+  Safety and transparency trade-offs
+    Model Safety - ability of an AI system to avoid causing harm in its interactions with the world.
+      This includes avoiding social harm, such as bias in decision-making algorithms, and avoiding privacy and security vulnerability exposures.
+    • Accuracy
+        Complex models like large neural networks tend to be more accurate but less interpretable than simpler linear models, which are more transparent.
+    • Privacy
+        Privacy-preserving techniques like differential privacy can improve safety but make models harder to inspect. This can make models less transparent.
+    • Safety
+        Constraining or filtering model outputs for safety can reduce transparency into the original model reasoning. 
+    • Security
+        Highly secured air-gapped train models (models that are trained on networks that are private and do not have access to external data) might be less open to external auditing. 
+  Model controllability
+    Model control - A controllable model is one where you can influence the model's predictions and behavior by changing aspects of the training data. Higher controllability provides more transparency into the model and allows correcting undesired biases and outputs.
+    Model controllability is measured by how much control you have over the model by changing the input data. Models that are more controllable are easier to steer towards desired behaviors. This is important for fairness because you want to be able to understand and control bias in the model. Controllability of a model is also important for transparency and debugging in a model. 
+    Controllability depends on the model architecture. Linear models tend to be more controllable than complex neural models. You can test for controllability by evaluating if manipulating the data, such as adding or removing examples, causes expected changes in the model's outputs and predictions. Controllability can be improved through data augmentation techniques and by adding constraints to the model training process. 
+
+  Summary
+    • A model that provides transparency into a system so a human can explain the model’s output based on the weights and features is an example of "interpretability" in a model.
+    • A model that uses model agnostic methods to explain the behavior of the model in human terms is an example of "explainability" in a model.
+    • A model that avoids causing harm in its interactions with the world is an example of "safety" in a model.
+    • A model that you can influence the predictions and behavior by changing aspects of the training data is an example of "controllability" in a model.
+
+4.2.d
+Principles of Human-Centered Design for Explainable AI (XAI)
+  Human-centered design (HCD) - approach to creating products and services that are intuitive, easy to use, and meet the needs of the people who will be using them.
+  In explainable AI, HCD helps ensure that the explanations and interfaces provided are clear, understandable, and useful to the people they are intended to serve.
+  Key principles of human-centered design for explainable AI:
+    • Design for amplified decision-making.
+      supports decision-makers in high-stakes situations.
+      maximize the benefits of using technology while minimizing potential risks and errors, especially risks and errors that can occur when humans make decisions under stress or in high-pressure environments.
+      can help to mitigate sensitive errors.
+      Key aspects:
+        • Clarity
+            information is presented in a way that is easy to understand and interpret without introducing biases or misunderstandings.
+        • Simplicity
+            minimizes the amount of information that needs to be processed by the user while still providing all the necessary information to make a decision.
+        • Usability
+            easy to use and navigate regardless of the user's level of expertise or technical skills.
+        • Reflexivity
+            prompts users to reflect on their decision-making process and encourages them to take responsibility for their choices.
+        • Accountability
+            attaches consequences to the decisions made using amplified technology so the users are held responsible for their actions.
+    • Design for unbiased decision-making.
+      design of decision-making processes, systems, and tools is free from biases that can influence the outcomes.
+      help promote fairness and efficient use of resources.
+      Involves the following steps:
+        • Identify and assess potential biases.
+        • Design decision-making processes and tools that are transparent and fair.
+        • Train decision-makers to recognize and mitigate biases.
+      Key aspects:
+        • Transparency
+            clear and accessible to all stakeholders. These processes should provide easy scrutiny and identification of potential biases. This can involve using data visualization techniques to make complex information more accessible and intuitive and providing clear explanations of the decision-making process and its implications. 
+        • Fairness
+            minimize unfairness and discrimination. They should help to ensure that all stakeholders have an equal opportunity to participate and influence the outcomes. This can involve designing decision-making processes that are inclusive of diverse perspectives and experiences. It also involves avoiding the use of biased criteria or metrics that might perpetuate stereotypes or biases. 
+        • Training
+            Decision-makers, including policymakers, judges, and business leaders, need to be trained to recognize and mitigate biases. This can involve providing training to help decision-makers develop strategies for managing and overcoming biases.
+    • Design for human and AI learning.
+      aims to create learning environments and tools that are beneficial and effective for both humans and AI.
+      It encompasses a range of strategies and approaches that take into account the unique strengths and limitations of each learner and the goals and purposes of the learning experience.
+      Key aspects:
+        • Cognitive apprenticeship
+            process in which humans learn new skills and knowledge by observing and interacting with more skilled and knowledgeable individuals, such as teachers or mentors.
+            In AI learning, this involves creating learning environments where AI systems learn from human instructors and experts and gain experience and expertise through simulated or real-world scenarios.
+        • Personalization
+            process of tailor-making learning experiences and tools to meet the specific needs and preferences of individual learners.
+            By using data analytics and ML algorithms, developers can create personalized learning recommendations and algorithms that adapt to the unique learning style and needs of each learner. 
+        • User-centered design
+            designing learning environments and tools that are intuitive and accessible to a wide range of learners, including those with disabilities or language barriers.
+            By prioritizing user experience and usability, designers can ensure that learning environments are effective and engaging for all users.
+  Involve users throughout the design process.
+  Prioritize user understanding and trust.
+  Tailor explanations to the user's needs and expertise.
+
+  Reinforcement learning from human feedback (RLHF)
+    an ML technique that uses human feedback to optimize ML models to self-learn more efficiently.
+    Reinforcement learning (RL) techniques train software to make decisions that maximize rewards, which makes their outcomes more accurate.
+    used in both traditional AI and generative AI applications. 
+    Benefits of RLHF:
+      • Enhances AI performance
+      • Supplies complex training parameters
+      • Increases user satisfaction
+    "Amazon SageMaker Ground Truth" - humans involved for making high value data sets
+      offers the most comprehensive set of human-in-the-loop capabilities for incorporating human feedback across the ML lifecycle to improve model accuracy and relevancy.
+      includes a data annotator for RLHF capabilities. You can give direct feedback and guidance on output that a model has generated by ranking, classifying, or doing both for its responses for RL outcomes. The data, referred to as comparison and ranking data, is effectively a reward model or reward function that is then used to train the model. You can use comparison and ranking data to customize an existing model for your use case or to fine-tune a model that you build from scratch.
+=====
+
 Security and Privacy Considerations for AI Systems
   5.1.d
   Security considerations
