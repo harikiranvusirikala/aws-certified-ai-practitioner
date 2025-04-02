@@ -2114,3 +2114,403 @@ Best Practices for Secure Data Engineering
     offers a set of guidelines to assist in the design and implementation of privacy-supporting controls within AWS services.
     helps make informed decisions regarding the people, processes, and technology that are necessary to ensure privacy in the AWS Cloud environment.
 =====
+
+
+
+
+
+
+
+
+
+
+Videos
+=====
+1.1
+Artificial intelligence - Field of computer science dedicated to solve cognitive problems commonly associated with human intelligence such as learning, creation and image recognistion
+• Human-like intelligence
+• Human conversations
+• Creation of content
+• Solutions to complex problems
+• Increased business efficiency
+• Smarter decisions
+
+ML example: Product recommendation when shopping
+DL example: Recognising human speech, objects and images
+
+Benefits of Al
+• Health
+  • Diagnosing illness
+  • Predicting outbreaks
+• Quality
+  • Finding product defects
+  • Predictive maintenance
+• Customer experience
+  • Self-help
+  • Recommendations
+• Decision making
+  • Forecasting demand
+  • Preventing fraud
+• Productivity
+  • Hiring
+  • Targeted marketing
+
+What can AI do?
+  Recognize patterns and make predictions
+  Detect anomalies
+  Detect defects by using computer vision
+  Translation
+  Natural language processing (NLP)
+  Create content (generative AI)
+
+ML - science of developing algorithms and statistical models that computer systems use to perform complex tasks without explicit instructions.
+columns in table of data can serve as a features
+
+Train
+Inference
+
+Types of Data
+  Structured - from source Amazon RDS, Amazon Redshift --exported to--> Amazon S3
+  Semi-structured - from source Amazon DynamoDB, Amazon DocumentDB(with MongoDB compatibility) --exported to--> Amazon S3
+  Unstructured
+  Time-series
+
+Model training
+  Algorithm
+  Parameters
+
+Inferencing
+  real-time - low latency, high throughput, persistent endpoint
+  batch - offline, large dataset, infrequent use
+
+Supervised Learning
+  challenge is labeling the dataset.
+    "Amazon SageMaker Ground Truth" can levarage cloud sourcing service called "Amazon Mechanical Turk", that provides access to a large pool of affortable labor spread across the globe.
+    (The Amazon Mechanical Turk workforce consists of independent contractors located worldwide)
+    (Amazon A2I can also levarage Amazon Mechanical Turk)
+Unsupervised learning
+  Anomaly detection
+Reinforcement learning
+
+Troubleshooting model performance
+  Overfitting
+  Underfitting
+  Bias and fairness
+    Diversity of training data
+    Feature importance
+    Fairness constraints
+
+DL - type of machine learning that uses algorithmic structures called neural networks.
+For a Deep learning computer vision to understand it as fish we need to provide millions of images of fish until it understands it. So, costlier to train a deep learning model.
+
+Machine learning
+  Well-defined tasks with structured and "labeled data"
+  Solves problems through statistics and mathematics
+  Manually select and extract features
+  Less costly
+Deep learning
+  Complex tasks that require machines to make sense of "unstructured data"
+  Combines statistics and mathematics with "neural network architecture"
+  Models can self-learn using feedback from known error
+  Significantly higher costs
+
+Large language models (LLMs)
+  • Deep learning foundation models
+  • Transformers
+  • Hundreds of billions of features
+  • Flexible use cases
+  • Text classification
+  • Text generation
+  • Translation
+  • Code generation
+
+1.2
+Consider AI/ML for...
+• Increasing business efficiency
+  • Automating time-consuming tasks
+  • Streamlining self-service processes
+• Solving complex problems
+  • Fraud detection
+  • Waste reduction
+• Making better decisions
+  • Forecasting future actions
+  • Getting answers fast
+
+Consider Al/ML alternatives when... (When AI/ML not appropriate)
+• Costs outweigh the benefits.
+  • Perform a cost-benefit analysis.
+• Models cannot meet the interpretability requirements.
+  • Consider a rules-based system.
+• Systems must be "deterministic" rather than "probabilistic".
+
+ML learning problem types
+Contains target values?
+  Supervised learning
+    Categorial - Classification (Binary class, Multi class)
+    Continuous - Regression (Simple Linear Regression, Multi Linear Regression, Logistic Regression)
+  Unsupervised learning
+    Discrete groups - Clustering
+    Outliers - Anomaly detection
+
+before building a custom model, you should investigate whether an existing service for your use case already exists.
+Computer vision
+  • Amazon Rekognition
+    • Facial comparison and analysis
+    • Object detection and labeling
+      • Custom labeling
+    • Text detection
+    • Content moderation
+Text and document analysis
+  • Amazon Textract
+    • Extract text, handwriting, layout elements, and data from scanned documents.
+  • Amazon Comprehend
+    • Extract key phrases, entities, and sentiment.
+    • Pre-trained to find PII
+Language AI
+  • Amazon Lex
+    • Conversational voice and text
+  • Amazon Transcribe
+    • Converts speech to text
+  • Amazon Polly
+    • Converts text to speech
+Customer experience
+  • Amazon Kendra
+    • Intelligent document search
+  • Amazon Personalize
+    • Personalized product recommendations
+  • Amazon Translate
+    • Translates between 75 languages
+Business metrics
+  • Amazon Forecast
+    • Predicts future points in time-series data
+  • Amazon Fraud Detector
+    • Detects fraud and fraudulent activities
+    • Checks online transactions, product reviews, checkout and payments, new accounts, and account takeover
+Generative AI
+  • Amazon Bedrock
+    • Foundation models
+    • Can customize with training data or Retrieval Augmented Generation (RAG)
+Model development
+  • Amazon SageMaker
+    • Fully managed ML service
+    • Data preparation and labeling
+    • Model training and evaluation
+    • Model deployment and monitoring
+    • Pre-trained models
+
+How many companies used AI services in AWS to advance:
+  • MasterCard - Fraud detection and prevention
+  • DoorDash - Conversational AI for self service
+  • Laredo Petroleum - Preventive maintenance
+  • Booking.com - Product recommendations
+  • Pinterest - Computer vision
+  • AffordableTours.com - Demand forecasting
+
+1.3
+ML pipeline
+  1 Identify Business Goal
+  2 Frame ML Problem
+  3 Collect Data - Process Data
+  4 Pre-process Data - Process Data, Prepare Data
+  5 Engineer Features - Process Data, Prepare Data
+  6 Train, Tune, Evaluate
+  7 Deploy
+  8 Monitor
+
+ML lifecycle
+  Bussiness Goal -> ML Problem Framing -> Data Processing -> Model Development -> Deployment -> Monitoring -> Bussiness Goal and continues
+  some of the stages are interlinked.
+
+Defining the problem
+1 Identify the business goal.
+  • Success criteria
+  • Aligning stakeholders
+2 Frame the ML problem.
+  • Defining the ML task: inputs, outputs, and metrics
+  • Feasibility
+  • Starting with simplest model options
+  • Cost-benefit analysis
+
+Model options
+• Al/ML hosted service
+  • Consume with API.
+  • No training is required.
+• Pre-trained models
+  • Start with a trained model and customize.
+• Fully custom model
+
+Amazon SageMaker JumpStart
+• Pre-trained models
+  • Foundation models
+  • Computer vision
+  • Natural language processing
+• Fine-tune with your data
+• Deploy using SageMaker
+
+Processing data
+3 Collect training data
+  • Data sources
+  • Data ingestion - ETL
+  • Labels
+4 Pre-process data (Preparing data)
+  • Exploratory data analysis (EDA)
+  • Clean
+  • Split - train, validate test
+5 Feature engineering (Preparing data)
+  • Select features
+
+AWS Glue
+  • Cloud-optimized "ETL service"
+  • Contains its own data catalog
+  • Built-in transformations
+Eg: Amazon Kinesis Data Streams -> AWS Glue ETL job -> CSV to Parquet -> Amazon S3 data lake
+AWS Glue Data Catalog
+  (crawl the data and writes schema and meta data to tables, when then used for querying)
+AWS Glue DataBrew
+  • Visualization and data preparation (visual data preparation tool to "clean and normalize" data "without writing any code")
+    • Explore and discover
+    • Transformation steps saved as a recipe
+    • Point-and-click data transformation
+  • Data quality rules (and writing profiling jobs)
+Amazon SageMaker Ground Truth
+  Raw data -> AWS model -> training data the model understands is labelled, Ambiguous data is sent to human labelers(can leverage Amazon Mechanical Turk, or company employees)
+Amazon SageMaker Canvas
+  • Import(can use Amazon SageMaker DataWrangler visualization), prepare, transform, visualize, and analyze
+  • Transform (350 built in transofrmation, so that we can quickly normalize, transform and combine features without having to write any code)
+    • Each adds a step to data flow
+    • Built-in transforms
+  • Simplify the feature engineering process by using a single visual interface
+Amazon SageMaker Feature Store
+  • Serves as the single source of truth to store, retrieve, remove, track, share, discover, and control access to features
+  • Processes raw data into features by using a processing workflow
+
+6 Teach the model: Train, tune, evaluate
+  • Train
+    • Iterative process
+    • Tune parameters
+  • Run experiments
+    • Tune hyperparameters
+  • Model evaluation
+    • Metrics targets
+
+Amazon SageMaker training
+  • Training jobs
+  • Training data location (from Amazon S3)
+  • Training image (from Amazon ECR)
+  • ML compute instances
+  • Hyperparameters
+  • S3 output bucket (the artificats generated)
+Amazon SageMaker Experiments
+  • Tracks inputs, parameter, configurations as separate runs
+  • Compares runs against performance metrics
+  • Visual interface
+Amazon SageMaker automatic model tuning (AMT also known as hyperparameter tuning)
+• Automatically adjusts hyperparameters
+• Uses specified objective metric
+• Tuning job
+  • Runs training jobs inside a loop
+  • Satisfies completion criteria
+
+7 Deploy the model
+  • Considerations
+    • Batch inference
+    • Real-time inference
+    • Self-managed
+      • AWS Batch, Amazon ECS, Amazon EKS, AWS Lambda, Amazon EC2
+    • Hosted
+      • SageMaker inference
+
+Amazon SageMaker model deployment
+  takes model artifacts from Amazon S3, container image from Amazon ECR, choose inference option, then it creates endpoint
+
+Amazon SageMaker inference
+  Batch transform
+    • Offline inference
+    • Large datasets
+  Asynchronous
+    • Long processing times
+    • Large payloads
+  Serverless
+    • Intermittent traffic
+    • Periods of no traffic
+  Real-time
+    • Live predictions
+    • Sustained traffic
+    • Low latency
+    • Consistent performance
+
+8 Monitor the model
+  • Continuously monitor the quality of the ML model in real time.
+  • Identify the right time and frequency to retrain and update the model.
+  • Configure alerts to notify and initiate actions if any drift in model performance is observed.
+
+Amazon SageMaker Model Monitor
+  • Data is automatically collected from your endpoints.
+  • Define a monitoring schedule and detect changes in quality against a pre-defined baseline.
+  • Use built-in rules to detect data drift, or write your own rules for custom analysis.
+  • See monitoring results, data statistics, and violation reports in SageMaker Studio.
+  • Automate corrective actions based on Amazon CloudWatch alerts.
+
+What is MLOps?
+  • Application of DevOps principles used in software development to machine learning
+  • Infrastructure as code
+  • Rapid experimentation
+  • Version control
+  • Active performance monitoring
+  • Automatic model retraining and validation when there are data and code changes
+  • Benefits
+    • Productivity
+    • Repeatability
+    • Reliability
+    • Auditability
+    • Data and model quality
+
+Amazon SageMaker Model Building Pipelines
+  • Creating pipelines
+    • Python SDK
+    • JSON definition
+  • Data processing
+  • Training jobs
+  • Creating models
+  • Registering models
+  • Pipelines can be viewed in SageMaker Studio
+
+Repositories and orchestration tools
+  Repository options
+    Code repository
+    Amazon SageMaker Feature Store
+    Amazon SageMaker Model Registry
+    Third-party repository
+  Orchestration options
+    Amazon SageMaker Pipelines
+    Amazon Managed Workflows for Apache Airflow (Amazon MWAA)
+    AWS Step Functions
+    Third-party orchestration
+
+Performance metrics
+Confusion Matrix - True Positives, False Positives, False Negatives, True Negatives
+Accuracy = (TP + TN) / (TP + TN + FP + FN or Total)
+Precision = TP / (TP + FP)
+Recall (TPR - True Positive Rate) = TP / (TP + FN)
+F1-score = Precision * Recall * 2 / (Precision + Recall)
+False Positive Rate (FPR) = FP / (TN + FP)
+Specificity (TNR) = TN / (TN + FP)
+Area Under the ROC Curve [AUC]  (ROC - Reciever operating characteristics) - TPR in y-axis, FPR in x-axis
+Regression model errors
+  • Mean squared error (MSE)
+    • Average of the square of the errors
+  • Root mean squared error (RMSE)
+    • Square root of MSE
+  • Mean absolute error (MAE)
+
+AI/ML business metrics
+  • Define business goals at the beginning.
+  • Identify business metrics to improve.
+  • Evaluate risk and cost of errors.
+  • Measure actual improvement.
+  • Measure actual costs.
+  • Compare with cost-benefit model.
+  • Determine return on investment (ROI).
+
+AWS Cost Explorer
+=====
