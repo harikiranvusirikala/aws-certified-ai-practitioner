@@ -32,6 +32,7 @@ Guide for clearing AWS Certified AI Practitioner (AIF-C01) exam
     - Identify relevant AWS services and features for each stage of an ML pipeline.
     - Understand fundamental concepts of ML operations (MLOps).
     - Understand model performance metrics.
+
 ### Domain 2: Fundamentals of Generative AI (24% of scored content)
 1. Explain the basic concepts of generative AI.
     - Understand foundational generative AI concepts.
@@ -47,6 +48,28 @@ Guide for clearing AWS Certified AI Practitioner (AIF-C01) exam
     - Describe the advantages of using AWS generative AI services to build applications.
     - Understand the benefits of AWS infrastructure for generative AI.
     - Understand cost tradeoffs of AWS generative AI services.
+
+### Domain 3: Applications of Foundation Models (28% of scored content)
+1. Describe design considerations for applications that use foundation models.
+    - Identify selection criteria to choose pre-trained models.
+    - Understand the effect of inference parameters on model responses.
+    - Define Retrieval Augmented Generation (RAG) and describe its business applications.
+    - Identify AWS services that help store embeddings within vector databases.
+    - Explain the cost tradeoffs of various approaches to foundation model customization.
+    - Understand the role of agents in multi-step tasks.
+2. Choose effective prompt engineering techniques.
+    - Describe the concepts and constructs of prompt engineering.
+    - Understand techniques for prompt engineering.
+    - Understand the benefits and best practices for prompt engineering.
+    - Define potential risks and limitations of prompt engineering.
+3. Describe the training and fine-tuning process for foundation models.
+    - Describe the key elements of training a foundation model.
+    - Define methods for fine-tuning a foundation model.
+    - Describe how to prepare data to fine-tune a foundation model.
+4. Describe methods to evaluate foundation model performance.
+    - Understand approaches to evaluate foundation model performance.
+    - Identify relevant metrics to assess foundation model performance.
+    - Determine whether a foundation model effectively meets business objectives.
 
 _This guide is an improved version inspired by the AWS Skillbuilder Learning Path [Standard Exam Prep Plan: AWS Certified AI Practitioner (AIF-C01)](https://explore.skillbuilder.aws/learn/learning-plans/2193/standard-exam-prep-plan-aws-certified-ai-practitioner-aif-c01)._
 {: .text-center .fs-3 .grey-dk-000}
