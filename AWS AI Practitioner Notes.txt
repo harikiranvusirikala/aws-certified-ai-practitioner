@@ -2755,3 +2755,43 @@ Explainability
 
 Agents - can orchestrate interactions between model components such as the FM, data source and user conversations
 =====
+5.1
+IAM groups can not belong to other groups.
+AWS IAM, AWS IAM Identity Center, AWS CloudTrail (stored in S3, then integrated with SageMaker), Amazon S3 - Block Public Access, Amazon SageMaker Role Manager
+Encryption at Rest, AWS KMS, Encryption in transit
+Some services like S3, DynamoDB, SageMaker will encrypt by default with service key unless specified with AWS CMK.
+By default inter-node communication is not encrypted by default, but option available to enable encryption.
+Amazon Macie, VPCs, VPC interface endpoints (AWS PrivateLink) to reach AWS services from inside a VPC.
+Amazon SageMaker Model Monitor, integrate CloudWatch
+Amazon SageMaker Model Registry - Catalog models, model verions, manage approval
+Amazon SageMaker Model Cards
+Amazon SageMaker ML Lineage Tracking
+Amazon SageMaker Feature Store
+Amazon SageMaker Model Dashboard
+
+5.2
+AWS Artifact
+Cosumer Compliance Center - contains resources to help you learn more about AWS compliance.
+Algorithmic Accountability Act - prevent bias, ensure transparency and explainbility
+AWS Audit Manager - audit AWS usage to assess compliance, collect evidance and add to report
+AWS Bedrock Guardrails
+AWS Config (automated when non complaint using Systems Manager automation document) - has rules, conformance packs - resource level
+AWS Inspectore - application level
+AWS Trusted Advisor
+
+Data governance - Curation, Discovery and understanding, and Protection
+Data governance strategies
+  Define roles and responsibilities: Data steward, Data owner(define policies), IT roles
+Discovery and understanding
+  • Data profiling, Data catalog, Data lineage
+  AWS Glue DataBrew - visual data preparation tool to clean and normalize data without writing any code
+    use for Data profiling, Data lineage
+Curation
+  • Data quality management, Data integration, Data management
+  AWS Glue Data Catalog - stores metadata for datasets - do manual or by defining a AWS Glue Cralwer job.
+  AWS Glue Data Quality - quality rules, detect anomalies
+Protection
+  • Data security, Data compliance, Data lifecycle management
+  AWS Lake Formation - manage access control for Data lake built in Amazon S3 and cataloged using Amazon Glue Data catalog
+  Amazon S3 lifecycle policies
+=====
