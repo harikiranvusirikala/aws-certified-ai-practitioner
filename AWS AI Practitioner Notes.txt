@@ -2662,3 +2662,96 @@ Advantages of generative Al
 • Speed to market
 • Ability to meet business objectives
 =====
+4.1
+4.1.a
+Responsible Al
+  Fairness - How a system impacts different subpopulations of users (for example, by gender, ethnicity)
+  Explainability - Mechanisms to understand and evaluate the outputs of an Al system
+  Robustness - Mechanisms to ensure that an Al system operates reliably
+  Privacy and security - Data that is used in accordance with privacy considerations and protected from theft and exposure
+  Governance - Processes to define, implement, and enforce responsible Al practices within an organization
+  Transparency - Information about an Al system so stakeholders can make informed choices about their use of the system
+
+Fainess measured by the bias and variance of outcomes across groups
+
+4.1.f
+Effects of bias and variance
+  • Demographic disparities: Unequal outcomes or treatment of different groups because of biased models
+  • Inaccuracy: Reduced model performance and reliability because of bias or variance issues
+  • Overfitting: Models that are too complex and fail to generalize well to new data
+  • Underfitting: Models that are too simple and fail to capture underlying patterns in the data
+  • User trust: Eroding confidence in Al systems because of biased or inconsistent outputs
+
+One of the main reason for bais
+  Class imbalance
+    • Models preferentially fit larger classes
+    • Overfitting of smaller class
+    • Higher error rate for minority class
+
+Responsible datasets are the foundation of Responsible AI
+
+4.1.e
+Characteristics of datasets
+  Inclusivity: Representing diverse populations, perspectives, and experiences in training data
+  Diversity: Incorporating a wide range of attributes, features, and variables to avoid bias
+  Balanced datasets: Ensuring equal representation of different groups and avoiding skewed distributions
+  Privacy protection: Safeguarding sensitive information and adhering to data protection regulations
+  Consent and transparency: Obtaining informed consent from data subjects and providing clear information about data usage
+  Regular audits: Conducting periodic reviews of datasets to identify and address potential issues or biases
+
+4.1.c
+Responsible practices for model selection
+  Environmental considerations: Assessing the carbor footprint and energy consumption of Al models
+  Sustainability: Prioritizing models with minimal environmental impact and long-term viability
+  Transparency: Providing clear information about model capabilites, limitations, and potential risks
+  Accountability: Establishing clear lines of responsibility for Al model outcomes and decision making
+  Stakeholder engagement: Involving diverse perspectives in model selection and deployment processes
+
+Amazon SageMaker Clarify
+• Detect bias
+  • Training data that uses nine different pre-training detection methods
+  • Trained model
+  • Integrated with Amazon SageMaker Model Monitor to detect drift
+• Explainability
+  • Understand relative importance of each feature to your model's overall behavior, and to individual predictions.
+  • Explain decisions that are made by computer vision and NLP models.
+  • Understand how computer vision and NLP model predictions are being made in unstructured data models that are typically opaque box in their approach.
+SageMaker Clarify processing jobs - validates datasets in S3, models in SageMaker for bias
+SageMaker Clarify pre-training bias analysis
+SageMaker Clarify post-training bias analysis
+
+4.1.d
+Generative AI Risks
+  Hallucinations
+  Intellectual Property
+  Bias
+  Toxicity
+  Data Privacy (as soon as one FM is trained or sees some data you can't make it forget by deleting the data)
+
+Amazon Bedrock Guardrails
+  Content filters on Hate, Insult, Sex, and Violence
+  Denied topics
+Filter at both prompt input and model output
+
+Foundation Model Evaluation
+  Amazon SageMaker Clarify
+  Evaluation Dimensions
+    Prompt Stereotype
+    Toxicity
+    Factual Knowledge
+    Semantic robustness
+    Accuracy
+
+4.2
+Interpretability
+  • More transparent
+  • Deep level understanding of internal mechanics
+  • Uses interpretable algorithms
+  • Performance and security tradeoffs
+Explainability
+  • Less transparent
+  • High-level understanding
+  • Model agnostic (black box) approach
+
+Agents - can orchestrate interactions between model components such as the FM, data source and user conversations
+=====
