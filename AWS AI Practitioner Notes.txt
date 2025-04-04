@@ -2072,10 +2072,10 @@ Data engineering lifecycle
       Pipeline automation is an important part of modern data-centric architecture design.
       You can use "AWS Glue workflows" to create a pipeline.
   • Data collection
-      "Amazon Kinesis", "AWS Database Migration Service (DMS)" and AWS Glue
+      "Amazon Kinesis", "AWS Database Migration Service (DMS)" and "AWS Glue"
   • Data preparation and cleaning
       one of the most important, yet most time-consuming, stages of the data lifecycle.
-      for large workload that has a variety of data, use "Amazon EMR" or AWS Glue
+      for large workload that has a variety of data, use "Amazon EMR" or "AWS Glue"
   • Data quality checks
       "AWS Glue DataBrew", and "AWS Glue Data Quality"
   • Data visualization and analysis
@@ -2513,4 +2513,152 @@ AI/ML business metrics
   • Determine return on investment (ROI).
 
 AWS Cost Explorer
+=====
+2.1
+Al
+  • Learn from data and make predictions.
+Gen AI
+  • Create new solutions based on learned data.
+  • Use foundation models.
+
+Concepts of generative Al
+  • Models
+  • Transformer
+  • Prompts, prompt tuning, prompt engineering
+  • Inference
+  • Context window
+  • Token
+    • Tokenizer (convert input text into a vector)
+  • Prompt engineering
+  • Completion
+  • Vector
+  • Embeddings
+Incontext learning - providing examples inside the context window(prompt)
+
+What is a vector?
+  • Ordered list of numbers
+  • Indicate location within a space
+  • Ability to encode related relationships and collect associations
+Embeddings
+  • Embedding vector(also called Embeddings) - is the set of input IDs necessary to obtain each tokens high dimensional representation
+  • Numerical vectorized representations of type that capture the semantic meaning of the token
+Self-attention layers
+  • Encoder
+  • Decoder
+Transformer Network
+  • Article "Attention is all you need"
+
+The larger the model is the most probable that it doesn't need incontext examples
+Large language models (LLMs)
+  • Deep learning foundation models
+  • Transformers
+  • Unimodal or multimodal
+  • Multimodal use cases
+    • Marketing, image captioning, product design, customer service, and more
+  • Multimodal tasks
+
+Diffusion models
+  • Generative Al model that learns to reverse the noise
+    • Forward diffusion
+    • Reverse diffusion
+    • Stable diffusion: Does not use the pixel space of the image; uses a reduced-definition latent space
+
+Large language model Use cases
+  • Text classification
+  • Text generation
+  • Translation
+  • Code generation
+
+Amazon Bedrock, Amazon Titan - offer pre-trained models for text, image and audio generation 
+SageMaker, Amazon Q Developer(formerly Amazon CodeWhisperer) - support code generation and completion
+Amazon Samerian - offer virtual production and 3D content creation
+
+Generative Al architectures
+  • Generative adversarial networks (GANs)
+  • Variational autoencoders (VAEs)
+  • Transformers
+
+FM lifecycle (Generative AI project lifecycle): data selection, model selection, pre-training, fine-tuning, evaluation, deployment, feedback
+
+2.2
+Advantages of generative Al
+  • Adaptability
+  • Responsiveness
+  • Simplicity
+
+Limitations of generative Al
+  • Natural sounding human language
+  • Completions are not helpful
+  • Completions are misleading, incorrect, or harmful
+    • Helpfulness, honesty, and harmlessness (HHH)
+  • Interpretability
+    • Intrinsic analysis
+      • Can be applied to models with "low complexity" or "simple relationships" between the input variables and the predictions
+      • High model interpretability - lower model performance
+    • Post hoc analysis
+      • Can be applied to "simple relationship" models and "more complex models" that capture nonlinear interactions
+
+Generative Al performance metrics
+  • ML outputs are deterministic.
+  • Gen Al outputs are non-deterministic.
+
+  • Recall-Oriented Understudy for Gisting Evaluation (ROUGE) - evaulate generated summary
+  • Bilingual Evaluation Understudy (BLEU) - evaluate machine translation
+
+Generative Al models
+  • Generative adversarial networks (GANs)
+  • Variational autoencoders (VAEs)
+  • Transformers
+  • Recurrent neural networks (RNNs)
+  • Transformer
+  • Reinforcement learning for generative tasks
+  • Diffusion
+  • Flow-based
+
+  • Bidirectional encoder representation from transformers (BERT)
+  • Generative Pre-trained Transformer (GPT)
+  • Amazon Titan foundation models
+  • Jurassic-2
+  • Claude-2
+  • Cohere
+  • Stable Diffusion
+  • Bloom
+
+Generative Al performance metrics
+  • Accuracy
+  • Cross-domain performance - model's ability to generalize and perform well on tasks or data from domains different from the one it was primarily trained on, leveraging knowledge gained from the source domain.
+  • Efficiency
+  • Conversion rate
+  • Average revenue per user
+  • Customer lifetime value
+
+2.3
+Transfer learning
+  • AWS SageMaker JumpStart
+AWS Cloud Adoption Framework (CAF-AI)
+Generative AI stack security layers
+  • AWS infrastructure - Amazon EC2, GPUs and more
+  • AWS ML services - Amazon SageMaker
+  • AWS AI services
+Critical components of AI systems
+  • input, model, output
+
+Pricing models
+• Host your own infrastructure
+• Token-based pricing
+• On-demand Amazon Bedrock models - By the number of input tokens that are received and the number of output tokens that are generated
+
+Foundation models
+• Amazon Bedrock
+  • Playground - "PartyRock"
+  • Model evaluation
+• Amazon Titan
+
+Advantages of generative Al
+• Accessibility
+• Lower barrier to entry
+• Efficiency
+• Cost-effective
+• Speed to market
+• Ability to meet business objectives
 =====
