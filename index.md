@@ -71,5 +71,20 @@ Guide for clearing AWS Certified AI Practitioner (AIF-C01) exam
     - Identify relevant metrics to assess foundation model performance.
     - Determine whether a foundation model effectively meets business objectives.
 
+### Domain 4: Guidelines for Responsible AI (14% of scored content)
+1. Explain the development of AI systems that are responsible.
+    - Identify features of responsible AI.
+    - Understand how to use tools to identify features of responsible AI.
+    - Understand responsible practices to select a model.
+    - Identify legal risks of working with generative AI.
+    - Identify characteristics of datasets.
+    - Understand effects of bias and variance.
+    - Describe tools to detect and monitor bias, trustworthiness, and truthfulness.
+2. Recognize the importance of transparent and explainable models.
+    - Understand the differences between models that are transparent and explainable and models that are not transparent and explainable.
+    - Understand the tools to identify transparent and explainable models.
+    - Identify tradeoffs between model safety and transparency.
+    - Understand principles of human-centered design for explainable AI.
+
 _This guide is an improved version inspired by the AWS Skillbuilder Learning Path [Standard Exam Prep Plan: AWS Certified AI Practitioner (AIF-C01)](https://explore.skillbuilder.aws/learn/learning-plans/2193/standard-exam-prep-plan-aws-certified-ai-practitioner-aif-c01)._
 {: .text-center .fs-3 .grey-dk-000}
