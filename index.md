@@ -86,5 +86,17 @@ Guide for clearing AWS Certified AI Practitioner (AIF-C01) exam
     - Identify tradeoffs between model safety and transparency.
     - Understand principles of human-centered design for explainable AI.
 
+### Domain 5: Security, Compliance, and Governance for AI Solutions (14% of scored content)
+1. Explain methods to secure AI systems.
+    - Identify AWS services and features to secure AI systems.
+    - Understand the concept of source citation and documenting data origins.
+    - Describe best practices for secure data engineering.
+    - Understand security and privacy considerations for AI systems.
+2. Recognize governance and compliance regulations for AI systems.
+    - Identify regulatory compliance standards for AI systems.
+    - Identify AWS services and features to assist with governance and regulation compliance.
+    - Describe data governance strategies.
+    - Describe processes to follow governance protocols.
+
 _This guide is an improved version inspired by the AWS Skillbuilder Learning Path [Standard Exam Prep Plan: AWS Certified AI Practitioner (AIF-C01)](https://explore.skillbuilder.aws/learn/learning-plans/2193/standard-exam-prep-plan-aws-certified-ai-practitioner-aif-c01)._
 {: .text-center .fs-3 .grey-dk-000}
