@@ -2969,3 +2969,157 @@ Protection
   AWS Lake Formation - manage access control for Data lake built in Amazon S3 and cataloged using Amazon Glue Data catalog
   Amazon S3 lifecycle policies
 =====
+
+Internal Certification (80% - 28/35):
+=====
+Your organization is planning end-to-end automation of ML pipeline to ensure faster time to market. You are being tasked to Identify AWS services which can be used to implement ML pipeline. Which of the following options matches the appropriate pipeline stage and corresponding AWS services that can be utilized for ML pipeline Implementation?
+Data Preparation: SageMaker Data Wrangler -> Train and Tune: SageMaker Experiments and SageMaker Model Registry -> Deploy and Manage: Amazon SageMaker Model Monitor.
+(SageMaker Model Registry is used to manage model versions and facilitate tracking the lifecycle of machine learning models, including storing and deploying models.)
+(SageMaker Autopilot automates the model-building process)
+
+A fashion designer wants to create a new apparel design, but they are struggling with inspiration. Which technique could help them generate novel and stylish clothing designs?
+• A diffusion model to generate highly detailed and fashionable clothing designs from text descriptions or sketches
+
+Your organization is considering implementing a foundation model to "automate customer service inquiries". Which of the following metrics would be more relevant to assess the model's effectiveness in meeting their business objectives?
+• Reduction in customer wait times, Model accuracy on a benchmark dataset
+
+A research team is using a foundation model to "analyze large datasets". Which metric would be most relevant to assess the model's effectiveness in meeting business objectives?
+• Time taken to analyze a dataset
+
+A marketing team wants to use a foundation model to generate creative ad copy.
+Which metric would be most relevant to assess the model's effectiveness in meeting business objectives?
+• Increase in ad click-through rates (CTR) - how often people click on an ad after seeing it.
+
+Monitoring plays a key role in maintaining the accuracy of high-quality machine learning models. Which of the following services or features from AWS support monitoring and managing "human reviews"? (Choose TWO)
+• Amazon Sagemaker Clarify, Amazon augmented Al
+
+The increasing sophistication of Al makes it harder for humans to understand and trace the algorithm's path to a conclusion. When creating Al-based solutions for users, their input is crucial. Why is user interaction so important in the creation of explainable Al (XAI)?
+• To understand user needs and preferences for explanations
+(User interaction is crucial in the creation of explainable AI (XAI) because it helps tailor the AI system's explanations to the specific needs and preferences of the users. Different users may have different levels of expertise and may require explanations in varying formats or detail. Involving users ensures that the explanations provided by the AI are understandable, transparent, and meaningful to the intended audience.)
+
+Underfitting?
+Increase model complexity
+Gather more training data
+Select the most important features that contribute most to the model's performance.
+(Reducing training time is typically done to avoid overfitting)
+=====
+
+
+Assessments:
+=====
+"Fine-tuning" on the industry dataset is useful when you have a "labeled dataset" and need to tailor the model for specific downstream tasks.
+However, "continued pre-training"(domain adaption tuning) is better suited for leveraging "large volumes of unlabeled data", as mentioned in the scenario.
+
+When the data scientist invokes an "embedding model" with the phrase "the movie was really great," the model converts the input text into a numerical representation (embedding) in the form of a vector.
+A word that indicates the sentiment of the phrase: This would be the output of a sentiment analysis model, not an embedding model.
+A value that rates the plausibility of the phrase: This would be more relevant to language models that evaluate fluency or plausibility.
+
+Amazon Kendra is a fully managed, intelligent search service that allows users to search and retrieve answers from "unstructured data" such as PDF documents. It is designed for non-technical users and can be integrated with Amazon S3 to extract and summarize content from documents. Kendra also supports natural language queries, making it ideal for answering questions based on the information in those documents without requiring coding experience.
+
+Amazon Q Business is a managed service designed to answer questions based on documents stored in services like Amazon S3. It requires minimal setup and abstracts the complexity of configuring models, embeddings, conversational features, or vector stores. This makes it the most operationally efficient solution for creating a virtual assistant that can support customer inquiries and provide natural language answers based on stored documents.
+
+If the input text is "This product is amazing and exceeded my expectations", which of the following outputs would be generated using an N-gram transformation with a window size of 3?
+response includes all the three-word combinations (trigrams) from the input text, along with the implicit two-word and one-word combinations that are always generated.
+
+Customer data is not used to train or improve the Bedrock service
+
+ROUGE: Calculate the overlap of n-grams (sequence of one or more words) between generated and human-written summaries.
+RMSE(Root Mean Square Error) is a common metric for regression tasks, where the goal is to predict a numerical value.
+BLEU is primarily used for evaluating machine translation systems. While it also relies on n-gram overlap, it's specifically designed for "comparing translations to reference translations" and might not be the most appropriate metric for summarization.
+
+1.3.a
+"Exploratory Data Analysis (EDA)" is the investigative phase of the machine learning pipeline. It's where you delve into your dataset to understand its structure, distributions, and relationships between variables.
+This involves visualizing the data through plots and charts, calculating summary statistics, and identifying potential outliers or anomalies. The insights gained from EDA are crucial for making informed decisions about data preprocessing, feature engineering, and model selection.
+Feature engineering involves selecting, transforming, and creating new features that can improve the model's performance. It relies on the insights gained from EDA but is a separate stage focused on feature creation.
+
+"Grid search" is a common "hyperparameter tuning" technique that involves defining a grid of possible hyperparameter values and systematically evaluating the model's performance for each combination of values. It's a brute-force approach that can be computationally expensive but guarantees finding the best combination within the defined grid.
+"Random search" involves randomly sampling hyperparameter values from a defined range and evaluating the model's performance for each set of sampled values. It's often more efficient than grid search, especially when some hyperparameters have a greater impact on performance than others.
+"Bayesian optimization" is an advanced method that leverages a probabilistic model to steer the search for optimal hyperparameters. By iteratively assessing the model's performance at various points in the hyperparameter space, it learns from past evaluations to select the next set of values to test. This technique is often more efficient than grid or random search, particularly for complex models with numerous hyperparameters.
+
+"Gradient descent" is an optimization algorithm used to find the optimal values for a model's internal parameters (weights and biases) during the "training process". It works by iteratively adjusting the parameters in the direction that minimizes the loss function. While gradient descent is essential for training machine learning models, it's not directly used for tuning hyperparameters.
+
+"Pruning" is a model "compression technique" that involves removing redundant or less important parameters from the model, effectively reducing its size and computational requirements.
+"Quantization" reduces the precision of the model's weights, representing them with fewer bits. This leads to a smaller memory footprint and often faster inference, making it a common model compression technique
+"Distillation" involves training a smaller "student" model to mimic the behavior of a larger "teacher" model. This allows you to deploy a more compact and efficient model while retaining a significant portion of the original model's performance, making it another effective model compression technique.
+
+Fine-tuning is a process where a pre-trained model is further trained on a specific task or dataset to adapt its knowledge and improve its performance on that particular task. While fine-tuning can be a crucial step in model development, it doesn't inherently reduce the model's size. In fact, fine-tuning can sometimes even slightly increase the model size if additional parameters are introduced.
+
+Observer bias occurs when the individuals collecting or analyzing data allow their subjective expectations to influence the outcomes.
+Sampling bias(Representation Bias) occurs when certain groups are underrepresented or overrepresented in the training data, leading to a model that generalizes poorly to the broader population.
+  If the model disproportionately triggers alarms for certain people based on looks, it may be due to an imbalance in the training dataset.
+Recency bias happens when more recent events are given more weight than older events, leading to skewed decision-making.
+
+Models
+Support Vector Machines (SVM) is a widely-used supervised learning algorithm for classification and regression tasks.
+Decision tree
+Residual neural networks (ResNets) are a type of deep learning architecture designed to solve the vanishing gradient problem in very deep neural networks.
+
+AWS Titan - A generative-AI powered assistant
+XGBoost (Extreme Gradient Boosting) is a powerful, optimized gradient boosting algorithm widely used for structured data problems like classification and regression.
+
+Logistic Regression – Best for binary classification (0 or 1)
+Linear Regression – Used for predicting continuous values
+Neural Networks – Excellent for multi-class classification and can learn complex, non-linear relationships between genes. Since genes often interact in non-linear ways, a neural network is a good choice.
+Decision Trees – Can handle multi-class classification but may struggle with capturing deep relationships unless they are used as part of an ensemble (e.g., Random Forest).
+
+A company wants to classify human genes into 20 categories based on gene characteristics. The company needs an ML algorithm to document how the inner mechanism of the model affects the output.
+Which ML algorithm meets these requirements? - Decision trees
+
+Self-learning - reinforcement
+
+AWS Bedrock Provisioned Throughput allows customers to reserve dedicated capacity for foundation models (FMs), ensuring consistent, high-performance inference without variability in response times. It is ideal for applications with predictable or high-volume workloads.
+
+For a customer who "needs flexibility" and does "not want a long-term commitment", the best AWS Bedrock pricing model would be On-Demand or Spot, depending on their tolerance for interruptions(if acceptable then Spot).
+
+"epoch" represents one complete pass of the entire training dataset through the learning algorithm.
+number of epochs being a key hyperparameter that influences model performance.
+increase epoch to increase accuracy of model.
+
+The most eco-friendly AWS EC2 instance types are generally those designed for high efficiency and energy savings.
+Graviton-based Instances (ARM architecture) - Instances: t4g, m7g, c7g, r7g, etc.
+
+Token - A unit of text that the model processes, which can be a word, part of a word, or a character
+
+Use Amazon Kendra (Enterprise Search) if you need an intelligent search engine to find relevant documents quickly.
+Use Amazon Q (Generative AI-Powered Assistant) if you want an AI-powered assistant that can generate responses, analyze data, and assist in real-time conversations.
+
+Amazon Textract is fully managed service that can detect and extract text and data from scanned documents, PDFs, and images. One of the use cases for Amazon Textract is to process invoices and receipts. For example, Amazon Textract can detect billing and shipping addresses automatically from images.
+
+Amazon Comprehend is a natural language processing (NLP) service that can extract insights and relationships from text data (or Documents).
+
+Amazon Recognization image and video analysis.
+
+Amazon Kendra is an intelligent search service that uses semantic and contextual understanding to provide relevant responses to a search query.
+
+
+
+
+
+
+
+
+
+
+
+Recommended
+Generative AI for Executives (0.25 hour)
+Amazon Q Business Getting Started (0.75 hour)
+Amazon Bedrock Getting Started (1 hour)
+Getting Started with Amazon Comprehend: Custom Classification (1.25 hours)
+Build a Question-Answering Bot Using Generative AI (1.5 hours)
+
+videos for Domain 1-4 in skillbuilder
+recap tree in github pages - for my benefit - CHANGE to Domain with Summary folder?
+ADD video notes to SUMMARY in github pages
+* see each service in AWS console (hands-on) - do it even after exam done
+Go through Additional Resources section link in each Domain
+practice tests
+2 courses in Lex
+optional courses in skillbuilder
+advice videos in youtube sharing their experience on certification (Stephen Mareke course for hand-on understanding, Important: SageMaker, Q, Bedrock,  https://learn.techwithlucy.com/p/ai-practitioner-notes)
+internal certification
+(add course material in github pages)
+add the github pages link in LinkedIn post after completion
+change text color to black in github pages
+
+** educative courses (both)
