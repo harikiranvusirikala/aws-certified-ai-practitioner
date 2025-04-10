@@ -260,7 +260,7 @@ Prompt engineering:
     Prompts -> manipulate LLM
   2. Prompt Leaking
     LLM(own system prompts)
-  3. Prompt Poisioning
+  3. Prompt Poisoning
     Malicious data -> training data -> manipulated output
 
 
@@ -2661,6 +2661,180 @@ Advantages of generative Al
 • Cost-effective
 • Speed to market
 • Ability to meet business objectives
+=====
+3.1
+Considerations
+• Cost
+  • Requirements
+• Latency
+  • Inference speed
+  • Real-time
+    Models: K-Nearest Neighbors, Decision tree
+• Modalities
+  • Ensemble methods
+  • Multilingual
+• Architecture
+• Complexity
+  • Number of parameters, layers, and operations
+  Architecture and complexity considerations
+    • Performance and metrics
+    don't use Accuracy if data is uneven or bias. Use F1-Score.
+• Bias and fairness
+• Availability
+• Compatibility
+• Explainability
+• Interpretability
+
+Inference
+  • It is the process of generating an output from an input that you provided to the model.
+• Which inputs do you provide to run inference?
+  • Prompt and inference parameters
+
+Inference parameters
+• Randomness and diversity
+  • Temperature, Top K, Top P
+• Length
+  • Response length, penalties, stop sequences
+Amazon Bedrock
+
+Prompt
+  • A specific set of inputs to guide LLMs to generate an appropriate output or completion.
+• What is Retrieval Augmented Generation (RAG)?
+  • Prompt enrichment and appending external data to your prompt
+• What is a vector database?
+  • Collection of data stored as mathematical representations
+
+Amazon Bedrock
+  • Foundation models
+  • Customize with training data or Retrieval Augmented Generation (RAG)
+
+RAG combines two components, 
+  a retriever component, which searches through a knowledge base and 
+  a generator component, which produces outputs based on the retrieved information.
+This combination helps the model access up-to-date and "domain-specific knowledge beyond their training data".
+Generative LLM can be prone to hallucinations(beliveable, but factually incorrect).
+  RAG solves this problem by complementing Generative LLMs with an external knowledge base(typically built using a vector database, hydrated with vector-coded knowledge articles)
+Amazon Bedrock offers RAG models that integrate with custom knowledge bases.
+
+AWS services for vector search databases
+Amazon OpenSearch Service, 
+Amazon OpenSearch Service Serverlsess - no need to manage vector database
+Amazon Aurora, Redis, Amazon Neptune, Amazon DocumentDB with MongoDB compatibility, and Amazon RDS with PostgreSQL
+
+Bidirectional Encoder Representations from Transformers, BERT is hosted by Amazon SageMaker to generate vectors and store them in OpenSearch.
+
+Amazon Bedrock agents
+Agents are an additional piece of software that orchestrates the prompt completion workflows and interactions between the user requests, foundation model, and external data sources or applications.
+
+3.2
+Prompt
+  • A specific set of inputs to guide LLMs to generate an appropriate output or completion.
+Few-shot prompting
+Zero-shot prompting
+Prompt engineering techniques
+  • Chain-of-thoughts prompting
+  • Prompt tuning
+Prompt engineering strategy and tasks
+  • Classification
+  • Question and answer with and without context
+  • Summarization
+  • Open-ended text generation
+  • Code generation
+  • Math
+  • Reasoning
+Latent space
+  • The encoded knowledge of language in LLMs or the stored patterns of data that capture relationships and reconstruct the language from the patterns when prompted
+
+Prompt engineering techniques
+  • Be specific.
+  • Add examples.
+  • Experiment.
+  • Understand your model.
+  • Find your balance.
+  • Use comments.
+  • Add guardrails.
+
+Prompt engineering risks and limitations
+  • Exposure
+  • Prompt injection
+  • Jailbreaking
+  • Hijacking
+  • Poisoning
+
+3.3
+Training process for foundation models
+• Pretraining
+    • Learn capabilities
+    • Train with huge amounts of data
+• Fine-tuning
+    • Supervised learning process to adapt custom foundation models to custom datasets and use cases
+    • Catastrophic forgetting (as it is fine tuned on a specific task, due to change in weight other tasks may be forgetten)
+• Continuous pre-training
+    • Produces more knowledgeable models and adds value
+
+Fine-tuning techniques
+  • Parameter-efficient fine-tuning (PEFT)
+  • Low-Rank Adaptation (LoRA)
+
+  • Representation fine-tuning (ReFT)
+  • Multitask fine-tuning - mitigate Catastrophic forgetting
+  • Domain adaptation fine-tuning
+  • Reinforcement learning from human feedback (RLHF)
+
+Data preparation fine-tuning
+  • Prepare your training data.
+  • Select prompts.
+  • Calculate loss.
+  • Update weights.
+  • Define evaluation steps.
+
+AWS services for data preparation
+  • Amazon SageMaker Canvas
+  • Open-source frameworks
+  • Amazon SageMaker Studio
+  • AWS Glue
+  • Amazon SageMaker Feature Store
+  • Amazon SageMaker Clarify
+  • Amazon SageMaker Ground Truth
+
+3.4
+Model performance
+  Amazon SageMaker
+    • Fully managed ML service
+    • Data preparation and labeling
+    • Model training and evaluation
+    • Model deployment and monitoring
+    • Pre-trained models
+
+Generative Al performance metrics
+• Recall Oriented Understudy for Gisting Evaluation (ROUGE) - evaluate summary
+• Bilingual Evaluation Understudy (BLEU) - evaluate machine translation
+
+• General Language Understanding Evaluation (GLUE)
+• Holistic Evaluation of Language Models (HELM) - help improve model transparency
+• Massive Multitask Language Understanding (MMLU) - Evaluate knowledge and problem solving capabilities
+• Beyond the Imitation Game Benchmark (BIG-bench)
+
+• BERTscore - scematic - faithfulness and hallucinations
+
+AWS services for evaluation
+  • Amazon SageMaker JumpStart
+  • Amazon SageMaker Clarify
+
+Model integration
+  Amazon Bedrock
+    • Foundation Models
+    • Customize with training data or Retrieval Augmented Generation (RAG)
+    RAG helps overcomes the outdated knowledge issue, if model uses older information
+
+Generative Al application stack
+  Users (People / Systems)
+  Application interfaces
+  LLM tools and frameworks
+  Data sources | LLM models | Outputs and feedback
+  Infrastructure: training, fine-tuning, serving, application components
+
+PostgreSQL database engine can supports the pgvector extension(can provide vector similarity search)
 =====
 4.1
 4.1.a
