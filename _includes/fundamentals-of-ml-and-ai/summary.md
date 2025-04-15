@@ -58,9 +58,9 @@
 - Retrieval-augmented generation (RAG) 
 
 ## AWS offering ML Frameworks, AI/ML Services and Generative AI
-- ML Frameworks
+- **ML Frameworks**
   - Amazon Sagemaker - build, train, and deploy ML models for any use case with fully managed infrastructure, tools, and workflows
-- AI/ML Services:
+- **AI/ML Services**:
   - Text and documents:
      - Amazon Comprehend - uses ML & Natural Language Processing to uncover insights & relationships of unstructured data, detecting offensive words in text.
      - Amazon Translate - Neural machine translation using deep learning to translate
@@ -79,7 +79,7 @@
      - Amazon Personalize
   - Misc:
      - AWS DeepRacer - to get started with reinforcement learning (RL)
-- Generative AI:
+- **Generative AI**:
    - Amazon Sagemaker JumpStart - choose one of the language models available and retrain it with your own data
     for accelerating model development and deployment
    - Amazon Bedrock - Foundation Model as a Service
