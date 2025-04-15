@@ -1,5 +1,5 @@
 ---
-title: Domain 4. Responsible AI Practices
+title: 7. Responsible AI Practices
 parent: Summary
 nav_order: 7
 ---

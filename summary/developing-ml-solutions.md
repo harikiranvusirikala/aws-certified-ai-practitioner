@@ -1,10 +1,10 @@
 ---
-title: Topic 3. Developing ML Solutions
+title: 3. Developing ML Solutions
 parent: Summary
 nav_order: 3
 ---
 
-# Topic 3: Developing ML Solutions
+# Developing ML Solutions
 {: .no_toc }
 
 <details open markdown="block">

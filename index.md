@@ -6,16 +6,16 @@ nav_order: 1
 
 Guide for clearing AWS Certified AI Practitioner (AIF-C01) exam
 
-- Doing Recap/Want to have short guide? Directly go through the following summaries of each section.
-  - [Summary - Topic 1. Fundamentals of ML and AI]({{siteb.baseurl}}/fundamentals-of-ml-and-ai/summary.html)
-  - [Summary - Topic 2. Exploring AI Use Cases and Applications]({{siteb.baseurl}}/exploring-ai-use-cases-and-applications/summary.html)
-  - [Summary - Topic 3. Developing ML Solutions]({{siteb.baseurl}}/developing-ml-solutions/summary.html)
-  - [Summary - Topic 4. Developing Generative AI Solutions]({{siteb.baseurl}}/developing-generative-ai-solutions/summary.html)
-  - [Summary - Topic 5. Essentials of Prompt Engineering]({{siteb.baseurl}}/essentials-of-prompt-engineering/summary.html)
-  - [Summary - Topic 6. Optimizing Foundation Models]({{siteb.baseurl}}/optimizing-foundation-models/summary.html)  
- 
-  - [Summary - Domain 4. Responsible AI Practices]({{site.baseurl}}/responsible-ai-practices/summary.html)
-  - [Summary - Domain 5. Security, Compliance, and Governance for AI Solutions]({{site.baseurl}}/security-compliance-and-governance-for-ai-solutions/summary.html)
+## Section wise Summary
+- Doing Recap/Want to have short guide? Directly go through the following **summaries** of each section.
+  - [1. Fundamentals of ML and AI]({{siteb.baseurl}}/fundamentals-of-ml-and-ai/summary.html)
+  - [2. Exploring AI Use Cases and Applications]({{siteb.baseurl}}/exploring-ai-use-cases-and-applications/summary.html)
+  - [3. Developing ML Solutions]({{siteb.baseurl}}/developing-ml-solutions/summary.html)
+  - [4. Developing Generative AI Solutions]({{siteb.baseurl}}/developing-generative-ai-solutions/summary.html)
+  - [5. Essentials of Prompt Engineering]({{siteb.baseurl}}/essentials-of-prompt-engineering/summary.html)
+  - [6. Optimizing Foundation Models]({{siteb.baseurl}}/optimizing-foundation-models/summary.html)
+  - [7. Responsible AI Practices (Domain 4)]({{site.baseurl}}/responsible-ai-practices/summary.html)
+  - [8. Security, Compliance, and Governance for AI Solutions (Domain5)]({{site.baseurl}}/security-compliance-and-governance-for-ai-solutions/summary.html)
 
 
 ## Exam topics
@@ -105,5 +105,6 @@ Guide for clearing AWS Certified AI Practitioner (AIF-C01) exam
     - Describe data governance strategies.
     - Describe processes to follow governance protocols.
 
+ 
 _This guide is an improved version inspired by the AWS Skillbuilder Learning Path [Standard Exam Prep Plan: AWS Certified AI Practitioner (AIF-C01)](https://explore.skillbuilder.aws/learn/learning-plans/2193/standard-exam-prep-plan-aws-certified-ai-practitioner-aif-c01)._
 {: .text-center .fs-3 .grey-dk-000}

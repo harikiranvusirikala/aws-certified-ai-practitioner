@@ -1,10 +1,10 @@
 ---
-title: Topic 4. Developing Generative AI Solutions
+title: 4. Developing Generative AI Solutions
 parent: Summary
 nav_order: 4
 ---
 
-# Topic 4: Developing Generative AI Solutions
+# Developing Generative AI Solutions
 {: .no_toc }
 
 <details open markdown="block">

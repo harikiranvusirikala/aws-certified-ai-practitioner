@@ -1,5 +1,5 @@
 ---
-title: Domain 5. Security, Compliance, and Governance for AI Solutions
+title: 8. Security, Compliance, and Governance for AI Solutions
 parent: Summary
 nav_order: 8
 ---

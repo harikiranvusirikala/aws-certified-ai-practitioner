@@ -1,10 +1,10 @@
 ---
-title: Topic 6. Optimizing Foundation Models
+title: 6. Optimizing Foundation Models
 parent: Summary
 nav_order: 6
 ---
 
-# Topic 6: Optimizing Foundation Models
+# Optimizing Foundation Models
 {: .no_toc }
 
 <details open markdown="block">

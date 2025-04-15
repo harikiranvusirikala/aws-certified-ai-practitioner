@@ -1,10 +1,10 @@
 ---
-title: Topic 1. Fundamentals of ML and AI
+title: 1. Fundamentals of ML and AI
 parent: Summary
 nav_order: 1
 ---
 
-# Topic 1: Fundamentals of ML and AI
+# Fundamentals of ML and AI
 {: .no_toc }
 
 <details open markdown="block">

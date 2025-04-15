@@ -1,10 +1,10 @@
 ---
-title: Topic 5. Essentials of Prompt Engineering
+title: 5. Essentials of Prompt Engineering
 parent: Summary
 nav_order: 5
 ---
 
-# Topic 5: Essentials of Prompt Engineering
+# Essentials of Prompt Engineering
 {: .no_toc }
 
 <details open markdown="block">
