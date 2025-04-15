@@ -1,6 +1,6 @@
 ---
 title: Summary
-parent: 7. Responsible AI Practices
+parent: Domain 4. Responsible AI Practices
 nav_order: 5
 ---
 
