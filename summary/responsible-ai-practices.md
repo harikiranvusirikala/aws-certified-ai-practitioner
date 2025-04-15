@@ -1,10 +1,10 @@
 ---
-title: 7. Responsible AI Practices
+title: Domain 4. Responsible AI Practices
 parent: Summary
 nav_order: 7
 ---
 
-# Summary
+# Domain 4: Responsible AI Practices
 {: .no_toc }
 
 <details open markdown="block">
@@ -15,7 +15,5 @@ nav_order: 7
 - TOC
 {:toc}
 </details>
-
-# Course 7: Responsible AI Practices (Domain 4)
 
 {% include responsible-ai-practices/summary.md %}

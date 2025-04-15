@@ -1,10 +1,10 @@
 ---
-title: 8. Security, Compliance, and Governance for AI Solutions
+title: Domain 5. Security, Compliance, and Governance for AI Solutions
 parent: Summary
 nav_order: 8
 ---
 
-# Summary
+# Domain 5: Security, Compliance, and Governance for AI Solutions
 {: .no_toc }
 
 <details open markdown="block">
@@ -15,7 +15,5 @@ nav_order: 8
 - TOC
 {:toc}
 </details>
-
-# Course 8: Security, Compliance, and Governance for AI Solutions (Domain 5)
 
 {% include security-compliance-and-governance-for-ai-solutions/summary.md %}
