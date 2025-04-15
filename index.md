@@ -7,8 +7,15 @@ nav_order: 1
 Guide for clearing AWS Certified AI Practitioner (AIF-C01) exam
 
 - Doing Recap? Directly go through the following summaries of each section.
-  - [Summary - 7. Responsible AI Practices (Domain 4)]({{site.baseurl}}/responsible-ai-practices/summary.html)
-  - [Summary - 8. Security, Compliance, and Governance for AI Solutions (Domain 5)]({{site.baseurl}}/security-compliance-and-governance-for-ai-solutions/summary.html)
+  - [Summary - Topic 1. Fundamentals of ML and AI]({{siteb.baseurl}}/fundamentals-of-ml-and-ai/summary.html)
+  - [Summary - Topic 2. Exploring AI Use Cases and Applications]({{siteb.baseurl}}/exploring-ai-use-cases-and-applications/summary.html)
+  - [Summary - Topic 3. Developing ML Solutions]({{siteb.baseurl}}/developing-ml-solutions/summary.html)
+  - [Summary - Topic 4. Developing Generative AI Solutions]({{siteb.baseurl}}/developing-generative-ai-solutions/summary.html)
+  - [Summary - Topic 5. Essentials of Prompt Engineering]({{siteb.baseurl}}/essentials-of-prompt-engineering/summary.html)
+  - [Summary - Topic 6. Optimizing Foundation Models]({{siteb.baseurl}}/optimizing-foundation-models/summary.html)  
+ 
+  - [Summary - Domain 4. Responsible AI Practices]({{site.baseurl}}/responsible-ai-practices/summary.html)
+  - [Summary - Domain 5. Security, Compliance, and Governance for AI Solutions]({{site.baseurl}}/security-compliance-and-governance-for-ai-solutions/summary.html)
 
 
 ## Exam topics
