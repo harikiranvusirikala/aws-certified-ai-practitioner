@@ -3074,7 +3074,62 @@ Amazon Kendra is an intelligent search service that uses semantic and contextual
 =====
 
 
-
+Main Test - 65 question (15 not score among them) - 15th April 2025 8:45 AM IST
+=====
+Regression
+Unsupervised learning
+large labeled data, and no more labeling data?
+Batch inferencing
+Sentiment analysis of part of AI - NLP
+ - NLP
+Chatbot see claims details - Agent with Bedrock
+Private Link
+FM as a service - Amazon Bedrock
+LLM to new LLM in Amazon Bedrock - new labeled dataset, fine tunining, feature enginering
+Multimodal generation model
+Adjust prompts - 
+Possible words - Top K
+Same input different output decrease - Decrease temperature
+Factually correct - Hallucation
+Retrieval-augmented generation (RAG)
+Bedrock pricing - Number of Token consumption
+Transperancy and Explainability - Model complexity
+Accuracy
+efficiency of operating AI - Customer experienc survery? (human feedback, )
+Prompt leaking
+Data not leaving location - Data Residency
+evaluate image classification model - Benchmark datasets
+Transfer learning
+Iac used for manintang consistent across environments
+Monitor the scaling of service - AWS cloudwatch
+Object detection or Named identity recognistion
+SVM or GPT
+holes, bends, etc defects in machine building proccess - CNN?
+medical report in structured. Comprehand or Textract
+Kendra
+Inference
+IAM
+Guardrails of Amazon Bedrock
+Amazon Sagemaker AI endpoint - least operation overhead
+Guardrails - Hate, Violence
+Comprehand toxic detector
+Use AWS Glue without expereince - Amazon Q Developer
+Bilingual Evaluation Understudy (BLEU)
+Amazon SageMaker Model Cards
+AWS CloudTrail + Amazon S3 intillegent-tier
+Amazon SageMaker Clarify
+Amazon SageMaker in (isolated environment) - no internet connectivity
+Vector DB - Amazon Aurora Postgresql
+detect drift - Amazon SageMaker Model Montior
+Transperancy and explainabillity - Sample data used
+Transperancy and explainabillity - Amazon SageMaker Clarify to get metrics, etc
+Token in Generative AI context
+Use of Generative AI - Summarize content (other options classification, forecast, etc)
+Order: Zero/few/chain
+Chain-of-thought
+Order: Fine Tuning/Data Augmentation/Continuous pre-training
+Multi select: new articles published, Need to use in RAG - options: creating index, retreival of content, providing response, etc
+=====
 
 
 
