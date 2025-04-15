@@ -67,7 +67,7 @@ Responsible datasets are the foundation of Responsible AI
 ## Responsible Practices to Select a Model
 - use **Model evaluation on Amazon Bedrock** or **SageMaker Clarify** to evaluate models for accuracy, robustness, toxicity, or nuanced content that requires human judgement.  
  
-- **Environmental considerations**: Assessing the carbor footprint and energy consumption of Al models
+- **Environmental considerations**: Assessing the carbon footprint and energy consumption of Al models
 - **Sustainability**: Prioritizing models with minimal environmental impact and long-term viability
 - **Transparency**: Providing clear information about model capabilites, limitations, and potential risks
 - **Accountability**: Establishing clear lines of responsibility for Al model outcomes and decision making

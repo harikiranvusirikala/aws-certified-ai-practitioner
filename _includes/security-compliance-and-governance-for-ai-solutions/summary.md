@@ -7,7 +7,7 @@
 - Health Insurance Portability and Accountability Act (HIPAA)
 - General Data Protection Regulation (GDPR)
 - Payment Card Industry Data Security Standard (PCI DSS)
-- Algorithmic Accountability Act - prevent bias, ensure transparency and explainbility
+- Algorithmic Accountability Act - prevent bias, ensure transparency and explainability
 
 ## AWS Services for Governance and Compliance
 
