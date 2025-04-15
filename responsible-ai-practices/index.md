@@ -1,5 +1,5 @@
 ---
-title: Domain 4. Responsible AI Practices
+title: 7. Responsible AI Practices
 nav_order: 8
 ---
 

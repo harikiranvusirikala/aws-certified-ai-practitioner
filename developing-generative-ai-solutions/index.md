@@ -1,5 +1,5 @@
 ---
-title: Topic 4. Developing Generative AI Solutions
+title: 4. Developing Generative AI Solutions
 nav_order: 2
 ---
 

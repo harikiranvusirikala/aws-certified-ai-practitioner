@@ -1,6 +1,6 @@
 ---
 title: Summary
-parent: Topic 4: Developing Generative AI Solutions
+parent: 4: Developing Generative AI Solutions
 nav_order: 2
 ---
 
