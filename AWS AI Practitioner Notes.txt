@@ -1,7 +1,7 @@
 Learning Path in SkillBuilder:
 - [Standard Exam Prep Plan: AWS Certified AI Practitioner (AIF-C01)](https://explore.skillbuilder.aws/learn/learning-plans/2193/standard-exam-prep-plan-aws-certified-ai-practitioner-aif-c01)
 And
-Stephen Mareke course for hand-on understanding
+(Stephen Mareke course for hand-on understanding)
 
 - https://explore.skillbuilder.aws/learn/courses/19554/exam-prep-standard-course-aws-certified-ai-practitioner-aif-c01/lessons
 - https://explore.skillbuilder.aws/learn/courses/19603/responsible-artificial-intelligence-practices/lessons/153624/responsible-artificial-intelligence-practices
@@ -46,24 +46,21 @@ ML is training a computer to recognize patterns in historical data to make predi
 AI > ML > DL > Generative AI (here > is super set of right)
 Generative AI is powered by large language models that are pretrained on internet-scale data, and these models are called foundation models (FMs).
 Generative AI is a subset of deep learning because it can adapt models built using deep learning, but without retraining or fine tuning. 
-
-Eg: Amazon Q Developer is a generative AI tool that increases developer productivity by generating code.
+  Eg: Amazon Q Developer is a generative AI tool that increases developer productivity by generating code.
 
 Generative AI services on AWS:
-• Foundation Model as a Service: Amazon Bedrock
-• Build your own models: 	       Amazon SageMaker, Amazon SageMaker JumpStart(choose one of the language models available and retrain it with your own data.)
-• Compute: 			                 AWS Trainium, AWS Inferentia
-
+  • Foundation Model as a Service: Amazon Bedrock
+  • Build your own models: 	            Amazon SageMaker, Amazon SageMaker JumpStart(choose one of the language models available and retrain it with your own data.)
+  • Compute: 			                              AWS Trainium, AWS Inferentia
 Risks:
-Regulatory requirements
-Social risks
-Privacy concerns
-
+  • Regulatory requirements
+  • Social risks
+  • Privacy concerns
 Benefits:
-Personalize customer interactions.
-Generate novel content.
-Efficiently adapt pre-built models to business use cases.
-Achieve productivity gains through automation.
+  • Personalize customer interactions.
+  • Generate novel content.
+  • Efficiently adapt pre-built models to business use cases.
+  • Achieve productivity gains through automation.
 =====
 
 
@@ -75,15 +72,14 @@ What is Deep Learning? – https://aws.amazon.com/what-is/deep-learning/
 What is Generative AI? – https://aws.amazon.com/what-is/generative-ai/
 
 Generation of following types with Generative AI:
-Text
-Image
-Audio
-Coding
-
+  • Text
+  • Image
+  • Audio
+  • Coding
 Issues like:
-bias
-privacy
-responsible use
+  • bias
+  • privacy
+  • responsible use
 
 AI is a broad field that encompasses the development of intelligent systems capable of performing tasks that typically require human intelligence, such as perception, reasoning, learning, problem-solving, and decision-making. AI serves as an umbrella term for various techniques and approaches, including machine learning, deep learning, and generative AI, among others.
 
@@ -97,35 +93,36 @@ Generative AI systems are capable of generating new data based on the patterns a
 ML Fundamentals:
 ===
 Building a machine learning model involves:
-• data collection and preparation, 
-• selecting an appropriate algorithm, 
-• training the model on the prepared data, and 
-• evaluating its performance through testing and iteration.
+  • data collection and preparation, 
+  • selecting an appropriate algorithm, 
+  • training the model on the prepared data, and 
+  • evaluating its performance through testing and iteration.
 
 Training data:
-Bad data is often called garbage in, garbage out, and therefore an ML model is only as good as the data used to train it.
+  Bad data is often called garbage in, garbage out, and therefore an ML model is only as good as the data used to train it.
 
-• Labeled data - each input instance has a label that represent output for classification
-• Unlabled data
+  • Labeled data - each input instance has a label that represent output for classification
+  • Unlabled data  
 
-• Structured data    - data with particular format, mostly like form of tables or databases with rows and columns
-    Tabular data	   - data stored in spreadsheets, databases, or CSV files
-    Time-series data - data consists of sequences of values measured at successive points in time, such as stock prices, sensor readings, or weather data.
-• Unstructured data  - data that lacks a predefined structure or format, such as text, images, audio, and video
-    Text data        - documents, articles, social media posts, and other textual data.
-    Image data       - digital images, photographs, and video frames.
+  • Structured data    - data with particular format, mostly like form of tables or databases with rows and columns
+    • Tabular data	   - data stored in spreadsheets, databases, or CSV files
+    • Time-series data - data consists of sequences of values measured at successive points in time, such as stock prices, sensor readings, or weather data.
+  • Unstructured data  - data that lacks a predefined structure or format, such as text, images, audio, and video
+    • Text data        - documents, articles, social media posts, and other textual data.
+    • Image data       - digital images, photographs, and video frames.
 
 Machine learning process:
   • In supervised learning, the algorithms are trained on labeled data. The goal is to learn a mapping function that can predict the output for new, unseen input data.
   • Unsupervised learning refers to algorithms that learn from unlabeled data. The goal is to discover inherent patterns, structures, or relationships within the input data.
-  • In reinforcement learning, the machine is given only a performance score as guidance and semi-supervised learning, where only a portion of training data is labeled. Feedback is provided in the form of rewards or penalties for its actions, and the machine learns from this feedback to improve its decision-making over time.
+  • In reinforcement learning, the machine is given only a "performance score as guidance" and "semi-supervised learning", where only a portion of training data is labeled. Feedback is provided in the form of rewards or penalties for its actions, and the machine learns from this feedback to improve its decision-making over time.
 
 Inferencing: (process of using the information that a model has learned to make predictions or decisions)
-  Syncronous inferencing
+  • Syncronous inferencing
     Client-req -> AI -> immediate response
-  Asyncronous inferencing - longer processing time
-    Client-req -> AI(ack) -> later
-  • Batch inferencing     - analyzes large amount of data all at once, where the speed of the decision-making process is not as crucial as the accuracy of the results.
+  • Asyncronous inferencing - longer processing time
+    Client-req -> AI(ack) -> later  
+
+  • Batch inferencing     - analyzes "large amount of data" all at once, where the speed of the decision-making process is not as crucial as the accuracy of the results.
     Eg: data analysis
   • Real-time inferencing - process the incoming data and make a decision almost instantaneously, without taking the time to analyze a large dataset
     Eg: chatbots or self-driving cars
@@ -133,7 +130,7 @@ Inferencing: (process of using the information that a model has learned to make 
 
 DL Fundamentals:
 ===
-involves the use of Artificial Neural Networks(ANN), which are computational models that are designed to mimic the way the human brain processes information.
+involves the use of "Artificial Neural Networks (ANN)", which are computational models that are designed to mimic the way the human brain processes information.
 
 Neural networks - core of Deep learning. Like neurons connected in brain, "nodes" are connected here.
   Nodes are organized into layers. The layers include an input layer, one or more hidden layers, and an output layer.
@@ -163,7 +160,7 @@ Data selection:
   Unlabeled data can be used at scale for pre-training, easy to collect than labeled data.
   FMs require training on massive datasets from diverse sources.
 Pre-training:
-  Although traditional ML models rely on supervised, unsupervised, or reinforcement learning patterns, FMs are typically pre-trained through self-supervised learning.
+  Although traditional ML models rely on supervised, unsupervised, or reinforcement learning patterns, FMs are typically pre-trained through "self-supervised learning".
   With self-supervised learning, labeled examples are not required. Self-supervised learning makes use of the structure within the data to autogenerate labels.
 
   During the initial pre-training stage, the FM's algorithm can learn the meaning, context, and relationship of the words in the datasets. Like drink means bevarage(noun) or swalloing liquid(verb).
@@ -210,6 +207,7 @@ Diffusion models:
   Reverse diffusion: noisy image is gradually introduced to denoising until a new image is generated.
 
   well-kown for text-to-image models
+  To generate highly detailed and fashionable clothing designs from text descriptions or sketches
 
 Multimodal models:
   Instead of just relying on a single type of input or output, like text or images, multimodal models can process and generate multiple modes of data simultaneously.
@@ -246,26 +244,8 @@ Prompt engineering:
   • Input data: This is the input for which you want a response.
   • Output indicator: This is the output type or format.
 
-  Zero shot - No examples; output based on it's knowledge
-    Eg: Translate "hello" to French
-  One shot - One example
-    Eg: English: Cat, French: Chat; English: Dog, French?
-  Two shot - Two examples
-    Eg: A dog is a mammal, A cat is a mammal. What is Lion?
-  Chain of Thought - Complex -> Simple
-
-  Cyber-attacks in prompt engineering
-  1. Prompt Injection
-    Manipulate - LLM[behavior]
-    Prompts -> manipulate LLM
-  2. Prompt Leaking
-    LLM(own system prompts)
-  3. Prompt Poisoning
-    Malicious data -> training data -> manipulated output
-
-
 Fine-tuning:
-  Fine-tuning is a supervised learning process that involves taking a pre-trained model and adding specific, smaller datasets. Adding these narrower datasets modifies the weights of the data to better align with the task.
+  Fine-tuning is a "supervised learning" process that involves taking a pre-trained model and adding specific, smaller datasets. Adding these narrower datasets modifies the weights of the data to better align with the task.
 
   • Instruction fine-tuning: uses examples of how the model should respond to a specific instruction. Prompt tuning is a type of instruction fine-tuning.
   • Reinforcement learning from human feedback (RLHF): provides human feedback data, resulting in a model that is better aligned with human preferences.
@@ -532,6 +512,7 @@ Business Metrics for Generative AI
 Course: developing-machine-learning-solutions
 =====
 * When doing recap see Conclusion section in course first.
+- https://explore.skillbuilder.aws/learn/learning-plans/2193/standard-exam-prep-plan-aws-certified-ai-practitioner-aif-c01/courses/19609/developing-machine-learning-solutions/lessons/153599/developing-machine-learning-solutions
 
 https://aws.amazon.com/sagemaker-ai/getting-started/
 
@@ -540,10 +521,10 @@ Will learn about the machine learning lifecycle, and how to use AWS services at 
 Machine Learning Development Lifecycle:
   Business goal identification
   ML problem framing
-  Data processing (
+  Data processing
     data collection and integration - raw data in central place,
     data preprocessing and data visualization - raw data into an understandable format, and 
-    feature engineering - creating, transforming, extracting, and selecting variables from data)
+    feature engineering - creating, transforming, extracting, and selecting variables from data
   Model development (training, tuning, and evaluation)
     do additional feature engineering and tune the model's hyperparameters before retraining
   Model retraining
@@ -718,11 +699,11 @@ Sagemaker deployment options:
   • Real-time
     Real-time inference is ideal for inference workloads where you have real-time, interactive, and low latency requirements.
   • Batch transform
-    Use batch transform when you need to get inferences from large datasets and don't need a persistent endpoint. You can also use it when you need to preprocess datasets to remove noise or bias that interferes with training or inference from your dataset.
+    Use batch transform when you need to get inferences from "large datasets" and don't need a persistent endpoint. You can also use it when you need to preprocess datasets to remove noise or bias that interferes with training or inference from your dataset.
   • Asynchronous
     SageMaker asynchronous inference is a capability in SageMaker that queues incoming requests and processes them asynchronously. This option is ideal for requests with large payload sizes (up to 1GB), long processing times (up to one hour), and near real-time latency requirements.
   • Serverless
-    On-demand serverless inference is ideal for workloads that have idle periods between traffic spurts and can tolerate cold starts. It is a purpose-built inference option that you can use to deploy and scale ML models without configuring or managing any of the underlying infrastructure.
+    On-demand serverless inference is ideal for workloads that have "idle periods between traffic spurts" and can tolerate "cold starts". It is a purpose-built inference option that you can use to deploy and scale ML models without configuring or managing any of the underlying infrastructure.
 
 Fundamental Concepts of MLOps:
 MLOps combines people, technology, and processes to deliver collaborative ML solutions.
@@ -1010,7 +991,7 @@ Relevant metrics
   • ROUGE
     Recall-Oriented Understudy for Gisting Evaluation (ROUGE) is a set of metrics used for evaluating automatic summarization and machine translation systems. It measures the "quality of a generated summary" or translation by comparing it to one or more reference summaries or translations.
   • BLEU
-    Bilingual Evaluation Understudy (BLEU) is a metric used to evaluate the "quality of machine-generated text", particularly in the context of machine translation. It measures the "similarity" between a generated text and one or more reference translations, considering both precision and brevity.
+    Bilingual Evaluation Understudy (BLEU) is a metric used to evaluate the quality of machine-generated text, particularly in the context of "machine translation". It measures the "similarity" between a generated text and one or more reference translations, considering both precision and brevity.
   • BERTScore
     BERTScore is a metric that evaluates the "semantic similarity" between a generated text and one or more reference texts. It uses pre-trained Bidirectional Encoder Representations from Transformers (BERT) models to compute contextualized embeddings for the input texts, and then calculates the cosine similarity between them.
 
@@ -2355,7 +2336,7 @@ Processing data
 4 Pre-process data (Preparing data)
   • Exploratory data analysis (EDA)
   • Clean
-  • Split - train, validate test
+  • Split - train, validate, and test
 5 Feature engineering (Preparing data)
   • Select features
 
@@ -2495,7 +2476,7 @@ Recall (TPR - True Positive Rate) = TP / (TP + FN)
 F1-score = Precision * Recall * 2 / (Precision + Recall)
 False Positive Rate (FPR) = FP / (TN + FP)
 Specificity (TNR) = TN / (TN + FP)
-Area Under the ROC Curve [AUC]  (ROC - Reciever operating characteristics) - TPR in y-axis, FPR in x-axis
+Area Under the ROC Curve [AUC]  (ROC - Reciever operating characteristics) - TNR in y-axis, FPR in x-axis
 Regression model errors
   • Mean squared error (MSE)
     • Average of the square of the errors
@@ -2875,7 +2856,7 @@ Characteristics of datasets
 
 4.1.c
 Responsible practices for model selection
-  Environmental considerations: Assessing the carbor footprint and energy consumption of Al models
+  Environmental considerations: Assessing the carbon footprint and energy consumption of Al models
   Sustainability: Prioritizing models with minimal environmental impact and long-term viability
   Transparency: Providing clear information about model capabilites, limitations, and potential risks
   Accountability: Establishing clear lines of responsibility for Al model outcomes and decision making
@@ -3044,15 +3025,15 @@ Feature engineering involves selecting, transforming, and creating new features 
 
 Fine-tuning is a process where a pre-trained model is further trained on a specific task or dataset to adapt its knowledge and improve its performance on that particular task. While fine-tuning can be a crucial step in model development, it doesn't inherently reduce the model's size. In fact, fine-tuning can sometimes even slightly increase the model size if additional parameters are introduced.
 
-Observer bias occurs when the individuals collecting or analyzing data allow their subjective expectations to influence the outcomes.
-Sampling bias(Representation Bias) occurs when certain groups are underrepresented or overrepresented in the training data, leading to a model that generalizes poorly to the broader population.
+"Observer bias" occurs when the individuals collecting or analyzing data allow their subjective expectations to influence the outcomes.
+"Sampling bias" (Representation Bias) occurs when certain groups are underrepresented or overrepresented in the training data, leading to a model that generalizes poorly to the broader population.
   If the model disproportionately triggers alarms for certain people based on looks, it may be due to an imbalance in the training dataset.
-Recency bias happens when more recent events are given more weight than older events, leading to skewed decision-making.
+"Recency bias" happens when more recent events are given more weight than older events, leading to skewed decision-making.
 
 Models
-Support Vector Machines (SVM) is a widely-used supervised learning algorithm for classification and regression tasks.
-Decision tree
-Residual neural networks (ResNets) are a type of deep learning architecture designed to solve the vanishing gradient problem in very deep neural networks.
+"Support Vector Machines (SVM)" is a widely-used supervised learning algorithm for classification and regression tasks.
+"Decision tree"
+"Residual neural networks (ResNets)" are a type of deep learning architecture designed to solve the vanishing gradient problem in very deep neural networks.
 
 AWS Titan - A generative-AI powered assistant
 XGBoost (Extreme Gradient Boosting) is a powerful, optimized gradient boosting algorithm widely used for structured data problems like classification and regression.
@@ -3069,7 +3050,7 @@ Self-learning - reinforcement
 
 AWS Bedrock Provisioned Throughput allows customers to reserve dedicated capacity for foundation models (FMs), ensuring consistent, high-performance inference without variability in response times. It is ideal for applications with predictable or high-volume workloads.
 
-For a customer who "needs flexibility" and does "not want a long-term commitment", the best AWS Bedrock pricing model would be On-Demand or Spot, depending on their tolerance for interruptions(if acceptable then Spot).
+For a customer who "needs flexibility" and does "not want a long-term commitment", the best AWS Bedrock pricing model would be On-Demand or Spot, depending on their "tolerance for interruptions"(if acceptable then Spot).
 
 "epoch" represents one complete pass of the entire training dataset through the learning algorithm.
 number of epochs being a key hyperparameter that influences model performance.
@@ -3090,6 +3071,7 @@ Amazon Comprehend is a natural language processing (NLP) service that can extrac
 Amazon Recognization image and video analysis.
 
 Amazon Kendra is an intelligent search service that uses semantic and contextual understanding to provide relevant responses to a search query.
+=====
 
 
 
