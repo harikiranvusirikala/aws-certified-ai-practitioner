@@ -1,6 +1,7 @@
 ---
-title: Summary
-nav_order: 10
+title: 8. Security, Compliance, and Governance for AI Solutions
+parent: Summary
+nav_order: 8
 ---
 
 # Summary
@@ -14,12 +15,6 @@ nav_order: 10
 - TOC
 {:toc}
 </details>
-
-# Course 7: Responsible AI Practices (Domain 4)
-
-{% include responsible-ai-practices/summary.md %}
-
----
 
 # Course 8: Security, Compliance, and Governance for AI Solutions (Domain 5)
 

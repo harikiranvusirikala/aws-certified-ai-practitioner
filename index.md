@@ -6,7 +6,7 @@ nav_order: 1
 
 Guide for clearing AWS Certified AI Practitioner (AIF-C01) exam
 
-- Doing Recap? Directly go through the following summaries of each section.
+- Doing Recap/Want to have short guide? Directly go through the following summaries of each section.
   - [Summary - Topic 1. Fundamentals of ML and AI]({{siteb.baseurl}}/fundamentals-of-ml-and-ai/summary.html)
   - [Summary - Topic 2. Exploring AI Use Cases and Applications]({{siteb.baseurl}}/exploring-ai-use-cases-and-applications/summary.html)
   - [Summary - Topic 3. Developing ML Solutions]({{siteb.baseurl}}/developing-ml-solutions/summary.html)
