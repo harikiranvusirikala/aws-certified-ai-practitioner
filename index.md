@@ -4,7 +4,9 @@ layout: home
 nav_order: 1
 ---
 
-Guide for clearing AWS Certified AI Practitioner (AIF-C01) exam
+# Guide for clearing AWS Certified AI Practitioner (AIF-C01) exam
+
+### To view the complete written notes in text format, click [here](https://github.com/harikiranvusirikala/aws-certified-ai-practitioner/blob/main/AWS%20AI%20Practitioner%20Notes.txt). 
 
 ## Section wise Summary
 - Doing Recap/Want to have short guide? Directly go through the following **summaries** of each section or at [Summary]({{site.baseurl}}/summary/) section at end. 
